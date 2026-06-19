@@ -1,0 +1,287 @@
+import React, { useState, useEffect, useRef } from 'react';
+import { View, Text, ScrollView, Pressable, Animated } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import { useRouter } from 'expo-router';
+
+import { Icon } from '@/components/ui';
+import { useTrackersStore, type FeedingSession } from '@/stores/trackers';
+import { colors } from '@/theme/tokens';
+
+const pad = (n: number) => String(n).padStart(2, '0');
+const fmtTime = (s: number) => `${pad(Math.floor(s / 60))}:${pad(s % 60)}`;
+
+function formatHour(ts: number) {
+  const d = new Date(ts);
+  return `${pad(d.getHours())}:${pad(d.getMinutes())}`;
+}
+
+function formatDateShort(ts: number) {
+  return new Date(ts).toLocaleDateString('pl-PL', { day: 'numeric', month: 'short' });
+}
+
+function todayMs() {
+  const now = new Date();
+  const start = new Date(now.getFullYear(), now.getMonth(), now.getDate()).getTime();
+  return { start, end: start + 86400000 };
+}
+
+const BACK_BTN = {
+  width: 40, height: 40, borderRadius: 12, borderWidth: 0.5,
+  borderColor: colors.line.DEFAULT, backgroundColor: colors.surface.DEFAULT,
+  alignItems: 'center' as const, justifyContent: 'center' as const,
+};
+
+const SIDE_LABELS: Record<string, string> = {
+  left: 'Lewa', right: 'Prawa', bottle: 'Butelka', pump: 'Laktator',
+};
+
+export default function KarmieniScreen() {
+  const router = useRouter();
+  const { feedingSessions, activeFeedingSessionId, startFeeding, endFeeding, deleteFeeding } =
+    useTrackersStore();
+
+  const [tick, setTick] = useState(0);
+  const pulseAnim = useRef(new Animated.Value(1)).current;
+
+  useEffect(() => {
+    const id = setInterval(() => setTick((t) => t + 1), 1000);
+    return () => clearInterval(id);
+  }, []);
+
+  // Pulse animation for active session
+  useEffect(() => {
+    if (!activeFeedingSessionId) { pulseAnim.setValue(1); return; }
+    const loop = Animated.loop(
+      Animated.sequence([
+        Animated.timing(pulseAnim, { toValue: 0.25, duration: 550, useNativeDriver: true }),
+        Animated.timing(pulseAnim, { toValue: 1, duration: 550, useNativeDriver: true }),
+      ])
+    );
+    loop.start();
+    return () => loop.stop();
+  }, [activeFeedingSessionId]);
+
+  const activeSession = feedingSessions.find((s) => s.id === activeFeedingSessionId);
+  const elapsed = activeSession ? Math.floor((Date.now() - activeSession.startedAt) / 1000) : 0;
+
+  const { start, end } = todayMs();
+  const todaySessions = feedingSessions.filter((s) => s.startedAt >= start && s.startedAt < end);
+  const todayDone = todaySessions.filter((s) => s.endedAt);
+  const lastSession = [...feedingSessions].filter((s) => s.endedAt).sort((a, b) => b.startedAt - a.startedAt)[0];
+
+  const pastSessions = feedingSessions.filter((s) => s.endedAt && s.startedAt < start);
+  const grouped: Record<string, FeedingSession[]> = {};
+  pastSessions.forEach((s) => {
+    const k = new Date(s.startedAt).toISOString().slice(0, 10);
+    if (!grouped[k]) grouped[k] = [];
+    grouped[k].push(s);
+  });
+  const dayKeys = Object.keys(grouped).sort((a, b) => b.localeCompare(a)).slice(0, 7);
+
+  const handleSide = (side: FeedingSession['side']) => {
+    if (activeFeedingSessionId) {
+      if (activeSession?.side === side) endFeeding();
+    } else {
+      startFeeding(side);
+    }
+  };
+
+  return (
+    <View style={{ flex: 1, backgroundColor: colors.cream.DEFAULT }}>
+      <SafeAreaView style={{ flex: 1 }} edges={['top']}>
+        {/* TopBar */}
+        <View style={{
+          flexDirection: 'row', alignItems: 'center', gap: 8,
+          paddingHorizontal: 18, paddingVertical: 14,
+          backgroundColor: colors.cream.DEFAULT,
+        }}>
+          <Pressable onPress={() => router.back()} style={BACK_BTN}>
+            <Icon name="back" size={20} color={colors.ink.DEFAULT} />
+          </Pressable>
+          <View style={{ flex: 1, alignItems: 'center' }}>
+            <Text style={{ fontSize: 15, fontFamily: 'Geist_500Medium', color: colors.ink.DEFAULT }}>
+              Karmienie
+            </Text>
+          </View>
+          <View style={{ width: 40 }} />
+        </View>
+
+        <ScrollView contentContainerStyle={{ paddingHorizontal: 22, paddingBottom: 40 }} showsVerticalScrollIndicator={false}>
+          {/* Last feeding card */}
+          <View style={{
+            backgroundColor: '#EFE9DC', borderRadius: 16, padding: 16, marginTop: 4, marginBottom: 14,
+          }}>
+            <Text style={{ fontSize: 11, color: colors.ink.faint, fontFamily: 'Geist_500Medium', letterSpacing: 0.4 }}>
+              ostatnie karmienie
+            </Text>
+            <Text style={{ fontFamily: 'Newsreader_400Regular', fontSize: 17, color: colors.ink.DEFAULT, marginTop: 5 }}>
+              {lastSession
+                ? `${SIDE_LABELS[lastSession.side]} · ${formatHour(lastSession.startedAt)}`
+                : 'Brak karmień — zacznij poniżej'}
+            </Text>
+          </View>
+
+          {/* L / P side buttons */}
+          <View style={{ flexDirection: 'row', gap: 12, marginBottom: 10 }}>
+            {(['left', 'right'] as const).map((side) => {
+              const isActive = activeSession?.side === side && !!activeFeedingSessionId;
+              const otherActive = !!activeFeedingSessionId && !isActive;
+              return (
+                <Pressable
+                  key={side}
+                  onPress={() => handleSide(side)}
+                  style={{
+                    flex: 1, position: 'relative',
+                    backgroundColor: isActive ? colors.sage.soft : colors.surface.DEFAULT,
+                    borderWidth: 1, borderColor: isActive ? colors.evergreen.DEFAULT : colors.line.DEFAULT,
+                    borderRadius: 22, paddingVertical: 26, alignItems: 'center',
+                    overflow: 'hidden',
+                    opacity: otherActive ? 0.45 : 1,
+                  }}
+                >
+                  <Text style={{
+                    fontFamily: 'Newsreader_400Regular', fontSize: 17,
+                    color: isActive ? colors.evergreen.DEFAULT : colors.ink.DEFAULT,
+                  }}>
+                    {SIDE_LABELS[side]}
+                  </Text>
+                  {isActive ? (
+                    <Text style={{
+                      fontFamily: 'GeistMono_400Regular', fontSize: 22,
+                      color: colors.evergreen.DEFAULT, marginTop: 8, letterSpacing: 1,
+                    }}>
+                      {fmtTime(elapsed)}
+                    </Text>
+                  ) : !otherActive ? (
+                    <Text style={{
+                      fontSize: 12, color: colors.ink.faint,
+                      fontFamily: 'Geist_400Regular', marginTop: 6,
+                    }}>
+                      dotknij, by start
+                    </Text>
+                  ) : null}
+                  {isActive && (
+                    <Animated.View style={{
+                      position: 'absolute', top: 12, right: 12,
+                      width: 9, height: 9, borderRadius: 5,
+                      backgroundColor: colors.terracotta.DEFAULT,
+                      opacity: pulseAnim,
+                    }} />
+                  )}
+                </Pressable>
+              );
+            })}
+          </View>
+
+          {/* Butelka + Laktator */}
+          <View style={{ flexDirection: 'row', gap: 10, marginBottom: 4 }}>
+            {(['bottle', 'pump'] as const).map((side) => {
+              const isActive = activeSession?.side === side && !!activeFeedingSessionId;
+              return (
+                <Pressable
+                  key={side}
+                  onPress={() => handleSide(side)}
+                  style={{
+                    flex: 1,
+                    flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 8,
+                    backgroundColor: isActive ? colors.sage.soft : colors.surface.DEFAULT,
+                    borderWidth: 0.5, borderColor: isActive ? colors.evergreen.DEFAULT : colors.line.DEFAULT,
+                    borderRadius: 14, paddingVertical: 13,
+                  }}
+                >
+                  <Icon name={side === 'bottle' ? 'bottle' : 'milk'} size={16} color={isActive ? colors.evergreen.DEFAULT : colors.ink.soft} />
+                  <Text style={{ fontSize: 14, fontFamily: 'Geist_500Medium', color: isActive ? colors.evergreen.DEFAULT : colors.ink.soft }}>
+                    {SIDE_LABELS[side]}
+                    {isActive ? ` · ${fmtTime(elapsed)}` : ''}
+                  </Text>
+                </Pressable>
+              );
+            })}
+          </View>
+
+          <Text style={{
+            textAlign: 'center', fontSize: 13, color: colors.ink.soft,
+            marginTop: 14, marginBottom: 0,
+          }}>
+            {activeFeedingSessionId
+              ? 'Karmienie trwa — dotknij ponownie, by zapisać.'
+              : 'Dotknij stronę, by rozpocząć pomiar.'}
+          </Text>
+
+          {/* Today */}
+          {todayDone.length > 0 && (
+            <View style={{ marginTop: 28 }}>
+              <Text style={{ fontSize: 15, fontFamily: 'Geist_500Medium', color: colors.ink.DEFAULT, marginBottom: 12 }}>
+                Dzisiaj
+              </Text>
+              <View style={{ gap: 10 }}>
+                {todayDone.sort((a, b) => b.startedAt - a.startedAt).map((sess) => (
+                  <FeedRow key={sess.id} session={sess} onDelete={() => deleteFeeding(sess.id)} />
+                ))}
+              </View>
+            </View>
+          )}
+
+          {/* History by day */}
+          {dayKeys.map((day) => (
+            <View key={day} style={{ marginTop: 24 }}>
+              <Text style={{ fontSize: 11, color: colors.ink.faint, fontFamily: 'Geist_500Medium', letterSpacing: 0.4, marginBottom: 10 }}>
+                {formatDateShort(new Date(day).getTime() + 43200000).toUpperCase()}
+              </Text>
+              <View style={{ gap: 10 }}>
+                {(grouped[day] ?? []).sort((a, b) => b.startedAt - a.startedAt).map((sess) => (
+                  <FeedRow key={sess.id} session={sess} onDelete={() => deleteFeeding(sess.id)} />
+                ))}
+              </View>
+            </View>
+          ))}
+        </ScrollView>
+      </SafeAreaView>
+    </View>
+  );
+}
+
+function FeedRow({ session, onDelete }: { session: FeedingSession; onDelete: () => void }) {
+  const dur = session.endedAt ? Math.floor((session.endedAt - session.startedAt) / 1000) : 0;
+  const pad = (n: number) => String(n).padStart(2, '0');
+  const fmtTime = (s: number) => `${pad(Math.floor(s / 60))}:${pad(s % 60)}`;
+  const formatHour = (ts: number) => {
+    const d = new Date(ts);
+    return `${pad(d.getHours())}:${pad(d.getMinutes())}`;
+  };
+
+  const isLeft = session.side === 'left';
+  const isRight = session.side === 'right';
+  const label = SIDE_LABELS[session.side];
+  const badgeBg = isLeft ? colors.evergreen.DEFAULT : isRight ? colors.sage.DEFAULT : '#EFE9DC';
+  const badgeColor = isLeft || isRight ? '#fff' : colors.ink.DEFAULT;
+  const badgeLabel = isLeft ? 'L' : isRight ? 'P' : session.side === 'bottle' ? '🍼' : '🔬';
+
+  return (
+    <View style={{
+      flexDirection: 'row', alignItems: 'center', gap: 13,
+      backgroundColor: colors.surface.DEFAULT, borderWidth: 0.5,
+      borderColor: colors.line.DEFAULT, borderRadius: 16, padding: 14,
+    }}>
+      <View style={{
+        width: 38, height: 38, borderRadius: 11, backgroundColor: badgeBg,
+        alignItems: 'center', justifyContent: 'center',
+      }}>
+        <Text style={{ fontSize: 15, fontFamily: 'Newsreader_400Regular', color: badgeColor }}>
+          {badgeLabel}
+        </Text>
+      </View>
+      <View style={{ flex: 1 }}>
+        <Text style={{ fontSize: 14, fontFamily: 'Geist_500Medium', color: colors.ink.DEFAULT }}>
+          {label} · {dur > 0 ? fmtTime(dur) : ''}
+        </Text>
+        <Text style={{ fontSize: 12, color: colors.ink.soft, marginTop: 2 }}>
+          {formatHour(session.startedAt)}
+        </Text>
+      </View>
+      <Pressable onPress={onDelete} hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}>
+        <Icon name="trash" size={16} color={colors.ink.faint} />
+      </Pressable>
+    </View>
+  );
+}

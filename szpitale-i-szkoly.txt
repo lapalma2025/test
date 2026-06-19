@@ -1,0 +1,5089 @@
+======================================================================
+KIDELO — SZPITALE I SZKOLY RODZENIA
+Lista placowek z podzialem na wojewodztwa i miasta
+Zrodlo: gdzierodzic.info + parenting.pl + dane wlasne
+Data: 13.06.2026
+======================================================================
+
+LEGENDA:
+  [SZ]  = Szpital z oddzialem polozniczym
+  [SR]  = Szkola Rodzenia (stacjonarna)
+  [ON]  = Szkola Rodzenia (online)
+  [HY]  = Szkola Rodzenia (hybrydowa)
+  [NFZ] = bezplatna / refundowana przez NFZ
+
+Pola do uzupelnienia:
+  OPIS:   ??? — krotki opis placowki
+  STRONA: ??? — adres strony www
+  UWAGI:  ??? — dodatkowe informacje
+
+
+######################################################################
+# WOJEWODZTWO: MAZOWIECKIE
+#   Szpitale: 43   Szkoly rodzenia: 33
+######################################################################
+
+  --------------------------------------------------------------------
+  MIASTO: CIECHANÓW
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Specjalistyczny Szpital Wojewódzki
+       Adres:   Powstanców Wielkopolskich 2, 06-400, Ciechanów
+       Telefon: sekretariat: 23 673 02 14
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: GARWOLIN
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Samodzielny Publiczny Zakład Opieki Zdrowotnej w Garwolinie
+       Adres:   Lubelska 50, 08-400, Garwolin
+       Telefon: centrala: 25 68 44 7
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: GRÓJEC
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Powiatowe Centrum Medyczne w Grójcu Sp. z o.o.
+       Adres:   Piotra Skargi 10, 05-600, Grójec
+       Telefon: centrala : 48 664 91 01
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  >> SZKOLY RODZENIA (1):
+
+  [SR] Szkoła Rodzenia Lemurek
+       Adres:   POW 15 U1
+       Telefon: 510370545
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: LIPSKO
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Samodzielny Publiczny Zespół Zakładów Opieki Zdrowotnej Szpital Powiatowy
+       Adres:   Śniadeckiego 2, 27-300, Lipsko
+       Telefon: centrala automatyczn
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  >> SZKOLY RODZENIA (1):
+
+  [SR] Szkoła rodzenia w SPZZOZ LIPSKO
+       Adres:   ul.Śniadeckiego 2, 27-300 Lipsko
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: ŁOMIANKI
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Dom Narodzin Świetej Rodziny
+       Adres:   Polna 28a, 05-092, Łomianki
+       Telefon: tel. 22 751 48 00  w.5
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: MAKÓW MAZOWIECKI
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Samodzielny Publiczny Zakład Opieki Zdrowotnej Zespól Zakładów Oddział Ginekologiczno-Położniczy
+       Adres:   Witosa 2, 06-200, Maków Mazowiecki
+       Telefon: centrala: 29 71 42 400
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: MIŃSK MAZOWIECKI
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Samodzielny Publiczny Zespol Opieki Zdrowotnej Mińsk Mazowiecki
+       Adres:   Szpitalna 37, 05-300, Mińsk Mazowiecki
+       Telefon: centrala 25 506 51 00
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: NOWY DWÓR MAZOWIECKI
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Nowodworskie Centrum Medyczne
+       Adres:   Miodowa 2, 05-100, Nowy Dwór Mazowiecki
+       Telefon: tel.: 22 765 83 08;
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: OSTROŁĘKA
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Mazowiecki Szpital Specjalistyczny w Ostrołęce im. dr Józefa Psarskiego
+       Adres:   Al. Jana Pawła II 120 A, 07-410, Ostrołęka
+       Telefon: tel.: 29 765 21 00;
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  >> SZKOLY RODZENIA (1):
+
+  [SR] Perła
+       Adres:   ul. Głowackiego 30
+       Telefon: 504-43-11-55
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: OSTRÓW MAZOWIECKA
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Samodzielny Publiczny Zespół Zakładów Opieki Zdrowotnej w Ostrowi Mazowieckiej
+       Adres:   Duboisa 68, 07-300, Ostrów Mazowiecka
+       Telefon: centrala: 29 746 37
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: OTWOCK
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Powiatowe Centrum Zdrowia Sp. z o.o. Szpital Powiatowy w Otwocku
+       Adres:   Batorego 44, 05-400, Otwock
+       Telefon: centrala: 22 778 26 00
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  >> SZKOLY RODZENIA (1):
+
+  [SR] Szkoła Rodzenia Małgorzata Babińska
+       Adres:   ul.Poniatowskiego 10
+       Telefon: +48608501538
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: PIASECZNO
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] NZOZ Szpital św. Anny w Piasecznie
+       Adres:   ul. Mickiewicza 39, 05-500, Piaseczno
+       Telefon: 22 73 54 100
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: PŁOCK
+  --------------------------------------------------------------------
+
+  >> SZPITALE (2):
+
+  [SZ] Płocki Zakład Opieki Zdrowotnej Sp z o.o. Szpital Świętej Trójcy
+       Adres:   Kościuszki 28, 09-402, Płock
+       Telefon: tel.: 24 364 51 00;
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SZ] Wojewodzki Szpital Zespolony Płock
+       Adres:   Medyczna 19, 09-400, Płock
+       Telefon: centrala: 24 364 6322
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  >> SZKOLY RODZENIA (3):
+
+  [SR] Łono natury
+       Adres:   Armii Krajowej 5
+       Telefon: 504913857
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] [NFZ] Szkoła od Rodzenia Ewy Woźnickiej
+       Adres:   Centrum Metanoia ul.Kobylińskiego 21a , Płock
+       Telefon: Ewa Woźnicka- 501 012 812
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] W Czepku Urodzeni
+       Adres:   Ul. Mościckiego 25
+       Telefon: 796753420
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: PŁOŃSK
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Samodzielny Publiczny Zespół Zakładów Opieki Zdrowotnej im. Marszałka Józefa Piłsudskiego w Płońsku
+       Adres:   Sienkiewicza 7, 09-100, Płońsk
+       Telefon: centrala: 23 661 77
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: PRUSZKÓW
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Samodzielny Publiczny Zespól Zakładów Opieki Zdrowotnej w Pruszkowie
+       Adres:   Armii Krajowej 2/4, 05-800, Pruszków
+       Telefon: 572664516
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: PRZASNYSZ
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Samodzielny Publiczny Zespół Zakładów Opieki Zdrowotnej w Przasnyszu Szpital im. dr. Wojciecha Oczko
+       Adres:   Sadowa 9, 06-300, Przasnysz
+       Telefon: sekretariat: 29 75 34 318
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: PUŁTUSK
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Szpital Powiatowy Gajda-Med Sp. z o.o.
+       Adres:   Teofila Kwiatkowskiego 19, 06-100, Pułtusk
+       Telefon: 23 691 99 01
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  >> SZKOLY RODZENIA (1):
+
+  [SR] Rodzę w Pułtusku
+       Adres:   Teofila Kwiatkowskiego 19
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: RADOM
+  --------------------------------------------------------------------
+
+  >> SZPITALE (2):
+
+  [SZ] Mazowiecki Szpital Specjalistyczny Sp. z o.o.
+       Adres:   Juliana Aleksandrowicza 5, 26-600, Radom
+       Telefon: tel.:48 361 39-00; 
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SZ] Radomski Szpital Specjalistyczny im. dr T. Chałubińskiego
+       Adres:   Lekarska 4, 26-610, Radom
+       Telefon: +48 48 361 51 00
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  >> SZKOLY RODZENIA (2):
+
+  [SR] Szkoła Rodzenia Edyta Gregorczyk
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] Szkoła Rodzenia przy Radomskim Szpitalu Specjalistycznym
+       Adres:   ul. Tochtermana 1
+       Telefon: 48 361 57 61
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: RADZYMIN
+  --------------------------------------------------------------------
+
+  >> SZKOLY RODZENIA (1):
+
+  [SR] Perełka
+       Telefon: 604 300 271
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: SIEDLCE
+  --------------------------------------------------------------------
+
+  >> SZPITALE (2):
+
+  [SZ] Mazowiecki Szpital Wojewódzki w Siedlcach Sp. z o.o. Siedlecki Szpital Specjalistyczny.
+       Adres:   Poniatowskiego 26, 08-110, Siedlce
+       Telefon: centrala: 25 64 03 200
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SZ] Samodzielny Publiczny Zaklad Opieki Zdrowotnej Siedlce
+       Adres:   Kilińskiego 29, 08-110, Siedlce
+       Telefon: 25 63 220 61/9  w. 251
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: SOCHACZEW
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Zespół Opieki Zdrowotnej Szpitala Powiatowego w Sochaczewie
+       Adres:   Batalionów Chłopskich 3/7, 96-500, Sochaczew
+       Telefon: 46 864 95 00; tel./f
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: SOKOŁÓW PODLASKI
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Samodzielny Publiczny Zakład Opieki Zdrowotnej w Sokołowie Podlaskim Szpital Powiatowy im Zbigniewa Koprowskiego
+       Adres:   Ks. J. Bosko 5, 08-300, Sokołów Podlaski
+       Telefon: centrala: 25 781 72 00 
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: WARSZAWA
+  --------------------------------------------------------------------
+
+  >> SZPITALE (14):
+
+  [SZ] Centralny Szpital Kliniczny MSW
+       Adres:   Wołoska 137, 02-507, Warszawa
+       Telefon: 22 508 20 00
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SZ] Centrum Medyczne ŻELAZNA Sp.z o.o. Szpital Specjalistyczny św. Zofii
+       Adres:   Żelazna 90, 01-004, Warszawa
+       Telefon: centrala: 22 255 98 00
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SZ] I Katedra i Klinika Położnictwa i Ginekologii Warszawskiego Uniwersytetu Medycznego. Uniwersyteckie Centrum Zdrowia Kobiety i Noworodka
+       Adres:   Pl. Starynkiewicza 1/ 3, 02-015, Warszawa
+       Telefon: centrala:22 583 03 00
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SZ] Klinika Położnictwa i Ginekologii Instytut Matki i Dziecka
+       Adres:   Kasprzaka 17A, 01-211, Warszawa
+       Telefon: sekretariat instytutu: 22 32 77 305 sekretariat Kliniki Położnictwa: 22 32 77 044
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SZ] Mazowiecki Szpital Bródnowski Sp. z o.o. Bródnowskie Centrum Kliniczne Zespół Oddziałow Ginekologii Onkologicznej i Położnictwa Katedra i Klinika Położnictwa Chorób Kobiecych i Ginekologii Onkologicznej
+       Adres:   Kondratowicza 8, 03-242, Warszawa
+       Telefon: 22 326-59-87
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SZ] Międzyleski Szpital Specjalistyczny
+       Adres:   Bursztynowa 2, 04-749, Warszawa
+       Telefon: tel.: 22 47 35 383 t
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SZ] Samodzielny Publiczny Dziecięcy Szpital Kliniczny w Warszawie
+       Adres:   Żwirki i Wigury 63A, 02-091, Warszawa
+       Telefon: 022-317-91-02 / 022-317-91-33
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SZ] Szpital Bielański im. ks. Jerzego Popiełuszki SPZOZ
+       Adres:   Cegłowska 80, 01-809, Warszawa
+       Telefon: 22 56 90 500
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SZ] Szpital Kliniczny im. Ks. Anny Mazowieckiej
+       Adres:   Karowa 2, 00-315, Warszawa
+       Telefon: centrala: 225966160
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SZ] Szpital Medicover
+       Adres:   Al. Rzeczypospolitej 5, 02-972, Warszawa
+       Telefon: umawianie wizyt: 500 900 902
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SZ] Szpital Praski p.w. Przemienienia Pańskiego Sp. z o.o.
+       Adres:   Al. Solidarności 67, 03-401, Warszawa
+       Telefon: centrala: 22 818 5061
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SZ] Szpital Specjalistyczny im. Świętej Rodziny SPZOZ
+       Adres:   A..J. Madalińskiego 25, 02-544, Warszawa
+       Telefon: centrala: 22 45 02 215
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SZ] Warszawski Instytut Zdrowia Kobiet
+       Adres:   Inflancka 6, 00-189, Warszawa
+       Telefon: Biuro Wsparcia Pacjenta/Rejestracja: (22) 636-06-50
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SZ] Warszawski Szpital Południowy
+       Adres:   Rotmistrza W Pileckiego 99, 02-781, Warszawa
+       Telefon: 22 602 05 50
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  >> SZKOLY RODZENIA (22):
+
+  [SR] [NFZ] Beauty Mama
+       Adres:   02-497 Warszawa Ursus ul. Starodęby 10 lok 49     Warszawa Białołęka ul. Modlińska 310/312 Fort Fitness
+       Telefon: + 48 606-517-379
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] [NFZ] Bezpłatna Szkoła Rodzenia Centrum Medycznego Warszawskiego Uniwersytetu Medycznego
+       Adres:   ul. Jana Nielubowicza 5
+       Telefon: +48 504 123 099
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] [890 zl] Bocian — szkoła rodzenia
+       Adres:   ul. Puławska, Warszawa
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] [NFZ] Bocianie Sprawy
+       Adres:   ul.Solec 99
+       Telefon: 605356817
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] [NFZ] Centrum dla Kobiet aKuku Magdalena Kukulska
+       Adres:   ul. Grzybowska 4 lok.110, ul. Tarnowiecka 48, ul. Rydygiera 13
+       Telefon: 787 36 00 36
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] [NFZ] CzłowiekODrodzenia
+       Adres:   ulica Grzybowskiej 4 lokal 110
+       Telefon: 603 404 799
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] [NFZ] Dom Narodzin
+       Adres:   Wybrzeże Kościuszkowskie 21a
+       Telefon: 515504342
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] Enel-Med Szpital Położniczy — Warszawa
+       Adres:   ul. Domaniewska, Warszawa
+       Telefon: +48 22 566 22 22
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] Jestem doulą
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] [NFZ] LoveCare
+       Adres:   Ul. Zwoleńska 81
+       Telefon: 509102914
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [HY] [1200 zl] Mamaville — kompleksowy kurs
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] Maternity Concierge Warsaw
+       Adres:   Zajęcia indywidualne u klientki w domu
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] Medicover Hospital — oddział położniczy
+       Adres:   ul. Krzywoustego, Warszawa
+       Telefon: +48 500 900 900
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] [NFZ] Narodziny Rodziny
+       Adres:   HB CLINIC naprzeciwo WOLA PARK 01-458 Warszawa ul. Białowiejska 24A
+       Telefon: 664996206
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] [NFZ] Rodzi się Rodzina
+       Adres:   Warszawa, ul.Emilii Plater 25 lok.4
+       Telefon: 501-735-875
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] Serce Położnej Magdalena Kuś
+       Adres:   Ul. Bursztynowa 2
+       Telefon: 666604763
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] [NFZ] Szkoła rodzenia Urszuli Tataj-Puzyny \
+       Adres:   al. KEN 101
+       Telefon: +48664525298
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] U-rodzeni na Bródnie
+       Adres:   ul. Kondratowicza 8
+       Telefon: 786 956 896
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] Uczkin
+       Adres:   Plac Starynkiewicza 1/3
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] [NFZ] Ursynowska Szkola Narodzin
+       Adres:   Meander 22/U4
+       Telefon: 690920800
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] [NFZ] Zakład Medyczny KAAR-MED
+       Adres:   ul. Przemyska 11 A Warszawa 02-361 (Ochota)
+       Telefon: 22 291 60 81/ 504 230 207
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] [NFZ] Zosieńka
+       Adres:   ul. Żelazna 90
+       Telefon: 668 30 88 55
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: WĘGRÓW
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Samodzielny Publiczny Zakład Opieki Zdrowotnej w Węgrowie
+       Adres:   Kościuszki 15, 07-100, Węgrów
+       Telefon: tel.: 25 792 28 33;
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: WOŁOMIN
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Szpital Powiatowy Wołomin
+       Adres:   Gdyńska 1/3, 05-200, Wołomin
+       Telefon: tel.: 22 763 31 00;
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: WYSZKÓW
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Szpital Powiatowy Samodzielnego Publicznego Zespołu Zakładów Opieki Zdrowotnej
+       Adres:   Komisji Edukacji Narodowej 1, 07-200, Wyszków
+       Telefon: tel.: 29 74 376 00;
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: ŻUROMIN
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Samodzielny Publiczny Zespół Zakładów Opieki Zdrowotnej w Żurominie
+       Adres:   Szpitalna 56, 09-300, Żuromin
+       Telefon: tel.: 23 657 22 01
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: ŻYRARDÓW
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Centrum Zdrowia Mazowsza Zachodniego Sp. z o.o.
+       Adres:   Limanowskiego 30, 96-300, Żyrardów
+       Telefon: tel.: 46 854 33 88
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+######################################################################
+# WOJEWODZTWO: WIELKOPOLSKIE
+#   Szpitale: 25   Szkoly rodzenia: 13
+######################################################################
+
+  --------------------------------------------------------------------
+  MIASTO: GNIEZNO
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Zespół Opieki Zdrowotnej w Gnieźnie
+       Adres:   ul. Świętego Jana 9, 62-200, Gniezno
+       Telefon: centrala: 61 222 8300
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: GOSTYŃ
+  --------------------------------------------------------------------
+
+  >> SZKOLY RODZENIA (1):
+
+  [SR] [NFZ] Gostyńska Akademia Przyszłych Rodziców
+       Adres:   63-800 Gostyń, ul. Laurentowskiego 4  - ENSOmedica
+       Telefon: 696 147 004
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: JAROCIN
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Szpital Powiatowy w Jarocinie Sp. z o.o.
+       Adres:   Szpitalna 1, 63-200, Jarocin
+       Telefon: rejestracja: 62 33 22 183
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: KALISZ
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Wojewódzki Szpital Zespolony im. Ludwika Perzyny
+       Adres:   Poznańska 79, 62-800, Kalisz
+       Telefon: centrala: 62 765 12 51
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: KĘPNO
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Samodzielny Publiczny Zakład Opieki Zdrowotnej w Kępnie
+       Adres:   Szpitalna 7, 63-600, Kępno
+       Telefon: centrala: 62 78 27 300
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: KOŁO
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Samodzielny Publiczny Zaklad Opieki Zdrowotnej Koło
+       Adres:   Księcia Józefa Poniatowskiego 25, 62-600, Koło
+       Telefon: tel. :63 2626140
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: KONIN
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Wojewodzki Szpital Zespolony Konin
+       Adres:   Szpitalana 45, 62-504, Konin
+       Telefon: 632404000
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: KOŚCIAN
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Samodzielny Publiczny Zespol Opieki Zdrowotnej Kościan
+       Adres:   Szpitalna 7, 64-000, Kościan
+       Telefon: tel.: 65 512 08 55;
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: KÓRNIK
+  --------------------------------------------------------------------
+
+  >> SZKOLY RODZENIA (2):
+
+  [SR] [NFZ] Blisko Mamy i Taty
+       Adres:   Poznańska34A
+       Telefon: 662 525 241
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] RUBUS MALINOWA SZKOŁA RODZENIA
+       Adres:   UL.ST.WYSPIAŃSKIEGO 13,  KÓRNIK
+       Telefon: 692 194 491
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: KROTOSZYN
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Samodzielny Publiczny Zespół Opieki Zdrowotnej. Oddział Położniczo-Ginekologiczny z Traktem Porodowo-Operacyjnym Szpitala Powiatowego im. Marcelego Neneckiego
+       Adres:   Mickiewicza 21, 63-700, Krotoszyn
+       Telefon: tel.: 62 5880390
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: LESZNO
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Wojewodzki Szpital Zespolony Leszno
+       Adres:   Kiepury 45, 64-100, Leszno
+       Telefon: punkt informacyjny: 655253195
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: MIĘDZYCHÓD
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Samodzielny Publiczny Zakład Opieki Zdrowotnej w Międzychodzie
+       Adres:   Szpitalna 10, 64-400, Międzychód
+       Telefon: centrala:  95 748 2011
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: OBORNIKI
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Samodzielny Publiczny Zaklad Opieki Zdrowotnej Oborniki
+       Adres:   Szpitalna 2, 64-600, Oborniki
+       Telefon: centrala: 61 29 73 600
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: OSTRÓW WIELKOPOLSKI
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Zespol Zakladow Opieki Zdrowotnej Ostrów Wielkopolski
+       Adres:   Limanowskiego 20/ 22, 63-400, Ostrów Wielkopolski
+       Telefon: tel.: 62 595 11 00 
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: PIŁA
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Szpital Specjalistyczny w Pile im. Stanisława Staszica
+       Adres:   Rydygiera 1, 64-920, Piła
+       Telefon: centrala: 67 2106 666
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: PLESZEW
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Pleszewskie Centrum Medyczne w Pleszewie Sp. z o.o.
+       Adres:   Poznańska 125a, 63-300, Pleszew
+       Telefon: sekretariat Prezesa 627420700
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: POZNAŃ
+  --------------------------------------------------------------------
+
+  >> SZPITALE (4):
+
+  [SZ] Ginekologiczno-Położniczy Szpital Kliniczny UM w Poznaniu
+       Adres:   Polna 33, 60-535, Poznań
+       Telefon: centrala: 61 8419188
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SZ] Specjalistyczny Zespół Opieki Zdrowotnej nad Matką i Dzieckiem (Szpital Świętej Rodziny)
+       Adres:   Adama Wrzoska 1, 60-663, Poznań
+       Telefon: centrala: 61 6162505
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SZ] Szpital Miejski im. Franciszka Raszei
+       Adres:   Mickiewicza 2, 60-834, Poznań
+       Telefon: 612245211
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SZ] Szpital Wojewodzki Poznań
+       Adres:   Juraszów 7/19, 60-479, Poznań
+       Telefon: centrala: 61 8212 20
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  >> SZKOLY RODZENIA (6):
+
+  [SR] [NFZ] Anna Gabryniewska Położna
+       Adres:   Aleje Solidarności 36
+       Telefon: 504-108-456
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] [NFZ] Bezpłatna Szkoła Rodzenia FEMINA
+       Adres:   61-525 Poznań , ul.28Czerwca1956r. nr 149
+       Telefon: +48 605787820
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] [NFZ] MAMMA INDYWIDUALNA PRAKTYKA POŁOŻNEJ
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] [650 zl] Położna od Serca — Poznań
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] Siła Rodzenia
+       Adres:   Rokietnica ul. Golęcińska 29
+       Telefon: 600 358 070
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] Szkoła rodzenia Moi mili
+       Adres:   Świebodzińska 38 Poznań
+       Telefon: 501238125
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: SŁUPCA
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Samodzielny Publiczny Zakład Opieki Zdrowotnej w Słupcy
+       Adres:   Traugutta 7, 62-400, Słupca
+       Telefon: centrala: 63 275 23
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: SZAMOTUŁY
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Samodzielny Publiczny Zespol Opieki Zdrowotnej Szamotuły
+       Adres:   Sukiennicza 13, 64-500, Szamotuły
+       Telefon: tel.: 61 29 27 100
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  >> SZKOLY RODZENIA (1):
+
+  [SR] [NFZ] Szkoła Rodzenia przy SPZOZ w Szamotułach
+       Adres:   64-500 Szamotuły, ul.Sukiennicza 13
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: ŚREM
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Szpital w Śremie Sp z o.o.
+       Adres:   Chełmońskiego 1, 63-100, Śrem
+       Telefon: tel.: 61 281 54 43;
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: ŚRODA WIELKOPOLSKA
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Szpital Średzki Sp. z o.o.
+       Adres:   Żwirki i Wigury 10, 63-000, Środa Wielkopolska
+       Telefon: tel.: 61 285 40 31;
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: TRZCIANKA
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Szpital Powiatowy im. Jana Pawła II w Trzciance
+       Adres:   Gen. Wł. Sikorskiego 9, 64-980, Trzcianka
+       Telefon: 67 35 23 100
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: TUREK
+  --------------------------------------------------------------------
+
+  >> SZKOLY RODZENIA (1):
+
+  [SR] Bezpłatna szkoła rodzenia
+       Adres:   Armii Krajowej 1
+       Telefon: 661771169
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: WOLSZTYN
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Samodzielny Publiczny Zaklad Opieki Zdrowotnej Wolsztyn
+       Adres:   Wschowska 3, 64-200, Wolsztyn
+       Telefon: centrala: 68 347 7300
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  >> SZKOLY RODZENIA (1):
+
+  [SR] Doula Hanna Krawczyk
+       Telefon: 510292331
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: WRONKI
+  --------------------------------------------------------------------
+
+  >> SZKOLY RODZENIA (1):
+
+  [SR] [NFZ] Szkoła Rodzenia Brzuszkowo Wronki
+       Adres:   Partyzantów 14
+       Telefon: 603590047
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: WRZEŚNIA
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Szpital Powiatowy we Wrześni Sp. z o.o.
+       Adres:   Słowackiego 2, 62-300, Września
+       Telefon: centrala: 61 437 0500
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+######################################################################
+# WOJEWODZTWO: KUJAWSKO-POMORSKIE
+#   Szpitale: 15   Szkoly rodzenia: 8
+######################################################################
+
+  --------------------------------------------------------------------
+  MIASTO: BRODNICA
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Zespół Opieki Zdrowotnej w Brodnicy
+       Adres:   Wiejska 9, 87-300, Brodnica
+       Telefon: 56 66 89 100
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: BYDGOSZCZ
+  --------------------------------------------------------------------
+
+  >> SZPITALE (3):
+
+  [SZ] Samodzielny Publiczny Wielospecjalistyczny Zakład Opieki Zdrowotnej Ministerstwa Spraw Wewnętrznych
+       Adres:   ks. R. Markwarta 4-6, 85-015, Bydgoszcz
+       Telefon:  52 582 62 05
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SZ] Szpital Uniwersytecki nr 2 im. dr. J. Biziela w Bydgoszczy
+       Adres:   Ujejskiego 75, 85-168, Bydgoszcz
+       Telefon: położnictwo: 52 36 55498/504/715/705
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SZ] Wielospecjalistyczny Szpital Miejski im. E. Warmińskiego
+       Adres:   Szpitalna 19, 85-826, Bydgoszcz
+       Telefon: 52 370 94 00
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  >> SZKOLY RODZENIA (5):
+
+  [SR] Akademia z Brzuszkiem
+       Adres:   ul. Nakielska 86
+       Telefon: +48 530 602 672
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] Położna uRodziny - Daria Gralik
+       Adres:   Dojazd do DOMU klienta, zajęcia INDYWIDUALNE
+       Telefon: 731166336
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] Szkoła Rodzenia \
+       Adres:   Obrońców Bydgoszczy 12 /2c
+       Telefon: +48 530 602 672
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] [NFZ] Szkoła Rodzenia DOMISIE
+       Adres:   Lawinowa22 (FORDON)
+       Telefon: 697 255 857
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] [700 zl] Szkoła Rodzenia Mama&Tata — Bydgoszcz
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: CHEŁMNO
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] ZOZ Chełmno
+       Adres:   Pl. Rydygiera 1, 86-200, Chełmno
+       Telefon: Sekratariat tel. 56 677 26 07
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: CHEŁMŻA
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Szpital Powiatowy Sp. z o o. Zespół Opieki Zdrowotnej
+       Adres:   Szewska 23, 87-140, Chełmża
+       Telefon: 56 675 22 55; 56 6392267
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: GRUDZIĄDZ
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Regionalny Szpital Specjalistyczny im. Władysława Biegańskiego
+       Adres:   Rydygiera 15/17, 86-300, Grudziądz
+       Telefon: Sekretariat: 56 641 3400
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: INOWROCŁAW
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Szpital Wielospecjalistyczny im. dr. L. Błażka w Inowrocławiu
+       Adres:   Poznańska 97, 88-100, Inowrocław
+       Telefon: 52 354 55 00
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: LIPNO
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Szpital Lipno Sp. z o.o.
+       Adres:   Nieszawska 6, 87-600, Lipno
+       Telefon: centrala: 54 288  0200
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: MOGILNO
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Samodzielny Publiczny Zakład Opieki Zdrowotnej Mogilno Szpital Powiatowy - Strzelno
+       Adres:   T. Kościuszki 10, 88-300, Mogilno
+       Telefon: 52 3152515
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: NAKŁO N. NOTECIĄ
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] NZOZ Nowy Szpital w Nakle i Szubinie
+       Adres:   Mickiewicza 7, 89-100, Nakło n. Notecią
+       Telefon: 412402042
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: ŚWIECIE
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] NZOZ Nowy Szpital Sp. z o. o.
+       Adres:   Wojska Polskiego 126, 86-100, Świecie
+       Telefon: 41 240 15 02
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: TORUŃ
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Wojewódzki Szpital Zespolony im. L.Rydygiera
+       Adres:   Św.  Józefa 53-59, 87-100, Toruń
+       Telefon: centrala: 56 679 31 00
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  >> SZKOLY RODZENIA (3):
+
+  [HY] [650 zl] Nowe Życie — szkoła rodzenia Toruń
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] [NFZ] Szkoła Mamy i Taty w Toruniu
+       Adres:   Toruń Zielona 21
+       Telefon: 506135264
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] Szkoła Mamy i Taty w Toruniu
+       Adres:   Zielona 21
+       Telefon: 506135264
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: TUCHOLA
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Szpital Tucholski Sp z o.o.
+       Adres:   Nowodworskiego 14/18, 89-500, Tuchola
+       Telefon: centrala: 52 3360500
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: WŁOCŁAWEK
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Wojewodzki Szpital Specjalistyczny Włocławek
+       Adres:   Wieniecka 49, 87-800, Włocławek
+       Telefon:  54 412 90 oo
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+######################################################################
+# WOJEWODZTWO: LUBELSKIE
+#   Szpitale: 16   Szkoly rodzenia: 4
+######################################################################
+
+  --------------------------------------------------------------------
+  MIASTO: (BEZ MIASTA)
+  --------------------------------------------------------------------
+
+  >> SZKOLY RODZENIA (1):
+
+  [SR] Rodzimisie - aktywna szkoła rodzenia
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: BEŁŻYCE
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Samodzielny Publiczny Zakład Opieki Zdrowotnej nr 1 w Bełżycach
+       Adres:   Lubelska 90, 24-200, Bełżyce
+       Telefon: 815162631
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: BIAŁA PODLASKA
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Wojewodzki Szpital Specjalistyczny Biała Podlaska
+       Adres:   Terebelska 57-65, 21-500, Biała Podlaska
+       Telefon: tel.: 83 41 47 100
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: BIŁGORAJ
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Arion Szpitale Sp.z o.o. Zespół Opieki Zdrowotnej Biłgoraj
+       Adres:   Dr Pojaska 5, 23-400, Biłgoraj
+       Telefon: 84 688 22 05
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: CHEŁM
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Samodzielny Publiczny Wojewódzki Szpital Specjalistyczny
+       Adres:   Szpitalna 53B, 22-100, Chełm
+       Telefon: dyrekcja: 82 562 3223
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: HRUBIESZÓW
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Samodzielny Publiczny Zaklad Opieki Zdrowotnej Hrubieszów
+       Adres:   Piłsudskiego 11, 22-500, Hrubieszów
+       Telefon: centrala: 84 696 26 11
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: KRASNYSTAW
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Samodzielny Publiczny Zespol Opieki Zdrowotnej Krasnystaw
+       Adres:   Sobieskiego 4, 22-300, Krasnystaw
+       Telefon: sekretariat: 82 543 15 22
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: KRAŚNIK
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Samodzielny Publiczny Zaklad Opieki Zdrowotnej Kraśnik
+       Adres:   ul. Chopina 13 (o.gin.-poł)/al. Niepodległości 25, 23-200, Kraśnik
+       Telefon: centrala: 81 825 13 66
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: LUBARTÓW
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Samodzielny Publiczny Zaklad Opieki Zdrowotnej Lubartów
+       Adres:   Cicha 14, 21-100, Lubartów
+       Telefon: 81 855 20 41
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: LUBLIN
+  --------------------------------------------------------------------
+
+  >> SZPITALE (3):
+
+  [SZ] Samodzielny Publiczny Szpital Kliniczny nr 1 Klinika Położnictwa i Patologii Ciąży Uniwersytetu Medycznego
+       Adres:   Stanisława Staszica 16, 20-081, Lublin
+       Telefon: 81 53 239 35
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SZ] Samodzielny Publiczny Szpital Kliniczny nr 4 Klinika Położnictwa i Perinatologii
+       Adres:   Kazimierza Jaczewskiego 8, 20-954, Lublin
+       Telefon:  81 7244400
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SZ] Wojewódzki Szpital Specjalistyczny im. Kardynała Stefana Wyszyńskiego Samodzielny Publiczny Zakład Opieki Zdrowotnej
+       Adres:   Al. Kraśnicka 100, 20-718, Lublin
+       Telefon: tel.: 81 537 42 29;
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  >> SZKOLY RODZENIA (1):
+
+  [ON] [520 zl] Mama Knows Best — Lublin
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: ŁUKÓW
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Samodzielny Publiczny Zaklad Opieki Zdrowotnej Łuków
+       Adres:   Doktora Andrzeja Rogalińskiego 3, 21-400, Łuków
+       Telefon: centrala: 25 798 2000 do 9
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: MIĘDZYRZEC PODLASKI
+  --------------------------------------------------------------------
+
+  >> SZKOLY RODZENIA (1):
+
+  [SR] Projekt Mama- Prywatna Szkoła Rodzenia
+       Telefon: 665263717
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: PUŁAWY
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Samodzielny Publiczny Zakład Opieki Zdrowotnej Szpital Specjalistyczny
+       Adres:   Bema 1, 24-100, Puławy
+       Telefon: 81 45-02-274 sekretariat
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  >> SZKOLY RODZENIA (1):
+
+  [SR] Puławska Akademia Kobiet
+       Adres:   Fielforfa Nila 18/24
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: ŚWIDNIK
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Samodzielny Publiczny Zaklad Opieki Zdrowotnej Świdnik
+       Adres:   ul. Bolesława Leśmiana 4, 21-040, Świdnik
+       Telefon: centrala: 81 751 4215
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: TOMASZÓW LUBELSKI
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Samodzielny Publiczny Zespol Opieki Zdrowotnej Tomaszów Lubelski
+       Adres:   Al. Grunwaldzkie 1, 22-600, Tomaszów Lubelski
+       Telefon: centrala: 84 664 44 -11
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: ZAMOŚĆ
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Samodzielny Publiczny Szpital Wojewódzki im. Papieża Jana Pawła II
+       Adres:   Al. Jana Pawła II 10, 22-400, Zamość
+       Telefon: centrala: 84 677 3333
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+######################################################################
+# WOJEWODZTWO: PODKARPACKIE
+#   Szpitale: 17   Szkoly rodzenia: 6
+######################################################################
+
+  --------------------------------------------------------------------
+  MIASTO: BRZOZÓW
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Szpital Specjalistyczny w Brzozowie. Podkarpacki Ośrodek Onkologiczny im Ks. B. Markowicza
+       Adres:   Bielawskiego 18, 36-200, Brzozów
+       Telefon: tel./fax:13 43 09 552
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: DĘBICA
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Zespół Opieki Zdrowotnej w Dębicy
+       Adres:   Krakowska 91, 39-200, Dębica
+       Telefon: tel.: 14 670 36 21;
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: JAROSŁAW
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Centrum Opieki Medycznej
+       Adres:   3 Maja 70, 37-500, Jarosław
+       Telefon: 16 621 54 21
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: JASŁO
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Szpital Specjalistyczny
+       Adres:   Lwowska 22, 38-200, Jasło
+       Telefon: tel.: 13 44 37 503;
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: KROSNO
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Wojewódzki Szpital Podkarpacki im. Jana Pawła II
+       Adres:   Korczyńska 57, 38-400, Krosno
+       Telefon: centrala: 13 43 78 586
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: LEŻAJSK
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Samodzielny Publiczny Zespół Opieki Zdrowotnej w Leżajsku
+       Adres:   Leśna 22, 37-300, Leżajsk
+       Telefon: tel.: 17 24 04 700;
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: LUBACZÓW
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Samodzielny Publiczny Zespół Opieki Zdrowotnej w Lubaczowie
+       Adres:   Mickiewicza 168, 37-600, Lubaczów
+       Telefon: centrala: 16 632 81 00
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: ŁAŃCUT
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Centrum Medyczne w Łańcucie Sp. z o.o. Szpital Św. Michała Archanioła
+       Adres:   Paderewskiego 5, 37-100, Łańcut
+       Telefon: centrala: 17 224 01
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: MIELEC
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Szpital Powiatowy im. Edmunda Biernackiego
+       Adres:   Żeromskiego 22, 39-300, Mielec
+       Telefon: centrala: 17 78 00 1
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  >> SZKOLY RODZENIA (2):
+
+  [SR] [NFZ] Medi3 - Położne Szkoła Rodzenia
+       Adres:   ul. Wyszyńskiego 4a/7
+       Telefon: 881489851
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] [NFZ] Szkoła Rodzenia Aktywni Rodzice
+       Adres:   ul. Wyszyńskiego 4a/7
+       Telefon: 881489851
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: NISKO
+  --------------------------------------------------------------------
+
+  >> SZKOLY RODZENIA (1):
+
+  [SR] [NFZ] niżańska szkoła rodzenia
+       Adres:   Wolności 54
+       Telefon: 15 8416809
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: NOWA DĘBA
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Samodzielny Publiczny Zespół Zakładów Opieki Zdrowotnej w Nowej Dębie
+       Adres:   Marii Skłodowskiej-Curie 1A, 39-460, Nowa Dęba
+       Telefon: tel./fax: 15 846 26 51
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: PRZEMYŚL
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Wojwódzki Szpital im. Św. Ojca Pio
+       Adres:   Monte Cassino 18, 37-700, Przemyśl
+       Telefon: centrala: 16 677 50
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: RZESZÓW
+  --------------------------------------------------------------------
+
+  >> SZPITALE (4):
+
+  [SZ] Szpital Miejski im. Jana Pawła II
+       Adres:   Rycerska 4, 35-051, Rzeszów
+       Telefon: centrala: 17 861 10 31 do 37
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SZ] Szpital Specjalistyczny PRO-FAMILIA Sp. z o.o. Sp.k.
+       Adres:   ul.Witolda 6B, 35-302, Rzeszów
+       Telefon: centrala: 17 773 57 00
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SZ] Szpital Wojewódzki nr 2 im. Świetej Jadwigi Królowej
+       Adres:   ul. Lwowska 60, 35-301, Rzeszów
+       Telefon: centrala: 17 86 64 000
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SZ] Uniwersytecki Szpital Kliniczny im. Fryderyka Chopina w Rzeszowie Klinika Noworodków z Intensywną Opieką Medyczną
+       Adres:   Chopina 2, 35-055, Rzeszów
+       Telefon: położnictwo - tel./fax 17 866 001
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  >> SZKOLY RODZENIA (3):
+
+  [SR] \
+       Adres:   Ul. Lwowska 60
+       Telefon: 506436323
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] [600 zl] Karpaty Birth School
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] U położnych
+       Adres:   Ul. Zdzisława Kozienia 7,  35-328
+       Telefon: 608637888
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: STALOWA WOLA
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] SPZZOZ Powiatowy Szpital Specjalistyczny w Stalowej Woli
+       Adres:   Staszica 4, 37-450, Stalowa Wola
+       Telefon: sekretariat:  15 843 32 05
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: TARNOBRZEG
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Wojewódzki Szpital im. Zofii z Zamoyskich Tarnowskiej
+       Adres:   Szpitalna 1, 39-400, Tarnobrzeg
+       Telefon: tel.: 15 812 30 01;
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+######################################################################
+# WOJEWODZTWO: POMORSKIE
+#   Szpitale: 13   Szkoly rodzenia: 11
+######################################################################
+
+  --------------------------------------------------------------------
+  MIASTO: CHOJNICE
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Szpital Specjalistyczny im. J.K. Łukowicza
+       Adres:   Leśna 10, 89-600, Chojnice
+       Telefon: 52 395 67 69
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: GDAŃSK
+  --------------------------------------------------------------------
+
+  >> SZPITALE (2):
+
+  [SZ] COPERNICUS Podmiot Leczniczy Sp. z o.o. Szpital św. Wojciecha
+       Adres:   al. .Jana Pawła II 50, 80-462, Gdańsk
+       Telefon: centrala: 58 768 40 00
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SZ] Uniwersyteckie Centrum Kliniczne - Klinika Położnictwa Szpital Gdańskiego Uniwersytetu Medycznego
+       Adres:   Dębinki 7, 80-952, Gdańsk
+       Telefon: 58 349 20 00
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  >> SZKOLY RODZENIA (4):
+
+  [HY] [850 zl] Akademia Porodu Gdańsk
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] [NFZ] POZMEDIK Szkoła Rodzenia Mama i ja
+       Adres:   ul. Franciszka Hynka 30, Gdańsk Zaspa
+       Telefon: 535-911-195
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] [NFZ] Super Mama
+       Adres:   Chełm, Przymorze, Wrzeszcz
+       Telefon: 535-555-536
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] [NFZ] Szkoła Rodzenia Brzuchatkowo
+       Adres:   ul. Królowej Jadwigi 137E/5, 80-097 Gdańsk
+       Telefon: +48 609 028 737
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: GDYNIA
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Szpital Morski im. PCK Sp. z o.o.
+       Adres:   Powstania Styczniowego 1, 81-519, Gdynia
+       Telefon: 58 72 60 119 / 58 72 60 270
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  >> SZKOLY RODZENIA (3):
+
+  [SR] Pępowina Wiczlina. Gdynia
+       Adres:   81-578 Gdynia ul. Wiczlinska 54
+       Telefon: 58 728 78 77
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] [NFZ] Szkoła Rodzenia Super Mama
+       Adres:   Karwiny, Chwarzno, Obłuże
+       Telefon: 505-09-10-20
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] Zaufaj Położnej
+       Adres:   Gdynia, ul. Słowicza 1/1
+       Telefon: 519754180
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: KARTUZY
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Powiatowe Centrum Zdrowia Sp z o o Kartuzy
+       Adres:   Floriana Ceynowy 7, 83-300, Kartuzy
+       Telefon: centrala: 58 685 48 00
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  >> SZKOLY RODZENIA (1):
+
+  [SR] Blisko Szkoła Rodzenia
+       Adres:   Ul. Starowiejska 3, Kiełpino
+       Telefon: 798953957
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: KOŚCIERZYNA
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Szpital Specjalistyczny w Kościerzynie Sp. z o.o.
+       Adres:   Piechowskiego 36, 83-400, Kościerzyna
+       Telefon: centrala: 58 686 00 00
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: KWIDZYN
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Zdrowie Sp. z o.o. NZOZ
+       Adres:   Gen. Józefa Hallera 31, 82-500, Kwidzyn
+       Telefon: tel.: 55 645 83 00
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: LĘBORK
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Samodzielny Publiczny Specjalistyczny Zakład Opieki Zdrowotnej
+       Adres:   Juliana Węgrzynowicza 13, 84-300, Lębork
+       Telefon: centrala: 59 863 5325
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: MALBORK
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Powiatowe Centrum Zdrowia Sp. z o.o. Szpital im. dr Jadwigi Obodzińskiej- Król
+       Adres:   Armii Krajowej 105/106, 82-200, Malbork
+       Telefon: centrala: 55 646 02 00
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: PRUSZCZ GDAŃSKI
+  --------------------------------------------------------------------
+
+  >> SZKOLY RODZENIA (1):
+
+  [SR] Szkoła Rodzenia Brzuchatkowo Pruszcz Gdański
+       Adres:   Ul. Juliana Ursyna Niemcewicza 1
+       Telefon: 609 028 737
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: SŁUPSK
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Wojewódzki Szpital Specjalistyczny im. Janusza Korczaka
+       Adres:   ul. Hubalczyków 1, 76-200, Słupsk
+       Telefon: Sekretariat: 59 8460600
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  >> SZKOLY RODZENIA (1):
+
+  [SR] [NFZ] Jakość narodzin - jakość życia
+       Adres:   ul. Boh. Westerplatte 1, 76-200 Słupsk
+       Telefon: 782 401 113 lub 59 844 76 21
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: STAROGARD GDAŃSKI
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Kociewskie Centrum Zdrowia Sp. z o.o.
+       Adres:   Józefa Balewskiego 1, 83-200, Starogard Gdański
+       Telefon: 58 562 92 00
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  >> SZKOLY RODZENIA (1):
+
+  [SR] Szkoła Rodzenia Starogard Gdański
+       Adres:   ul. Sportowa 5A, 83-200 Starogard Gdański
+       Telefon: 504236856
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: TCZEW
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Szpitale Tczewskie S.A.
+       Adres:   30- go Stycznia 57/58, 83-110, Tczew
+       Telefon: sekretariat : 58 777 66 73
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: WEJHEROWO
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Szpital Specjalistyczny im. F. Ceynowy Sp. z o.o.
+       Adres:   Jagalskiego 10, 84-200, Wejherowo
+       Telefon: centrala: 58 57 27 200 - centrala, 58 57 27 300 - sekretariat
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+######################################################################
+# WOJEWODZTWO: ZACHODNIOPOMORSKIE
+#   Szpitale: 16   Szkoly rodzenia: 4
+######################################################################
+
+  --------------------------------------------------------------------
+  MIASTO: BARLINEK
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Szpital Barlinek Sp. z o.o.
+       Adres:   Szpitalna 10, 74-320, Barlinek
+       Telefon: centrala: 957461810
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: BIAŁOGARD
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] CENTRUM DIALIZA SP. Z O.O. SZPITAL W BIAŁOGARDZIE
+       Adres:   Chopina 29, 78-200, Białogard
+       Telefon: 94 311 37 26
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: DRAWSKO POMORSKIE
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Szpitale Polskie S.A. Drawskie Centrum Specjalistyczne
+       Adres:   Bolesława Chrobrego 4, 78-500, Drawsko Pomorskie
+       Telefon: położnictwo: 94 36 3
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: GOLENIÓW
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Szpitalne Centrum Medyczne w Goleniowie Sp. z o.o
+       Adres:   Nowogardzka 2, 72-100, Goleniów
+       Telefon: tel.: sekretariat: 91 4664301
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: GRYFICE
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Samodzielny Publiczny Zespół zakładów opieki zdrowotnej w Gryficach
+       Adres:   Niechorska 27, 72-300, Gryfice
+       Telefon: 91 384 20 61
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: KAMIEŃ POMORSKI
+  --------------------------------------------------------------------
+
+  >> SZKOLY RODZENIA (1):
+
+  [SR] MomBella Edukacja i wsparcie okołoporodowe
+       Telefon: 603 223 376
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: KOŁOBRZEG
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Regionalny Szpital w Kołobrzegu
+       Adres:   Łopuskiego 31-33, 78-100, Kołobrzeg
+       Telefon: centrala: 94 35 30 201
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: KOSZALIN
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Szpital Wojewódzki im. Mikołaja Kopernika
+       Adres:   Chałubińskiego 7, 75-581, Koszalin
+       Telefon: centrala: 94 34 88 400
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  >> SZKOLY RODZENIA (1):
+
+  [SR] Aktywna szkoła rodzenia
+       Telefon: 505141074
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: NOWOGARD
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Samodzielny Publiczny Szpital Regionalny w Nowogardzie
+       Adres:   Wojska Polskiego 7, 72-200, Nowogard
+       Telefon: tel.: 91 39 21 559;
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: POLICE
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Samodzielny Publiczny Szpital Kliniczny nr 1 Pomorski Uniwersytet Medyczny im. Prof. Tadeusza Sokołowskiego Klinika Medycyny Rozrodu i Ginekologii
+       Adres:   Siedlecka 2, 72-010, Police
+       Telefon: tel./fax: 91 425 393
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: POŁCZYN ZDRÓJ
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Przyjazny Szpital w Połczynie Zdroju Sp. z o.o. Centrum Usług Szpitalnych
+       Adres:   Szpitalna 5, 78-320, Połczyn Zdrój
+       Telefon: tel.: 94 36 62 524;
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: STARGARD
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Samodzielny Publiczny Wielospecjalistyczny Zakład Opieki Zdrowotnej
+       Adres:   Wojska Polskiego 27, 73-110, Stargard
+       Telefon: tel.: 91 5789203;
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: SZCZECIN
+  --------------------------------------------------------------------
+
+  >> SZPITALE (2):
+
+  [SZ] Samodzielny Publiczny Szpital Kliniczny nr 2 Pomorski Uniwersytet Medyczny w Szczecinie
+       Adres:   Al. Powstańców Wielkopolskich 72, 70-111, Szczecin
+       Telefon: tel.: 91 466 10 00;
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SZ] Samodzielny Publiczny Zakład Opieki Zdrowotnej Zdroje
+       Adres:   Mączna 4, 70-780, Szczecin
+       Telefon: centrala: 91 8806200
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  >> SZKOLY RODZENIA (2):
+
+  [HY] [790 zl] Baby Friendly — Szczecin
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] Macierzanka
+       Adres:   Felczaka 16
+       Telefon: 600994210
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: SZCZECINEK
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Szpital w Szczecinku Sp. z o.o
+       Adres:   Kościuszki 38, 78-400, Szczecinek
+       Telefon: centrala: 94 37 43 3
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: ŚWINOUJŚCIE
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Szpital Miejski im. Jana Garduły w Świnoujściu Sp. z o.o.
+       Adres:   Mieszka I 7, 72-600, Świnoujście
+       Telefon: 913267345
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: WAŁCZ
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] 107 Szpital Wojskowy z Przychodnią SP ZOZ
+       Adres:   Kołobrzeska 44, 78-600, Wałcz
+       Telefon: sekretariat: 67 250
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+######################################################################
+# WOJEWODZTWO: LUBUSKIE
+#   Szpitale: 7   Szkoly rodzenia: 5
+######################################################################
+
+  --------------------------------------------------------------------
+  MIASTO: GORZÓW WIELKOPOLSKI
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Wielospecjalistyczny Szpital Wojewódzki Sp. z o.o.
+       Adres:   Dekerta 1, 66-400, Gorzów Wielkopolski
+       Telefon: centrala: 95 733 1223
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  >> SZKOLY RODZENIA (1):
+
+  [SR] [580 zl] Centrum Rodzicielstwa — Gorzów Wlkp.
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: NOWA SÓL
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Wielospecjalistyczny Szpital Samodzielny Publiczny Zakład Opieki Zdrowotnej
+       Adres:   Chałubińskiego 7, 67-100, Nowa Sól
+       Telefon: centrala: 68 38 82 100
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: SULECHÓW
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Samodzielny Publiczny Zaklad Opieki Zdrowotnej Sulechów
+       Adres:   Zwycięstwa 1, 66-100, Sulechów
+       Telefon: centrala:  68 416 13 03
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  >> SZKOLY RODZENIA (1):
+
+  [SR] [NFZ] Oaza
+       Adres:   Licealna 10b
+       Telefon: 603380942
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: SULĘCIN
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Samodzielny Publiczny Zakład Opieki Zdrowotnej Szpital Powiatowy im. dr Henryka Jordana w Sulęcinie
+       Adres:   Witosa 7, 69-200, Sulęcin
+       Telefon: 95 755 24 31
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: ŚWIEBODZIN
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Nowy Szpital w Świebodzinie Sp. z o.o.
+       Adres:   Młyńska 6, 66-200, Świebodzin
+       Telefon: centrala: 412402102
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: ZIELONA GÓRA
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Szpital Uniwersytecki im. Karola Marcinkowskiego w Zielonej Górze sp. z o. o.
+       Adres:   Zyty 26, 65-046, Zielona Góra
+       Telefon: 68 32 96 200
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  >> SZKOLY RODZENIA (3):
+
+  [SR] Centrum Rodziny
+       Adres:   ul. Kazimierza Wielkiego 6a
+       Telefon: 530904555
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] Doula Julita J.Hypki
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] [560 zl] Szkoła Rodzenia Zielona Góra
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: ŻARY
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Szpital na wyspie Sp.z o.o.
+       Adres:   Pszenna 2, 68-200, Żary
+       Telefon: centrala: 68 47 57 600
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+######################################################################
+# WOJEWODZTWO: OPOLSKIE
+#   Szpitale: 8   Szkoly rodzenia: 4
+######################################################################
+
+  --------------------------------------------------------------------
+  MIASTO: BRZEG
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] SP ZOZ Brzeskie Centrum Medyczne
+       Adres:   Mossora 1, 49-301, Brzeg
+       Telefon: 77 444 65 36
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: GŁUBCZYCE
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Samodzielny Publiczny Zespół Opieki Zdrowotnej w Głubczycach
+       Adres:   Marii Skłodowskiej – Curie 26, 48-100, Głubczyce
+       Telefon: tel.: 77 480 11 70;
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: KĘDZIERZYN-KOŹLE
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Samodzielny Publiczny Zespół Opieki Zdrowotnej w Kędzierzynie-Koźlu
+       Adres:   24 Kwietnia 5, 47-200, Kędzierzyn-Koźle
+       Telefon: centrala: 774 062 400
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: KRAPKOWICE
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Krapkowickie Centrum Zdrowia Sp z o.o.
+       Adres:   os. XXX-lecia 21, 47-303, Krapkowice
+       Telefon: sekretariat zarządu:
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: NYSA
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Szpital Powiatowy im. Błogosławionej Siostry Elżbietanki Marii Merkert. ZOZ w Nysie
+       Adres:   Bohaterów Warszawy 34, 48-300, Nysa
+       Telefon: sekretariat: 77 40 87830
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: OLESNO
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Zespół Opieki Zdrowotnej Szpital Powiatowy
+       Adres:   Klonowa 1, 46-300, Olesno
+       Telefon: tel.: 34 350 97 00;
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: OPOLE
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Kliniczne Centrum Ginekologii, Położnictwa i Neonatologii w Opolu
+       Adres:   Reymonta 8, 45-066, Opole
+       Telefon: centrala: 77 454 54 01
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  >> SZKOLY RODZENIA (3):
+
+  [SR] Opole
+       Adres:   Niemodlińska
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] [640 zl] Szkoła Rodzenia Mama Opole
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] [NFZ] Zdrowa Rodzina
+       Adres:   Zdrowa Rodzina Opole Krapkowicka 10A
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: PRUDNIK
+  --------------------------------------------------------------------
+
+  >> SZKOLY RODZENIA (1):
+
+  [SR] [NFZ] Akademia Aktywnego Rodzica
+       Adres:   48-200 Prudnik ul.Kościuszki 55 A
+       Telefon: 506411897
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: STRZELCE OPOLSKIE
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Szpital Powiatowy im. Prałata J. Glowatzkiego
+       Adres:   Opolska 36A, 47-100, Strzelce Opolskie
+       Telefon: sekretariat: 77 40 70 103
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+######################################################################
+# WOJEWODZTWO: PODLASKIE
+#   Szpitale: 13   Szkoly rodzenia: 3
+######################################################################
+
+  --------------------------------------------------------------------
+  MIASTO: AUGUSTÓW
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Samodzielny Publiczny Zakład Opieki Zdrowotnej w Augustowie. Szpital im. E. Biernackiego
+       Adres:   Szpitalna 12, 16-300, Augustów
+       Telefon: sekretariat: 87 64 44 284
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: BIAŁYSTOK
+  --------------------------------------------------------------------
+
+  >> SZPITALE (4):
+
+  [SZ] Poliklinika Ginekologiczno-Położnicza Sp.z o.o. Sp. k.
+       Adres:   Zamenhofa 19, 15-435, Białystok
+       Telefon: tel.: 85 732 32 02;
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SZ] Prywatna Klinika Ginekologiczno - Położnicza Sp. z o.o.
+       Adres:   Parkowa 6, 15-224, Białystok
+       Telefon: tel.: 85 732 20 22
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SZ] SP ZOZ Wojewódzki Szpital Zespolony im. Jędrzeja Śniadeckiego
+       Adres:   ul. M. Skłodowskiej-Curie 26, 15-278, Białystok
+       Telefon: 85 74 88 500
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SZ] Uniwersytecki Szpital Kliniczny w Białymstoku
+       Adres:   Marii Skłodowskiej-Curie 24a, 15-276, Białystok
+       Telefon: centrala: 85 831 8000
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  >> SZKOLY RODZENIA (1):
+
+  [SR] [620 zl] Matka i Dziecko — Białystok
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: GRAJEWO
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Szpital Ogólny im. dr Witolda Ginela
+       Adres:   Konstytucji 3 Maja 34, 19-200, Grajewo
+       Telefon: tel.: 86 272 32 71;
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: HAJNÓWKA
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Samodzielny Publiczny Zakład Opieki Zdrowotnej. Szpital im. lek.med. Włodzimierza Mantiuka
+       Adres:   Doc.  Adama Dowgirda 9, 17-200, Hajnówka
+       Telefon: tel.: 85 682 92 02;
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: ŁOMŻA
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Szpital Wojewodzki im kardynala Stefana Wyszynskiego Łomża
+       Adres:   al. Józefa Piłsudskiego 11, 18-404, Łomża
+       Telefon: centrala: 86 47 33 900
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  >> SZKOLY RODZENIA (1):
+
+  [SR] Akademia Rodzica
+       Adres:   Wyszyńskiego 2 lokal 6
+       Telefon: 696457988
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: SIEMIATYCZE
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Samodzielny Publiczny Zaklad Opieki Zdrowotnej Siemiatycze
+       Adres:   Szpitalna 8, 17-300, Siemiatycze
+       Telefon: położniczy: 85  655
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: SOKÓŁKA
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Samodzielny Publiczny Zaklad Opieki Zdrowotnej Sokółka
+       Adres:   Sikorskiego 40, 16-100, Sokółka
+       Telefon: 85 722 04 63
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: SUWAŁKI
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Szpital Wojewódzki im. dr. Ludwika Rydygiera
+       Adres:   Szpitalna 60, 16-400, Suwałki
+       Telefon: tel.: 87 562 94 21;
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: WASILKÓW
+  --------------------------------------------------------------------
+
+  >> SZKOLY RODZENIA (1):
+
+  [SR] Centrum Świadomego Rodzicielstwa s.c
+       Adres:   Kryńska 31
+       Telefon: 534 848 388
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: WYSOKIE MAZOWIECKIE
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Szpital Ogolny Wysokie Mazowieckie
+       Adres:   Szpitalna 5, 18-200, Wysokie Mazowieckie
+       Telefon: tel.: 86 477 54 95;
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: ZAMBRÓW
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Szpital Powiatowy w Zambrowie Sp. z o.o.
+       Adres:   Jana Pawła II 3, 18-300, Zambrów
+       Telefon: sekretariat: 86 276
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+######################################################################
+# WOJEWODZTWO: MALOPOLSKIE
+#   Szpitale: 22   Szkoly rodzenia: 17
+######################################################################
+
+  --------------------------------------------------------------------
+  MIASTO: BOCHNIA
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Samodzielny Publiczny Zakład Opieki Zdrowotnej w Bochni. Szpital Powiatowy im. bł Marty Wieckiej
+       Adres:   Krakowska 31, 32-700, Bochnia
+       Telefon: centrala: 14 615 34 00
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  >> SZKOLY RODZENIA (1):
+
+  [SR] Domowa szkoła rodzenia
+       Adres:   Kraków / Bochnia / Tarnów / Limanowa
+       Telefon: 731 - 252 - 436
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: CHRZANÓW
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Szpital Powiatowy w Chrzanowie
+       Adres:   Topolowa 16, 32-500, Chrzanów
+       Telefon: centrala: 32 624 77
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: GORLICE
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Szpital Specjalistyczny im. H. Klimontowicza
+       Adres:   Węgierska 21, 38-300, Gorlice
+       Telefon: centrala: 18 3553534
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: KRAKÓW
+  --------------------------------------------------------------------
+
+  >> SZPITALE (6):
+
+  [SZ] Niepubliczny Zakład Opieki Zdrowotnej. Szpital na Siemiradzkiego im. R.Czerwiakowskiego Sp. z o.o.
+       Adres:   Siemiradzkiego 1, 31-137, Kraków
+       Telefon: centrala: 12 634 22 22
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SZ] SP ZOZ Szpital Uniwersytecki w Krakowie
+       Adres:   Mikołaja Kopernika 23, 31-501, Kraków
+       Telefon: Sekretariat: 12 424 84 12
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SZ] Szpital Miejski Specjalistyczny im. Gabriela Narutowicza
+       Adres:   Prądnicka 35-37, 31-202, Kraków
+       Telefon: centrala: 12 416 22 66
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SZ] Szpital Położniczo – Ginekologiczny UJASTEK
+       Adres:   Ujastek 3, 31-752, Kraków
+       Telefon: 126855400
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SZ] Szpital Specjalistyczny im. Ludwika Rydygiera Sp. z o.o.
+       Adres:   os. Złotej Jesieni 1, 31-826, Kraków
+       Telefon: centrala: 12 64 68 0
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SZ] Szpital Specjalistyczny im. Stefana Żeromskiego SP ZOZ
+       Adres:   os. Na Skarpie 66, 31-913, Kraków
+       Telefon: centrala: 12 644 22 89
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  >> SZKOLY RODZENIA (9):
+
+  [SR] [NFZ] \
+       Adres:   Kielecka 3/2
+       Telefon: 605402495
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] Akademia Świadomej Ciąży
+       Adres:   Surzyckiego 16A
+       Telefon: 668614112
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] Błękitna Szkoła Ciąży i Rodzenia
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] [980 zl] Centrum Prenatalne Kraków
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] Koala rcp
+       Adres:   Retoryka 1/18 , 31-108 Kraków
+       Telefon: 692992555
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] Lux Med — Centrum Położnicze Kraków
+       Adres:   ul. Prądnicka, Kraków
+       Telefon: +48 22 33 88 700
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] Picolino
+       Adres:   Mitkowskiego 4
+       Telefon: 883608832
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] Rodzinne Centrum Położnicze Koala
+       Adres:   ul. Retoryka 1/16, 31-108 Kraków
+       Telefon: 692992555
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] Slow doula
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: LIMANOWA
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Szpital Powiatowy w Limanowej
+       Adres:   Piłsudskiego 61, 34-600, Limanowa
+       Telefon: centrala: 18  33 01700
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: MIECHÓW
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Szpital Św. Anny
+       Adres:   Szpitalna 3, 32-200, Miechów
+       Telefon: 413820333
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: MYŚLENICE
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Samodzielny Publiczny Zespol Opieki Zdrowotnej Myślenice
+       Adres:   Szpitalna 2, 32-400, Myślenice
+       Telefon: informacja: 12 273 03 55
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: NOWY SĄCZ
+  --------------------------------------------------------------------
+
+  >> SZPITALE (2):
+
+  [SZ] Szpital Położniczo-Ginekologiczny MEDIKOR
+       Adres:   Rzemieślnicza 5, 33-300, Nowy Sącz
+       Telefon: 18 473 13 80
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SZ] Szpital Specjalistyczny im. Jędrzeja Śniadeckiego
+       Adres:   Młyńska 10 (siedziba)/ul.Plac Kuźnice 1 - oddział położniczy, 33-300, Nowy Sącz
+       Telefon: centrala: 18 443 88
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: NOWY TARG
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Podhalański Szpital Specjalistyczny im. Jana Pawła II
+       Adres:   Szpitalna 14, 34-400, Nowy Targ
+       Telefon: tel.: 18 263 30 00
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  >> SZKOLY RODZENIA (1):
+
+  [SR] Akademia Świadomych Narodzin
+       Adres:   Szpitalna 14, 34-400 Nowy Targ
+       Telefon: +48 513 347 103
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: OLKUSZ
+  --------------------------------------------------------------------
+
+  >> SZKOLY RODZENIA (1):
+
+  [SR] NA DOBRY POCZĄTEK - DOULA MALWINA WÓJTOWICZ
+       Telefon: 504428371
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: OŚWIĘCIM
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] ZOZ Szpital Powiatowy im. Św. Maksymiliana
+       Adres:   Wysokie Brzegi 4, 32-600, Oświęcim
+       Telefon: centrala: 33 8448 200
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: SUCHA BESKIDZKA
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Zakład Opieki Zdrowotnej Sucha Beskidzka
+       Adres:   Szpitalna 22, 34-200, Sucha Beskidzka
+       Telefon: 338723100
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  >> SZKOLY RODZENIA (1):
+
+  [SR] [NFZ] Szkoła Rodzenia Anny Łoś
+       Adres:   online
+       Telefon: 508073011
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: TARNÓW
+  --------------------------------------------------------------------
+
+  >> SZPITALE (2):
+
+  [SZ] Specjalistyczny Szpital im. E. Szczeklika
+       Adres:   Szpitalna 13, 33-100, Tarnów
+       Telefon: centrala: 14 63 10 100
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SZ] Szpital Wojewódzki im. św. Łukasza. SP ZOZ w Tarnowie
+       Adres:   Lwowska 178a, 33-100, Tarnów
+       Telefon: centrala:14 6315 000
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  >> SZKOLY RODZENIA (1):
+
+  [SR] Szkoła Rodzenia przy Szpitalu im św. Łukasza
+       Adres:   ul. Lwowska178A
+       Telefon: 146315798                696372722
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: TUCHÓW
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Centrum Zdrowia Tuchów Sp. z o.o.
+       Adres:   Szpitalna 1, 33-170, Tuchów
+       Telefon: tel.: 14 65 35 101
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: WADOWICE
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Zespol Zakladow Opieki Zdrowotnej Wadowice
+       Adres:   Karmelicka 5, 34-100, Wadowice
+       Telefon: centrala: 33 87 21 200
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: WIELICZKA
+  --------------------------------------------------------------------
+
+  >> SZKOLY RODZENIA (2):
+
+  [SR] Centrum Maluszka i Rodziców
+       Adres:   Wieliczka ul. Powstania Styczniowego 2/2
+       Telefon: 602823465
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] Edukacja i wsparcie okołoporodowe
+       Adres:   ul. Słowackiego 24
+       Telefon: 509494676
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: ZAKOPANE
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Szpital Powiatowy im. dr Tytusa Chałubińskiego
+       Adres:   Kamieniec 10, 34-500, Zakopane
+       Telefon: centrala: 18 20 120 21
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  >> SZKOLY RODZENIA (1):
+
+  [SR] Akademia Rodzenia Zakopane
+       Telefon: 502485787, 537575755
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+######################################################################
+# WOJEWODZTWO: SLASKIE
+#   Szpitale: 30   Szkoly rodzenia: 18
+######################################################################
+
+  --------------------------------------------------------------------
+  MIASTO: BIELSKO-BIAŁA
+  --------------------------------------------------------------------
+
+  >> SZPITALE (2):
+
+  [SZ] Beskidzkie Centrum Onkologii. Szpital Miejski im. Jana Pawla II
+       Adres:   Wyspiańskiego 21, 43-300, Bielsko-Biała
+       Telefon: Izba Przyjęć Ginekologiczno-Położnicza: 33 827 25 27
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SZ] Szpital Wojewodzki Bielsko-Biała
+       Adres:   Armii Krajowej 101, 43-316, Bielsko-Biała
+       Telefon: tel.: 33 810 21 44
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: BLACHOWNIA
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Szpital im. R. Weigla
+       Adres:   Sosnowa 16, 42-290, Blachownia
+       Telefon: Centrala: 34 3279175
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  >> SZKOLY RODZENIA (2):
+
+  [SR] [NFZ] Przyszpitalna Szkoła Rodzenia w Blachowni
+       Adres:   42-290 Blachownia u. Sosnowa 16
+       Telefon: 532-348-358
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] [NFZ] Szkoła Rodzenia w Blachowni
+       Adres:   Sosnowa 16, 42-290 Blachownia
+       Telefon: 532 348 358
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: BYTOM
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Szpital Specjalistyczny nr 2
+       Adres:   Stefana Batorego 15, 41-902, Bytom
+       Telefon: tel.: 32 786 14 00;
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: CHORZÓW
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Śląski Instytut Matki i Noworodka
+       Adres:   Strzelców Bytomskich 11, 41-500, Chorzów
+       Telefon: 323499200
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: CIESZYN
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Zespół Zakładów Opieki Zdrowotnej w Cieszynie
+       Adres:   Bielska 4, 43-400, Cieszyn
+       Telefon: centrala: 33 8549200
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  >> SZKOLY RODZENIA (1):
+
+  [SR] [NFZ] Szkoła Rodzenia Usługi położnicze
+       Adres:   Bielska 64
+       Telefon: 509546612
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: CZĘSTOCHOWA
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Wojewódzki Szpital Specjalistyczny im. Najświętszej Maryi Panny w Częstochowie
+       Adres:   Bialska 104/ 118, 42-200, Częstochowa
+       Telefon: tel. 34 367 30 00
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  >> SZKOLY RODZENIA (1):
+
+  [SR] Mamani
+       Adres:   Aleja Najświętszej Maryi Panny 3
+       Telefon: +48 723 809 677
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: DĄBROWA GÓRNICZA
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Zaglabiowskie Centrum Onkologii Szpital Specjalistyczny
+       Adres:   ul. Szpitalna 13, 41-300, Dąbrowa Górnicza
+       Telefon: 32 621 20 00
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  >> SZKOLY RODZENIA (1):
+
+  [SR] [NFZ] Zagłębiowska Szkoła Rodzenia
+       Telefon: 530917909
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: GLIWICE
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Szpital Wielospecjalistyczny Sp. z o.o.
+       Adres:   Kościuszki 1, 44-100, Gliwice
+       Telefon: centrala: 32 238 20 91(do 95)
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: JASTRZĘBIE-ZDRÓJ
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Wojewódzki Szpital Specjalistyczny nr 2
+       Adres:   Al. Jana Pawła II 7, 44-330, Jastrzębie-Zdrój
+       Telefon: centrala tel.: 32 47 84 200
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: KATOWICE
+  --------------------------------------------------------------------
+
+  >> SZPITALE (4):
+
+  [SZ] Katowickie Centrum Onkologii
+       Adres:   Raciborska 26, 40-074, Katowice
+       Telefon: centrala: 34 42 00 100
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SZ] Łubinowa 3 Sp. z o.o Sp. k. Szpital Położniczo-Ginekologiczny
+       Adres:   Łubinowa 3, 40-647, Katowice
+       Telefon: tel.: 32 202 55 21;
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SZ] Szpital Zakonu Bonifratrów pw. Aniołów Stróżów
+       Adres:   Ks. Leopolda Markiefki 87, 40-211, Katowice
+       Telefon: 32 357 62 00
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SZ] Uniwersyteckie Centrum Kliniczne im. prof. K. Gibińskiego Śląskiego Uniwersytetu Medycznego w Katowicach
+       Adres:   Ceglana 35, 40-514, Katowice
+       Telefon: centrala: 32 789 4000
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  >> SZKOLY RODZENIA (3):
+
+  [SR] [NFZ] GYNCENTRUM
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] [680 zl] Rodzina Plus — Katowice
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] [NFZ] Szkoła Rodzenia MAMA W CENTRUM
+       Adres:   40-752 Katowice, ul. Medyków 14
+       Telefon: +48 (32) 789 47 23
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: KNURÓW
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Szpital w Knurowie Sp. z o.o
+       Adres:   Niepodległości 8, 44-190, Knurów
+       Telefon: tel.: 32 331 93 34
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: LUBLINIEC
+  --------------------------------------------------------------------
+
+  >> SZKOLY RODZENIA (1):
+
+  [SR] [NFZ] Szkoła Rodzenia Cud Narodzin
+       Adres:   ul.Sobieskiego 9
+       Telefon: 530-045-600
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: MIKOŁÓW
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Centrum Zdrowia w Mikołowie Sp. z o.o
+       Adres:   Waryńskiego 2, 43-190, Mikołów
+       Telefon: tel.: 32 325 76 35;
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  >> SZKOLY RODZENIA (1):
+
+  [SR] Centrum Kobiecości
+       Telefon: 692 978 013
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: MYSŁOWICE
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Mysłowickie Centrum Zdrowia Sp. z o.o
+       Adres:   Mikołowska   1, 41-400, Mysłowice
+       Telefon: sekretariat: 32 317 44 03
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: PIEKARY ŚLĄSKIE
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Piekarskie Centrum medyczne Sp. z o.o Szpital Miejski pw. Św. Łukasza
+       Adres:   Szpitalna 11, 41-940, Piekary Śląskie
+       Telefon: centrala: 32 39 38 103
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  >> SZKOLY RODZENIA (1):
+
+  [SR] Szkoła Rodzenia Babycare
+       Adres:   ul. Bytomska 64, 41-940
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: PSZCZYNA
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] SZPITAL JOANNITAS W PSZCZYNIE samorządowa sp. z o.o.
+       Adres:   dr. Witolda Antesa 11, 43-200, Pszczyna
+       Telefon: 32 611 53 00
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: RACIBÓRZ
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Szpital Rejonowy im. dr Józefa Rostka
+       Adres:   Gamowska 3, 47-400, Racibórz
+       Telefon: tel.: 32 755 50 00;
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  >> SZKOLY RODZENIA (1):
+
+  [SR] [NFZ] Swiadome Macierzynstwo
+       Adres:   ul. Gamowska 3 47-400 Racibórz
+       Telefon: 327555316
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: RUDA ŚLĄSKA
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Szpital Miejski w Rudzie Śląskiej Sp. z o.o.
+       Adres:   Wincentego Lipa 2, 41-703, Ruda Śląska
+       Telefon: centrala: 32 3440724
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: RYBNIK
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Samodzielny Publiczny Zakład Opieki Zdrowotnej Wojewódzki Szpital Specjalistyczny nr 3
+       Adres:   Energetyków 46, 44-200, Rybnik
+       Telefon: 32 42 91 000
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  >> SZKOLY RODZENIA (1):
+
+  [SR] [NFZ] NZOZ PRO FEMINAE
+       Adres:   Reymonta 60
+       Telefon: 607677320
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: SIEMIANOWICE ŚLĄSKIE
+  --------------------------------------------------------------------
+
+  >> SZKOLY RODZENIA (1):
+
+  [SR] Szkoła Rodzenia Szpital Miejski w Siemianowicach Śląskich
+       Adres:   1 Maja 9 41-100 Siemianowice Śląskie
+       Telefon: +48 509 909 977
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: SOSNOWIEC
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Sosnowiecki Szpital Miejski Sp z o.o.
+       Adres:   Zegadłowicza 3, 41-210, Sosnowiec
+       Telefon: centrala: 32 41 30 100
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  >> SZKOLY RODZENIA (1):
+
+  [SR] Fundacja Edukacji Zdrowotnej STIM
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: ŚWIĘTOCHŁOWICE
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Zespół Opieki Zdrowotnej w Świętochłowicach Sp. z o.o. Szpital Powiatowy
+       Adres:   Chorzowska 38, 41-605, Świętochłowice
+       Telefon: centrala: 326219535
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: TARNOWSKIE GÓRY
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Wielospecjalistyczny Szpital Powiatowy S.A. NZOZ Szpital im. dr B. Hagera
+       Adres:   Pyskowicka 47- 51, 42-612, Tarnowskie Góry
+       Telefon: centrala: 32 390 82 00
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: TYCHY
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Megrez Sp. z o.o
+       Adres:   Edukacji 102, 43-100, Tychy
+       Telefon: sekretariat: 32 32 55 171
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  >> SZKOLY RODZENIA (1):
+
+  [SR] Mamma Mia! Szkoła Narodzin
+       Adres:   ul. Grota Roweckiego 42-44/124
+       Telefon: 696-492-324
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: WODZISŁAW ŚLĄSKI
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Powiatowy Publiczny Zakład Opieki Zdrowotnej w Rydułtowach i Wodzisławiu Śląskim z siedzibą w Wodzisławiu Śląskim
+       Adres:   26 Marca 51, 44-300, Wodzisław Śląski
+       Telefon: 32 45 91 825
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: ZABRZE
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Szpital Miejski w Zabrzu Sp. z o.o. Niepubliczny Zakład Opieki Zdrowotnej Centrum Zdrowia Kobiety i Dziecka im. prof.. Wojciecha Starzewskiego
+       Adres:   Zamkowa 4, 41-803, Zabrze
+       Telefon: tel.: 32 277 63 02
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: ZAWIERCIE
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Szpital Powiatowy Zawiercie
+       Adres:   Miodowa 14, 42-400, Zawiercie
+       Telefon: centrala: 32 67 40 200
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: ŻYWIEC
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Szpital Żywiec
+       Adres:   Pola Lisickich 80, 34-300, Żywiec
+       Telefon: +48334401400
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  >> SZKOLY RODZENIA (2):
+
+  [SR] Blisko siebie
+       Adres:   Ul. Ks. Prałata St. Słonki 24
+       Telefon: 532657388
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] Szkoła Rodzenia
+       Adres:   ul. Pola Lisickich 80
+       Telefon: +48 696 929 586
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+######################################################################
+# WOJEWODZTWO: LODZKIE
+#   Szpitale: 19   Szkoly rodzenia: 8
+######################################################################
+
+  --------------------------------------------------------------------
+  MIASTO: (BEZ MIASTA)
+  --------------------------------------------------------------------
+
+  >> SZKOLY RODZENIA (1):
+
+  [SR] Nas Troje
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: BEŁCHATÓW
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Szpital Wojewódzki im. Jana Pawła II
+       Adres:   Czapliniecka 123, 97-400, Bełchatów
+       Telefon: centrala: 44 63 58 200
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: BRZEZINY
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Powiatowe Centrum Zdrowia w Brzezinach Sp. z o.o.
+       Adres:   Marii Curie-Skłodowskiej 6, 95-060, Brzeziny
+       Telefon: centrala: 46 874 20 02
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: KUTNO
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Kutnowski Szpital Samorządowy Sp.z o.o.
+       Adres:   Kościuszki 52, 99-300, Kutno
+       Telefon: centrala: 24 388 0200
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  >> SZKOLY RODZENIA (1):
+
+  [SR] Centrum Edukacji Okołoporodowej
+       Adres:   Barlickiego 2
+       Telefon: 24 384 71 17
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: ŁOWICZ
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Zespół Opieki Zdrowotnej w Łowiczu
+       Adres:   Ułańska 28, 99-400, Łowicz
+       Telefon: centrala: 46 837 56
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: ŁÓDŹ
+  --------------------------------------------------------------------
+
+  >> SZPITALE (5):
+
+  [SZ] Instytut Centrum Zdrowia Matki Polki Klinika Położnictwa i Ginekologii Klinika Perinatologii i Ginekologii Klinika Neonatologii
+       Adres:   Rzgowska 281/289, 93-338, Łódź
+       Telefon: 42 271 10 00; położn
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SZ] MEDEOR PLUS Szpital Wielospecjalistyczny
+       Adres:   Ciesielska 8, 91-308, Łódź
+       Telefon: 42 233 48 98
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SZ] SP ZOZ Centralny Szpital Kliniczny Uniwersytetu Medycznego w Łodzi - Klinika Położniczo – Ginekologiczna
+       Adres:   Pomorska 251, 92-213, Łódź
+       Telefon: 42 675 75 00
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SZ] Szpital Salve
+       Adres:   Szparagowa 10 (budynek A), II piętro, 91-211, Łódź
+       Telefon: 42 254 64 60
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SZ] Wojewódzki Specjalistyczny Szpital im. M. Pirogowa
+       Adres:   Wileńska 37, 94-029, Łódź
+       Telefon: połoznictwo: 42 6804712
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  >> SZKOLY RODZENIA (3):
+
+  [SR] Edusiowo
+       Adres:   Ul.Gdanska 112
+       Telefon: 669008045
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] [720 zl] Harmonia — edukacja przedporodowa Łódź
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] Nas Troje
+       Adres:   Sterlinga 16/18
+       Telefon: +48797422408
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: OPOCZNO
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] SP ZOZ Szpital Powiatowy im. E. Biernackiego
+       Adres:   Partyzantów 30, 26-300, Opoczno
+       Telefon: 44 754 48 04
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: PABIANICE
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Pabianickie Centrum Medyczne Sp.z o.o.
+       Adres:   Jana Pawła II 68, 95-200, Pabianice
+       Telefon: 42 22 53 503
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  >> SZKOLY RODZENIA (1):
+
+  [SR] [NFZ] Edukacja Przedporodowa zwana Szkołą Rodzenia
+       Adres:   \
+       Telefon: 886 191 498, 502 663 825
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: PIOTRKÓW TRYBUNALSKI
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Powiatowy Zespół Opieki Zdrowotnej
+       Adres:   Roosevelta 3, 97-300, Piotrków Trybunalski
+       Telefon: 44 649 11 40;
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  >> SZKOLY RODZENIA (1):
+
+  [SR] Szkoła Rodzenia Wioski Wsparcia
+       Adres:   powiat piotrkowski, opoczyński, tomaszowski, kielecki, bełchatowski,
+       Telefon: 505098155
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: RADOMSKO
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Szpital Powiatowy w Radomsku
+       Adres:   Jagiellońska 36, 97-500, Radomsko
+       Telefon:  44 685 47 16
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  >> SZKOLY RODZENIA (1):
+
+  [SR] Centrum Rodzicielstwa
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: RAWA MAZOWIECKA
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Szpital im. Św. Ducha w Rawie Mazowieckiej
+       Adres:   Warszawska 14, 96-200, Rawa Mazowiecka
+       Telefon: 729059534
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: SIERADZ
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Szpital Wojewodzki im Kardynala Stefana Wyszynskiego Sieradz
+       Adres:   Armii Krajowej 7, 98-200, Sieradz
+       Telefon: 43 827 57 71
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: SKIERNIEWICE
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Wojewodzki Szpital Zespolony Skierniewice
+       Adres:   Rybickiego 1, 96-100, Skierniewice
+       Telefon: centrala: 46 834 07
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: TOMASZÓW MAZOWIECKI
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Tomaszowskie Centrum Zdrowia Sp. z o.o.
+       Adres:   Jana Pawła II 35, 97-200, Tomaszów Mazowiecki
+       Telefon: centrala: 44 725 71
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: WIELUŃ
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Samodzielny Publiczny Zaklad Opieki Zdrowotnej Wieluń
+       Adres:   Szpitalna 16, 98-300, Wieluń
+       Telefon: centrala: 43 840 67
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: ZGIERZ
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Wojewódzki Szpital Specjalistyczny im. Marii Skłodowskiej – Curie
+       Adres:   Parzęczewska 35, 95-100, Zgierz
+       Telefon: centrala: 42 71 44 500
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+######################################################################
+# WOJEWODZTWO: WARMINSKO-MAZURSKIE
+#   Szpitale: 13   Szkoly rodzenia: 4
+######################################################################
+
+  --------------------------------------------------------------------
+  MIASTO: BARTOSZYCE
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Szpital Powiatowy im Jana Pawla II Bartoszyce
+       Adres:   Kardynała Wyszyńskiego 11, 11-200, Bartoszyce
+       Telefon: 896752350
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: DZIAŁDOWO
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Samodzielny Publiczny Zaklad Opieki Zdrowotnej Działdowo
+       Adres:   Leśna 1, 13-200, Działdowo
+       Telefon: centrala: 23 697 2211
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: ELBLĄG
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Wojewodzki Szpital Zespolony Elbląg
+       Adres:   Królewiecka 146, 82-300, Elbląg
+       Telefon: centrala: 55 239 59
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  >> SZKOLY RODZENIA (1):
+
+  [SR] Womed
+       Adres:   Królewiecka 161
+       Telefon: 535 263 268
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: EŁK
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Pro-Medica w Ełku Sp. z o.o.
+       Adres:   Baranki 24, 19-300, Ełk
+       Telefon:  87 621 96 20 
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: GIŻYCKO
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Giżycka Ochrona Zdrowia Sp z o o
+       Adres:   Warszawska 41, 11-500, Giżycko
+       Telefon: centrala: 87 429 6715
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: IŁAWA
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Powiatowy Szpital im. Władysława Biegańskiego
+       Adres:   Gen. Władysława Andersa 3, 14-200, Iława
+       Telefon: centrala: 459 599 444
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: MRĄGOWO
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Szpital Mrągowski im. M. Kajki Sp. z o.o.
+       Adres:   Wolności 12, 11-700, Mrągowo
+       Telefon: 89 741 94 00
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: OLECKO
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] OLMEDICA w Olecku Sp.z o.o.
+       Adres:   Gołdapska 1, 19-400, Olecko
+       Telefon: tel.: 87 520-22-95;
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: OLSZTYN
+  --------------------------------------------------------------------
+
+  >> SZPITALE (3):
+
+  [SZ] Miejski Szpital Zespolony
+       Adres:   Niepodległości 44, 10-045, Olsztyn
+       Telefon: sekretariat:  +48(89) 532-62-63
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SZ] Niepubliczny Zakład Opieki Zdrowotnej MALARKIEWICZ I SPÓŁKA Sp.j.
+       Adres:   Jagiellońska 78 A, 10-357, Olsztyn
+       Telefon: izba przyjęć: 89 535 73 03
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SZ] Wojewódzki Szpital Specjalistyczny
+       Adres:   Żołnierska  18, 10-561, Olsztyn
+       Telefon: 89 53 86 356
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  >> SZKOLY RODZENIA (3):
+
+  [SR] [610 zl] Bocian — edukacja przedporodowa Olsztyn
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] OMAMO Szkoła Rodzenia
+       Adres:   Jagiellońska 44B/3
+       Telefon: 730-386-516
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] Szkoła Rodzenia Ma&amp;Mo
+       Adres:   Niepodległości 57/40, 10-900 Olsztyn
+       Telefon: 789-247-072
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: PISZ
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] SP ZOZ Szpital Powiatowy
+       Adres:   Henryka Sienkiewicza 2, 12-200, Pisz
+       Telefon: centrala 87 42 54 50
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: SZCZYTNO
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Szpital Powiatowy Szczytno
+       Adres:   M. Curie-Skłodowskiej 12, 12-100, Szczytno
+       Telefon:  89 623 21 36
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+######################################################################
+# WOJEWODZTWO: SWIETOKRZYSKIE
+#   Szpitale: 9   Szkoly rodzenia: 3
+######################################################################
+
+  --------------------------------------------------------------------
+  MIASTO: KIELCE
+  --------------------------------------------------------------------
+
+  >> SZPITALE (3):
+
+  [SZ] Szpital Kielecki św. Aleksandra Sp. z o.o.
+       Adres:   Kościuszki 25, 25-316, Kielce
+       Telefon: tel.: 41 34 17 800;
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SZ] Świętokrzyskie Centrum Matki i Noworodka Szpital Specjalistyczny w Kielcach
+       Adres:   Prosta , 25-371, Kielce
+       Telefon: tel.: 41 201 38 00
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SZ] Wojewódzki Szpital Zespolony Klinika Połoznictwa i Ginekologii
+       Adres:   Grunwaldzka 45, 25-736, Kielce
+       Telefon: tel.: 41 367 13 01;
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  >> SZKOLY RODZENIA (2):
+
+  [SR] [590 zl] Narodziny — szkoła rodzenia Kielce
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] Praktyka położnicza Monika Posłowska
+       Adres:   Warszawska 21 lok. 6
+       Telefon: 791445109
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: KOŃSKIE
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Specjalistyczny Szpital św. Łukasza
+       Adres:   Gimnazjalna 41B, 26-200, Końskie
+       Telefon: sekretariat 41 39 02 350
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: OPATÓW
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] CENTRUM DIALIZA Sp z o o Opatów
+       Adres:   Szpitalna 4, 27-500, Opatów
+       Telefon: centrala: 15 86 70 401
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: OSTROWIEC ŚWIĘTOKRZYSKI
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Zespół Opieki Zdrowotnej w Ostrowcu Świętokrzyskim
+       Adres:   Karola Szymanowskiego 11, 27-400, Ostrowiec Świętokrzyski
+       Telefon: centrala: 41 247 80
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: SANDOMIERZ
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Szpital Specjalistyczny Ducha Świętego
+       Adres:   Zygmunta Schinzla 13, 27-600, Sandomierz
+       Telefon: tel. 15 832 36 14; 1
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: SKARŻYSKO-KAMIENNA
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Szpital Powiatowy im. M. Skłodowskiej – Curie
+       Adres:   Szpitalna 1, 26-110, Skarżysko-Kamienna
+       Telefon: dyrekcja: tel.: 516209201
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: STARACHOWICE
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Powiatowy Zakład Opieki Zdrowotnej
+       Adres:   Batalionów Chłopskich 6, 27-200, Starachowice
+       Telefon: tel./fax: 41 273 9670
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: WŁOSZCZOWA
+  --------------------------------------------------------------------
+
+  >> SZKOLY RODZENIA (1):
+
+  [SR] Doula wspiera - na drodze do rodzicielstwa
+       Telefon: 668460341
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+######################################################################
+# WOJEWODZTWO: DOLNOSLASKIE
+#   Szpitale: 21   Szkoly rodzenia: 14
+######################################################################
+
+  --------------------------------------------------------------------
+  MIASTO: BOGATYNIA
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] SPZOZ Szpital Gminny
+       Adres:   Szpitalna 16, 59-920, Bogatynia
+       Telefon: położniczy: 75 77 32031
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: BOLESŁAWIEC
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Zespół Opieki Zdrowotnej w Bolesławcu
+       Adres:   Jeleniogórska 4, 59-700, Bolesławiec
+       Telefon: centrala: 75 738 00
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: DZIERŻONIÓW
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] NZOZ Szpital Powiatowy w Dzierżoniowie Sp. z o.o.
+       Adres:   Cicha 1, 58-200, Dzierżoniów
+       Telefon: 748344143
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: GŁOGÓW
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Głogowski Szpital Powiatowy Sp. z o.o.
+       Adres:   Kościuszki 15, 67-200, Głogów
+       Telefon: centrala: 76 837 211
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  >> SZKOLY RODZENIA (1):
+
+  [SR] [NFZ] CENTRUM PRZYJAZNE RODZINIE
+       Adres:   GŁOWACKIEGO 6G-6H
+       Telefon: 725509508
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: JELCZ-LASKOWICE
+  --------------------------------------------------------------------
+
+  >> SZKOLY RODZENIA (1):
+
+  [SR] [NFZ] FEMMED Praktyka Położnicza
+       Adres:   Jelcz-Laskowice, ul. Oławska 23B/25
+       Telefon: 692730641
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: JELENIA GÓRA
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Wojewódzkie Centrum Szpitalne Kotliny Jeleniogórskiej
+       Adres:   Ogińskiego 6, 58-506, Jelenia Góra
+       Telefon: centrala: 75 75 37 100
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: KŁODZKO
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Zespól Opieki Zdrowotnej w Kłodzku
+       Adres:   Szpitalna 1a, 57-300, Kłodzko
+       Telefon: centrala: 74 865 1200
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  >> SZKOLY RODZENIA (2):
+
+  [SR] Donna-med
+       Adres:   Ul. Łukasińskiego 25
+       Telefon: 785728570  607528626
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] In-Med Mama
+       Adres:   ul. Rodzinna 101
+       Telefon: 781009600
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: LEGNICA
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Wojewódzki Szpital Specjalistyczny w Legnicy
+       Adres:   Iwaszkiewicza 5, 59-220, Legnica
+       Telefon: 76 721 10 00
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: LUBAŃ
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] NZOZ Łużyckie Centrum Medyczne w Lubaniu Sp. z o.o.
+       Adres:   Zawidowska 4, 59-800, Lubań
+       Telefon: 75 725 31 00 - centr
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: LUBIN
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Regionalne Centrum Zdrowia Sp. z o.o.
+       Adres:   Gen. Józefa Bema 5-6, 59-300, Lubin
+       Telefon: 76/ 8 401 738
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: OBORNIKI ŚLĄSKIE
+  --------------------------------------------------------------------
+
+  >> SZKOLY RODZENIA (1):
+
+  [SR] Centrum Położnicze MamaCare
+       Adres:   Ul.Kościuszki 14 lok.5
+       Telefon: 601204105
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: OLEŚNICA
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Powiatowy Zespół Szpitali
+       Adres:   Armii Krajowej 1, 56-400, Oleśnica
+       Telefon: sekretariat: 71 77 67427
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: OŁAWA
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Zespół Opieki Zdrowotnej w Oławie
+       Adres:   Krzysztofa Kamila Baczyńskiego 1, 55-200, Oława
+       Telefon: centrala: 71 30 11 300
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: POLANICA-ZDRÓJ
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] PZOZ Specjalistyczne Centrum Medyczne
+       Adres:   Jana Pawła II 2, 57-320, Polanica-Zdrój
+       Telefon: centrala 74 86 21 11 02
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: STRZELIN
+  --------------------------------------------------------------------
+
+  >> SZKOLY RODZENIA (1):
+
+  [SR] Fundacja Dobry Początek
+       Adres:   57-100 Strzelin, ul. Wrocławska 46
+       Telefon: 519364958
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: ŚWIDNICA
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Samodzielny Publiczny Zespół Opieki Zdrowotnej w Świdnicy. Regionalny Szpital Specjalistyczny Latawiec
+       Adres:   Leśna 27-29, 58-100, Świdnica
+       Telefon: 74 85 83 626
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  >> SZKOLY RODZENIA (1):
+
+  [SR] [NFZ] Szkoła Rodzenia Szpitala Latawiec
+       Adres:   ul. Leśna 27-29, 58-100 Świdnica
+       Telefon: 74 851 75 65
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: TRZEBNICA
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Szpital im. Św. Jadwigi Śląskiej
+       Adres:   Prusicka 53/55, 55-100, Trzebnica
+       Telefon: oddział położniczy:
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: WAŁBRZYCH
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Specjalistyczny Szpital Ginekologiczno-Położniczy im. E. Biernackiego
+       Adres:   I. Paderewskiego 10, 58-301, Wałbrzych
+       Telefon: tel./fax: 74 88 77 183
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: WROCŁAW
+  --------------------------------------------------------------------
+
+  >> SZPITALE (4):
+
+  [SZ] Centrum Zdrowia Medfemina
+       Adres:   Kukuczki 5/8, 50-570, Wrocław
+       Telefon: tel.: 71 333 00 03
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SZ] Szpital Specjalistyczny im. A. Falkiewicza
+       Adres:   Warszawska 2, 52-114, Wrocław
+       Telefon: tel.: 71 37 74 100;
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SZ] Uniwersytecki Szpital Kliniczny. Klinika Ginekologii i Położnictwa (ul. Borowska 213)
+       Adres:   Borowska 213, 50-556, Wrocław
+       Telefon: 71 733 11 10
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SZ] Wojewodzki Szpital Specjalistyczny Wrocław
+       Adres:   Kamieńskiego 73a, 51-124, Wrocław
+       Telefon: tel.: 71 32 70 101 /
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  >> SZKOLY RODZENIA (7):
+
+  [SR] [800 zl] Centrum Narodzin — Wrocław
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] Centrum Rodzicielstwa Bliskości
+       Adres:   Plac Pereca 2/1
+       Telefon: 662-130-197
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] SAGE-FEMME
+       Adres:   ul. Macedońska 29
+       Telefon: 607625177
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] Szkoła Rodzenia Ginemedica
+       Adres:   Krawiecka 1/5
+       Telefon: 609 877 544
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] [NFZ] Szkoła rodzenia NZOZ Twój Lekarz
+       Adres:   Kobierzyce oraz Wrocław
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] [750 zl] Szkoła Rodziców — Wrocław
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+  [SR] [NFZ] Wrocławska Szkoła Rodzenia FEV
+       Adres:   Rydygiera 22-28
+       Telefon: 668-850-773, 502-437-915
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: ZGORZELEC
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Wielospecjalistyczny Szpital Samodzielny Publiczny Zespół Opieki Zdrowotnej w Zgorzelcu
+       Adres:   Lubańska 11-12, 59-900, Zgorzelec
+       Telefon: +48 571 334 878
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+  --------------------------------------------------------------------
+  MIASTO: ZŁOTORYJA
+  --------------------------------------------------------------------
+
+  >> SZPITALE (1):
+
+  [SZ] Zespół Opieki Zdrowotnej. Szpital Powiatowy im. A. Wolańczyka
+       Adres:   Hoża 11, 59-500, Złotoryja
+       Telefon: tel.: 76 877 95 74
+       OPIS:    ???
+       STRONA:  ???
+       UWAGI:   ???
+
+
+======================================================================
+PODSUMOWANIE
+======================================================================
+Szpitale z oddzialem polozniczym:  287
+Szkoly rodzenia (lacznie):         210
+  w tym stacjonarne:               203
+  w tym online:                    3
+  w tym hybrydowe:                 4
+  w tym bezplatne NFZ:             52
+Wojewodztw z placowkami:           16
+======================================================================

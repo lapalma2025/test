@@ -1,0 +1,1771 @@
+[
+  {
+    "ID": "434",
+    "user_login": "414_rubus malinowa szkola rodzenia",
+    "user_nicename": "414_rubus-malinowa-szkola-rodzenia",
+    "display_name": "IWONA MARCZAK",
+    "nickname": "RUBUS MALINOWA SZKOŁA RODZENIA",
+    "szkolyrodzenia_wojewodztwo": "wielkopolskie",
+    "szkolyrodzenia_miasto": "Kórnik",
+    "szkolyrodzenia_szpital": "Poznań, Ginekologiczno-Położniczy Szpital Kliniczny UM w Poznaniu"
+  },
+  {
+    "ID": "439",
+    "user_login": "415_rodzimisie - aktywna szkola rodzenia",
+    "user_nicename": "415_rodzimisie-aktywna-szkola-rodzenia",
+    "display_name": "Paulina Jermak-Wawrzon",
+    "nickname": "Rodzimisie - aktywna szkoła rodzenia",
+    "userphoto": "415_rodzimisie-aktywna-szkola-rodzenia_3.jpg",
+    "szkolyrodzenia_wojewodztwo": "lubelskie"
+  },
+  {
+    "ID": "445",
+    "user_login": "418_zosienka",
+    "user_nicename": "418_zosienka",
+    "display_name": "Joanna Kusy",
+    "nickname": "Zosieńka",
+    "szkolyrodzenia_wojewodztwo": "mazowieckie",
+    "szkolyrodzenia_miasto": "Warszawa",
+    "szkolyrodzenia_szpital": "Warszawa, Centrum Medyczne ŻELAZNA Sp.z o.o. Szpital Specjalistyczny św. Zofii"
+  },
+  {
+    "ID": "449",
+    "user_login": "422_fundacja dobry poczatek",
+    "user_nicename": "422_fundacja-dobry-poczatek",
+    "display_name": "Aleksandra Knihinicka",
+    "nickname": "Fundacja Dobry Początek",
+    "szkolyrodzenia_wojewodztwo": "dolnośląskie",
+    "szkolyrodzenia_miasto": "Strzelin",
+    "szkolyrodzenia_szpital": "Strzelin, Strzelińskie Centrum Medyczne"
+  },
+  {
+    "ID": "453",
+    "user_login": "426_szkola rodzenia brzuchatkowo",
+    "user_nicename": "426_szkola-rodzenia-brzuchatkowo",
+    "display_name": "Dagmara Cheda",
+    "nickname": "Szkoła Rodzenia Brzuchatkowo",
+    "szkolyrodzenia_wojewodztwo": "pomorskie",
+    "szkolyrodzenia_miasto": "Gdańsk",
+    "userphoto": "426_szkola-rodzenia-brzuchatkowo_1-logo-biale.png"
+  },
+  {
+    "ID": "468",
+    "user_login": "441_rodzinne centrum poloznicze koala",
+    "user_nicename": "441_rodzinne-centrum-poloznicze-koala",
+    "display_name": "Anna Przybylska",
+    "nickname": "Rodzinne Centrum Położnicze Koala",
+    "szkolyrodzenia_wojewodztwo": "małopolskie",
+    "szkolyrodzenia_miasto": "Kraków",
+    "userphoto": "441_rodzinne-centrum-poloznicze-koala_logo_RCP-1.jpg"
+  },
+  {
+    "ID": "478",
+    "user_login": "450_centrum dla kobiet akuku magdalena kukulska",
+    "user_nicename": "450_centrum-dla-kobiet-akuku-magdalena-kukulska",
+    "display_name": "Magdalena Kukulska",
+    "nickname": "Centrum dla Kobiet aKuku Magdalena Kukulska",
+    "szkolyrodzenia_wojewodztwo": "mazowieckie",
+    "szkolyrodzenia_miasto": "Warszawa"
+  },
+  {
+    "ID": "479",
+    "user_login": "451_blisko mamy i taty",
+    "user_nicename": "451_blisko-mamy-i-taty",
+    "display_name": "Marta Konieczna",
+    "nickname": "Blisko Mamy i Taty",
+    "szkolyrodzenia_wojewodztwo": "wielkopolskie",
+    "szkolyrodzenia_miasto": "Kórnik"
+  },
+  {
+    "ID": "481",
+    "user_login": "453_szkola rodzenia - uslugi poloznicze",
+    "user_nicename": "453_szkola-rodzenia-uslugi-poloznicze",
+    "display_name": "Leokadia Gawlas",
+    "nickname": "Szkoła rodzenia - usługi położnicze"
+  },
+  {
+    "ID": "482",
+    "user_login": "454_rodzi sie rodzina",
+    "user_nicename": "454_rodzi-sie-rodzina",
+    "display_name": "Agnieszka Kacalak",
+    "nickname": "Rodzi się Rodzina",
+    "szkolyrodzenia_wojewodztwo": "mazowieckie",
+    "szkolyrodzenia_miasto": "Warszawa",
+    "szkolyrodzenia_szpital": "Warszawa, Centrum Medyczne ŻELAZNA Sp.z o.o. Szpital Specjalistyczny św. Zofii",
+    "userphoto": "454_rodzi-sie-rodzina_logo1.png"
+  },
+  {
+    "ID": "483",
+    "user_login": "455_lovecare",
+    "user_nicename": "455_lovecare",
+    "display_name": "Ewelina Dudek",
+    "nickname": "LoveCare",
+    "szkolyrodzenia_wojewodztwo": "mazowieckie",
+    "szkolyrodzenia_miasto": "Warszawa",
+    "userphoto": "455_lovecare_IMG_5198.jpg"
+  },
+  {
+    "ID": "486",
+    "user_login": "458_czlowiekodrodzenia",
+    "user_nicename": "458_czlowiekodrodzenia",
+    "display_name": "Magdalena Witkiewicz",
+    "nickname": "CzłowiekODrodzenia",
+    "szkolyrodzenia_wojewodztwo": "mazowieckie",
+    "szkolyrodzenia_miasto": "Warszawa",
+    "szkolyrodzenia_szpital": "Warszawa, Centrum Medyczne ŻELAZNA Sp.z o.o. Szpital Specjalistyczny św. Zofii"
+  },
+  {
+    "ID": "489",
+    "user_login": "461_szkola rodzenia ginemedica",
+    "user_nicename": "461_szkola-rodzenia-ginemedica",
+    "display_name": "Kamila Łabędź",
+    "nickname": "Szkoła Rodzenia Ginemedica",
+    "szkolyrodzenia_wojewodztwo": "dolnośląskie",
+    "szkolyrodzenia_miasto": "Wrocław"
+  },
+  {
+    "ID": "496",
+    "user_login": "468_szkola rodzenia urszuli tataj-puzyny narodziny",
+    "user_nicename": "468_szkola-rodzenia-urszuli-tataj-puzyny-narodziny",
+    "display_name": "Urszula Tataj-Puzyna",
+    "nickname": "Szkoła rodzenia Urszuli Tataj-Puzyny \"Narodziny\"",
+    "szkolyrodzenia_wojewodztwo": "mazowieckie",
+    "szkolyrodzenia_miasto": "Warszawa",
+    "szkolyrodzenia_szpital": "Warszawa, Centrum Medyczne ŻELAZNA Sp.z o.o. Szpital Specjalistyczny św. Zofii",
+    "userphoto": "468_szkola-rodzenia-urszuli-tataj-puzyny-narodziny_maly_Kpiel-szkoa-rodzenia-200x270.jpg"
+  },
+  {
+    "ID": "497",
+    "user_login": "469_beauty mama",
+    "user_nicename": "469_beauty-mama",
+    "display_name": "Magdalena Hryciuk",
+    "nickname": "Beauty Mama",
+    "szkolyrodzenia_wojewodztwo": "mazowieckie",
+    "szkolyrodzenia_miasto": "Warszawa",
+    "szkolyrodzenia_szpital": "Warszawa, Centrum Medyczne ŻELAZNA Sp.z o.o. Szpital Specjalistyczny św. Zofii"
+  },
+  {
+    "ID": "506",
+    "user_login": "478_instytut rodziny ej mamo magdalena jurczuk",
+    "user_nicename": "478_instytut-rodziny-ej-mamo-magdalena-jurczuk",
+    "display_name": "Magdalena Jurczuk",
+    "nickname": "Instytut Rodziny ej mamo Magdalena Jurczuk"
+  },
+  {
+    "ID": "509",
+    "user_login": "481_blisko mamy i taty",
+    "user_nicename": "481_blisko-mamy-i-taty",
+    "display_name": "Marta Konieczna",
+    "nickname": "Blisko Mamy i Taty"
+  },
+  {
+    "ID": "511",
+    "user_login": "483_zaklad medyczny kaar-med",
+    "user_nicename": "483_zaklad-medyczny-kaar-med",
+    "display_name": "Magdalena Skowron",
+    "nickname": "Zakład Medyczny KAAR-MED",
+    "szkolyrodzenia_wojewodztwo": "mazowieckie",
+    "szkolyrodzenia_miasto": "Warszawa",
+    "userphoto": "483_zaklad-medyczny-kaar-med_baby-19003_1920.jpg"
+  },
+  {
+    "ID": "529",
+    "user_login": "501_serce poloznej magdalena kus",
+    "user_nicename": "501_serce-poloznej-magdalena-kus",
+    "display_name": "Magdalena Kuś",
+    "nickname": "Serce Położnej Magdalena Kuś",
+    "szkolyrodzenia_wojewodztwo": "mazowieckie",
+    "szkolyrodzenia_miasto": "Warszawa",
+    "szkolyrodzenia_szpital": "Warszawa, Międzyleski Szpital Specjalistyczny",
+    "userphoto": "501_serce-poloznej-magdalena-kus_ZDJ_2.jpg"
+  },
+  {
+    "ID": "531",
+    "user_login": "503_centrum przyjazne rodzinie",
+    "user_nicename": "503_centrum-przyjazne-rodzinie",
+    "display_name": "IWONA SMEDA",
+    "nickname": "CENTRUM PRZYJAZNE RODZINIE"
+  },
+  {
+    "ID": "533",
+    "user_login": "505_centrum przyjazne rodzinie",
+    "user_nicename": "505_centrum-przyjazne-rodzinie",
+    "display_name": "centrumprzyjaznerodzinie@wp.pl SMEDA",
+    "nickname": "CENTRUM PRZYJAZNE RODZINIE",
+    "szkolyrodzenia_wojewodztwo": "dolnośląskie",
+    "szkolyrodzenia_miasto": "Głogów"
+  },
+  {
+    "ID": "541",
+    "user_login": "509_narodziny rodziny",
+    "user_nicename": "509_narodziny-rodziny",
+    "display_name": "Monika Łapczyńska",
+    "nickname": "Narodziny Rodziny",
+    "szkolyrodzenia_wojewodztwo": "mazowieckie",
+    "szkolyrodzenia_miasto": "Warszawa",
+    "szkolyrodzenia_szpital": "Warszawa, Centrum Medyczne ŻELAZNA Sp.z o.o. Szpital Specjalistyczny św. Zofii",
+    "userphoto": "509_narodziny-rodziny_fb_1_kwadrat.jpg"
+  },
+  {
+    "ID": "543",
+    "user_login": "511_szkola rodzenia przy szpitalu im sw. lukasza",
+    "user_nicename": "511_szkola-rodzenia-przy-szpitalu-im-sw-lukasza",
+    "display_name": "Katarzyna Kłopocka-Rutka",
+    "nickname": "Szkoła Rodzenia przy Szpitalu im św. Łukasza",
+    "szkolyrodzenia_wojewodztwo": "małopolskie",
+    "szkolyrodzenia_miasto": "Tarnów",
+    "szkolyrodzenia_szpital": "Tarnów, Szpital Wojewódzki im. św. Łukasza. SP ZOZ w Tarnowie",
+    "userphoto": "511_szkola-rodzenia-przy-szpitalu-im-sw-lukasza_20180502_192554.jpg"
+  },
+  {
+    "ID": "551",
+    "user_login": "519_szkola rodzenia u rozy",
+    "user_nicename": "519_szkola-rodzenia-u-rozy",
+    "display_name": "Róża Ambroziak-Falkiewicz",
+    "nickname": "Szkoła Rodzenia u Róży"
+  },
+  {
+    "ID": "558",
+    "user_login": "526_pozmedik szkola rodzenia mama i ja",
+    "user_nicename": "526_pozmedik-szkola-rodzenia-mama-i-ja",
+    "display_name": "Karolina Szatanik",
+    "nickname": "POZMEDIK Szkoła Rodzenia Mama i ja"
+  },
+  {
+    "ID": "559",
+    "user_login": "527_pozmedik szkola rodzenia mama i ja",
+    "user_nicename": "527_pozmedik-szkola-rodzenia-mama-i-ja",
+    "display_name": "Karolina Szatanik",
+    "nickname": "POZMEDIK Szkoła Rodzenia Mama i ja",
+    "szkolyrodzenia_wojewodztwo": "pomorskie",
+    "szkolyrodzenia_miasto": "Gdańsk",
+    "userphoto": "527_pozmedik-szkola-rodzenia-mama-i-ja_LOGO_NOWE-1.jpg"
+  },
+  {
+    "ID": "563",
+    "user_login": "531_szkola rodzenia super mama",
+    "user_nicename": "531_szkola-rodzenia-super-mama",
+    "display_name": "Anna Bartkowska",
+    "nickname": "Szkoła Rodzenia Super Mama",
+    "szkolyrodzenia_wojewodztwo": "pomorskie",
+    "szkolyrodzenia_miasto": "Gdynia",
+    "userphoto": "531_szkola-rodzenia-super-mama_logo_2.png"
+  },
+  {
+    "ID": "577",
+    "user_login": "545_centrum rodziny szkola rodzenia joanny wilk",
+    "user_nicename": "545_centrum-rodziny-szkola-rodzenia-joanny-wilk",
+    "display_name": "Joanna Wilk",
+    "nickname": "Centrum Rodziny Szkoła Rodzenia Joanny Wilk",
+    "szkolyrodzenia_miasto": "Warszawa",
+    "szkolyrodzenia_szpital": "Warszawa, Centrum Medyczne ŻELAZNA Sp.z o.o. Szpital Specjalistyczny św. Zofii"
+  },
+  {
+    "ID": "588",
+    "user_login": "556_gostynska akademia przyszlych rodzicow",
+    "user_nicename": "556_gostynska-akademia-przyszlych-rodzicow",
+    "display_name": "Elżbieta Muszyńska",
+    "nickname": "Gostyńska Akademia Przyszłych Rodziców",
+    "szkolyrodzenia_wojewodztwo": "wielkopolskie",
+    "szkolyrodzenia_miasto": "Gostyń",
+    "szkolyrodzenia_szpital": "Gostyń, Samodzielny Publiczny Zespół Opieki Zdrowotnej w Gostyniu. Szpital im. Karola Marcinowskiego",
+    "userphoto": "556_gostynska-akademia-przyszlych-rodzicow_2mamamownia.png"
+  },
+  {
+    "ID": "601",
+    "user_login": "568_szkola rodzenia z anna nowak-duda",
+    "user_nicename": "568_szkola-rodzenia-z-anna-nowak-duda",
+    "display_name": "Joanna Mikołajczuk",
+    "nickname": "Szkoła Rodzenia z Anną Nowak-Dudą"
+  },
+  {
+    "ID": "609",
+    "user_login": "570_femmed praktyka poloznicza",
+    "user_nicename": "570_femmed-praktyka-poloznicza",
+    "display_name": "Kamila Ciastek-Majtyka",
+    "nickname": "FEMMED Praktyka Położnicza",
+    "szkolyrodzenia_wojewodztwo": "dolnośląskie",
+    "szkolyrodzenia_miasto": "Jelcz-Laskowice",
+    "userphoto": "570_femmed-praktyka-poloznicza_591EEFFD-4A4B-4334-B127-56A801A81F67.jpeg"
+  },
+  {
+    "ID": "622",
+    "user_login": "582_szkola rodzenia domisie",
+    "user_nicename": "582_szkola-rodzenia-domisie",
+    "display_name": "Jacek Komorowski",
+    "nickname": "Szkoła Rodzenia DOMISIE",
+    "szkolyrodzenia_wojewodztwo": "kujawsko-pomorskie",
+    "szkolyrodzenia_miasto": "Bydgoszcz"
+  },
+  {
+    "ID": "649",
+    "user_login": "609_in-med mama",
+    "user_nicename": "609_in-med-mama",
+    "display_name": "Magdalena Glos",
+    "nickname": "In-Med Mama",
+    "szkolyrodzenia_wojewodztwo": "dolnośląskie",
+    "szkolyrodzenia_miasto": "Kłodzko"
+  },
+  {
+    "ID": "650",
+    "user_login": "610_u-rodziny szkola rodzenia mirzynska tryka",
+    "user_nicename": "610_u-rodziny-szkola-rodzenia-mirzynska-tryka",
+    "display_name": "Agnieszka Korczyńska-Tryka",
+    "nickname": "\"U-rodziny\" Szkoła Rodzenia Mirzyńska &amp; Tryka",
+    "szkolyrodzenia_wojewodztwo": "małopolskie",
+    "szkolyrodzenia_miasto": "Kraków"
+  },
+  {
+    "ID": "652",
+    "user_login": "612_pulawska akademia kobiet",
+    "user_nicename": "612_pulawska-akademia-kobiet",
+    "display_name": "Małgorzata Kukiełka",
+    "nickname": "Puławska Akademia Kobiet",
+    "szkolyrodzenia_wojewodztwo": "lubelskie",
+    "szkolyrodzenia_miasto": "Puławy"
+  },
+  {
+    "ID": "663",
+    "user_login": "620_akademia z brzuszkiem",
+    "user_nicename": "620_akademia-z-brzuszkiem",
+    "display_name": "Justyna Chmiel",
+    "nickname": "Akademia z Brzuszkiem",
+    "szkolyrodzenia_wojewodztwo": "kujawsko-pomorskie",
+    "szkolyrodzenia_miasto": "Bydgoszcz",
+    "userphoto": "620_akademia-z-brzuszkiem_B141FE9F-010C-4AFA-911F-A1415C4C835A.png"
+  },
+  {
+    "ID": "664",
+    "user_login": "621_szkola rodzenia przy kobiecie",
+    "user_nicename": "621_szkola-rodzenia-przy-kobiecie",
+    "display_name": "Justyna Chmiel",
+    "nickname": "Szkoła Rodzenia \"Przy Kobiecie\"",
+    "szkolyrodzenia_wojewodztwo": "kujawsko-pomorskie",
+    "szkolyrodzenia_miasto": "Bydgoszcz",
+    "userphoto": "621_szkola-rodzenia-przy-kobiecie_Przy-Kobiecie-logo.png"
+  },
+  {
+    "ID": "689",
+    "user_login": "645_polozna urodziny - daria gralik",
+    "user_nicename": "645_polozna-urodziny-daria-gralik",
+    "display_name": "Daria Gralik",
+    "nickname": "Położna uRodziny - Daria Gralik",
+    "szkolyrodzenia_wojewodztwo": "kujawsko-pomorskie",
+    "szkolyrodzenia_miasto": "Bydgoszcz",
+    "userphoto": "645_polozna-urodziny-daria-gralik_DSC00206.jpg"
+  },
+  {
+    "ID": "707",
+    "user_login": "663_akademia aktywnego rodzica",
+    "user_nicename": "663_akademia-aktywnego-rodzica",
+    "display_name": "Aleksandra Osińska",
+    "nickname": "Akademia Aktywnego Rodzica",
+    "szkolyrodzenia_wojewodztwo": "opolskie",
+    "szkolyrodzenia_miasto": "Prudnik",
+    "szkolyrodzenia_szpital": ","
+  },
+  {
+    "ID": "717",
+    "user_login": "673_zaufaj poloznej",
+    "user_nicename": "673_zaufaj-poloznej",
+    "display_name": "Anna Bulczak",
+    "nickname": "Zaufaj Położnej"
+  },
+  {
+    "ID": "720",
+    "user_login": "676_zaufaj poloznej",
+    "user_nicename": "676_zaufaj-poloznej",
+    "display_name": "Anna Bulczak",
+    "nickname": "Zaufaj Położnej",
+    "szkolyrodzenia_wojewodztwo": "pomorskie",
+    "szkolyrodzenia_miasto": "Gdynia",
+    "userphoto": "676_zaufaj-poloznej_zaufajpoloznej-logo.jpg"
+  },
+  {
+    "ID": "724",
+    "user_login": "680_szkola rodzenia prenalen",
+    "user_nicename": "680_szkola-rodzenia-prenalen",
+    "display_name": "Szkoła Prenalen",
+    "nickname": "Szkoła rodzenia Prenalen",
+    "userphoto": "680_szkola-rodzenia-prenalen_fb.jpg"
+  },
+  {
+    "ID": "735",
+    "user_login": "691_centrum rodzicielstwa bliskosci",
+    "user_nicename": "691_centrum-rodzicielstwa-bliskosci",
+    "display_name": "Joanna Paluchiewicz",
+    "nickname": "Centrum Rodzicielstwa Bliskości",
+    "szkolyrodzenia_wojewodztwo": "dolnośląskie",
+    "szkolyrodzenia_miasto": "Wrocław",
+    "userphoto": "691_centrum-rodzicielstwa-bliskosci_52596257_2232618083426665_3281806900538114048_n.jpg"
+  },
+  {
+    "ID": "739",
+    "user_login": "695_sage-femme",
+    "user_nicename": "695_sage-femme",
+    "display_name": "JOANNA SYREK - RAWIAK",
+    "nickname": "SAGE-FEMME",
+    "szkolyrodzenia_wojewodztwo": "dolnośląskie",
+    "szkolyrodzenia_miasto": "Wrocław",
+    "userphoto": "695_sage-femme_199222_190893330947224_4542098_n.jpg"
+  },
+  {
+    "ID": "745",
+    "user_login": "701_przy kobiecie",
+    "user_nicename": "701_przy-kobiecie",
+    "display_name": "Justyna Chmiel",
+    "nickname": "„Przy kobiecie„"
+  },
+  {
+    "ID": "749",
+    "user_login": "705_anna gabryniewska polozna",
+    "user_nicename": "705_anna-gabryniewska-polozna",
+    "display_name": "Anna Gabryniewska",
+    "nickname": "Anna Gabryniewska Położna",
+    "szkolyrodzenia_wojewodztwo": "wielkopolskie",
+    "szkolyrodzenia_miasto": "Poznań"
+  },
+  {
+    "ID": "778",
+    "user_login": "734_family vita - nysa",
+    "user_nicename": "734_family-vita-nysa",
+    "display_name": "Małgorzata Krawczyk",
+    "nickname": "Family Vita - Nysa"
+  },
+  {
+    "ID": "782",
+    "user_login": "738_szkola rodzenia uslugi poloznicze",
+    "user_nicename": "738_szkola-rodzenia-uslugi-poloznicze",
+    "display_name": "Leokadia Gawlas - Kaczmarczyk",
+    "nickname": "Szkoła Rodzenia Usługi położnicze",
+    "szkolyrodzenia_wojewodztwo": "śląskie",
+    "szkolyrodzenia_miasto": "Cieszyn"
+  },
+  {
+    "ID": "788",
+    "user_login": "744_mamma indywidualna praktyka poloznej",
+    "user_nicename": "744_mamma-indywidualna-praktyka-poloznej",
+    "display_name": "Marika Frankowska",
+    "nickname": "MAMMA INDYWIDUALNA PRAKTYKA POŁOŻNEJ",
+    "szkolyrodzenia_wojewodztwo": "wielkopolskie",
+    "szkolyrodzenia_miasto": "Poznań"
+  },
+  {
+    "ID": "797",
+    "user_login": "753_macierzanka",
+    "user_nicename": "753_macierzanka",
+    "display_name": "Nina Kwaśniewska",
+    "nickname": "Macierzanka",
+    "szkolyrodzenia_wojewodztwo": "zachodniopomorskie",
+    "szkolyrodzenia_miasto": "Szczecin"
+  },
+  {
+    "ID": "801",
+    "user_login": "757_szkola rodzenia izabella walczak",
+    "user_nicename": "757_szkola-rodzenia-izabella-walczak",
+    "display_name": "Izabella Walczak",
+    "nickname": "Szkoła rodzenia Izabella Walczak"
+  },
+  {
+    "ID": "864",
+    "user_login": "820_bezplatna szkola rodzenia femina",
+    "user_nicename": "820_bezplatna-szkola-rodzenia-femina",
+    "display_name": "Alina Kuemmel",
+    "nickname": "Bezpłatna Szkoła Rodzenia FEMINA",
+    "szkolyrodzenia_wojewodztwo": "wielkopolskie",
+    "szkolyrodzenia_miasto": "Poznań",
+    "userphoto": "820_bezplatna-szkola-rodzenia-femina_warsztaty.jpg"
+  },
+  {
+    "ID": "887",
+    "user_login": "843_szkola rodzenia malgorzata babinska",
+    "user_nicename": "843_szkola-rodzenia-malgorzata-babinska",
+    "display_name": "Małgorzata Babińska",
+    "nickname": "Szkoła Rodzenia Małgorzata Babińska",
+    "szkolyrodzenia_wojewodztwo": "mazowieckie",
+    "szkolyrodzenia_miasto": "Otwock",
+    "userphoto": "843_szkola-rodzenia-malgorzata-babinska_FB_IMG_1589723118607.jpg"
+  },
+  {
+    "ID": "913",
+    "user_login": "869_centrum kobiecosci",
+    "user_nicename": "869_centrum-kobiecosci",
+    "display_name": "Katarzyna Głośna",
+    "nickname": "Centrum Kobiecości",
+    "szkolyrodzenia_wojewodztwo": "śląskie",
+    "szkolyrodzenia_miasto": "Mikołów"
+  },
+  {
+    "ID": "941",
+    "user_login": "895_aktywna_szkola_rodzenia",
+    "user_nicename": "895_aktywna_szkola_rodzenia",
+    "display_name": "Anna Mazur",
+    "nickname": "Aktywna szkoła rodzenia",
+    "szkolyrodzenia_wojewodztwo": "zachodniopomorskie",
+    "szkolyrodzenia_miasto": "Koszalin"
+  },
+  {
+    "ID": "955",
+    "user_login": "909_",
+    "user_nicename": "909",
+    "display_name": "Elżbieta Lech",
+    "nickname": "909_"
+  },
+  {
+    "ID": "956",
+    "user_login": "910_",
+    "user_nicename": "910",
+    "display_name": "Ewa Rutkowska",
+    "nickname": "910_"
+  },
+  {
+    "ID": "1003",
+    "user_login": "956_u_poloznych",
+    "user_nicename": "956_u_poloznych",
+    "display_name": "Karolina Pityńska-Maga",
+    "nickname": "U położnych",
+    "szkolyrodzenia_wojewodztwo": "podkarpackie",
+    "szkolyrodzenia_miasto": "Rzeszów"
+  },
+  {
+    "ID": "1030",
+    "user_login": "982_",
+    "user_nicename": "982",
+    "display_name": "Natalia Bukowska-Marszałkowska",
+    "nickname": "982_",
+    "szkolyrodzenia_wojewodztwo": "wielkopolskie",
+    "szkolyrodzenia_miasto": "Nekla"
+  },
+  {
+    "ID": "1037",
+    "user_login": "989_mundra_doula_i_szkola_rodzenia",
+    "user_nicename": "szkola-od-rodzenia-ewy-woznickiej",
+    "display_name": "ewawoznicka2@gmail.com Woźnicka",
+    "nickname": "Szkoła od Rodzenia Ewy Woźnickiej",
+    "szkolyrodzenia_wojewodztwo": "mazowieckie",
+    "szkolyrodzenia_miasto": "Płock",
+    "userphoto": "989_mundra_doula_i_szkola_rodzenia_received_1581703465699070.png",
+    "szkolyrodzenia_szpital": ","
+  },
+  {
+    "ID": "1042",
+    "user_login": "994_",
+    "user_nicename": "994",
+    "display_name": "Marzena Dreczka",
+    "nickname": "994_"
+  },
+  {
+    "ID": "1043",
+    "user_login": "995_",
+    "user_nicename": "995",
+    "display_name": "Radosława Opiela",
+    "nickname": "995_"
+  },
+  {
+    "ID": "1044",
+    "user_login": "996_",
+    "user_nicename": "996",
+    "display_name": "Anna Kołodziejczyk",
+    "nickname": "996_"
+  },
+  {
+    "ID": "1045",
+    "user_login": "997_",
+    "user_nicename": "997",
+    "display_name": "Sylwia Pastewski",
+    "nickname": "997_"
+  },
+  {
+    "ID": "1046",
+    "user_login": "998_",
+    "user_nicename": "998",
+    "display_name": "Marzena Dreczka",
+    "nickname": "998_"
+  },
+  {
+    "ID": "1047",
+    "user_login": "999_super_mama",
+    "user_nicename": "999_super_mama",
+    "display_name": "Anna Bartkowska",
+    "nickname": "Super Mama",
+    "userphoto": "999_logo_2.png",
+    "szkolyrodzenia_wojewodztwo": "pomorskie",
+    "szkolyrodzenia_miasto": "Gdańsk"
+  },
+  {
+    "ID": "1092",
+    "user_login": "1044_gyncentrum",
+    "user_nicename": "1044_gyncentrum",
+    "display_name": "Beata Ligocka",
+    "nickname": "GYNCENTRUM",
+    "szkolyrodzenia_wojewodztwo": "śląskie",
+    "szkolyrodzenia_miasto": "Katowice",
+    "userphoto": "1044_FB_IMG_1598604063841.jpg",
+    "szkolyrodzenia_szpital": ","
+  },
+  {
+    "ID": "1093",
+    "user_login": "1045_dom_narodzin",
+    "user_nicename": "1045_dom_narodzin",
+    "display_name": "Paulina Buczniewska",
+    "nickname": "Dom Narodzin",
+    "szkolyrodzenia_wojewodztwo": "mazowieckie",
+    "szkolyrodzenia_miasto": "Warszawa",
+    "szkolyrodzenia_szpital": "Warszawa, Szpital Specjalistyczny im. Świętej Rodziny SPZOZ",
+    "userphoto": "1045_FB_IMG_1598604529118.jpg"
+  },
+  {
+    "ID": "1095",
+    "user_login": "1047_centrum_rodzicielstwa",
+    "user_nicename": "1047_centrum_rodzicielstwa",
+    "display_name": "Centrum Rodzicielstwa Centrum",
+    "nickname": "Centrum Rodzicielstwa",
+    "szkolyrodzenia_wojewodztwo": "łódzkie",
+    "szkolyrodzenia_miasto": "Radomsko"
+  },
+  {
+    "ID": "1098",
+    "user_login": "1049_",
+    "user_nicename": "1049",
+    "display_name": "Marta Kruszewska",
+    "nickname": "1049_"
+  },
+  {
+    "ID": "1099",
+    "user_login": "1050_mama_i_ja",
+    "user_nicename": "1050_mama_i_ja",
+    "display_name": "Kamila Soszyńska",
+    "nickname": "Mama i ja"
+  },
+  {
+    "ID": "1119",
+    "user_login": "1067_nzoz_pro_feminae_",
+    "user_nicename": "1067_nzoz_pro_feminae",
+    "display_name": "NZOZ PRO FEMINAE",
+    "nickname": "NZOZ PRO FEMINAE",
+    "szkolyrodzenia_wojewodztwo": "śląskie",
+    "szkolyrodzenia_miasto": "Rybnik"
+  },
+  {
+    "ID": "1120",
+    "user_login": "1068_nzoz_pro_feminae_rybnik",
+    "user_nicename": "1068_nzoz_pro_feminae_rybnik",
+    "display_name": "NZOZ Pro Feminae Rybnik",
+    "nickname": "NZOZ Pro Feminae Rybnik"
+  },
+  {
+    "ID": "1139",
+    "user_login": "1087_ursynowska_szkola_narodzin",
+    "user_nicename": "1087_ursynowska_szkola_narodzin",
+    "display_name": "Ursynowska Szkola Narodzin",
+    "nickname": "Ursynowska Szkola Narodzin",
+    "szkolyrodzenia_wojewodztwo": "mazowieckie",
+    "szkolyrodzenia_miasto": "Warszawa",
+    "szkolyrodzenia_szpital": ","
+  },
+  {
+    "ID": "1152",
+    "user_login": "1100_perelka_",
+    "user_nicename": "1100_perelka",
+    "display_name": "Perełka",
+    "nickname": "Perełka",
+    "szkolyrodzenia_wojewodztwo": "mazowieckie",
+    "szkolyrodzenia_miasto": "Radzymin",
+    "szkolyrodzenia_szpital": "Wołomin, Szpital Powiatowy Wołomin"
+  },
+  {
+    "ID": "1159",
+    "user_login": "1107_jakosc_narodzin_-_jakosc_zycia",
+    "user_nicename": "1107_jakosc_narodzin_-_jakosc_zycia",
+    "display_name": "Amelia Kosińska - Wiatrak",
+    "nickname": "Jakość narodzin - jakość życia",
+    "szkolyrodzenia_wojewodztwo": "pomorskie",
+    "szkolyrodzenia_szpital": ",",
+    "szkolyrodzenia_miasto": "Słupsk",
+    "userphoto": "1107_jakosc_narodzin_-_jakosc_zycia_Szkoła_Rodzenia_-_zajęcia_relaksacyjne.jpg"
+  },
+  {
+    "ID": "1176",
+    "user_login": "1124_szkola_rodzenia_brzuszkowo_wronki",
+    "user_nicename": "1124_szkola_rodzenia_brzuszkowo_wronki",
+    "display_name": "Szkoła Rodzenia Brzuszkowo Wronki",
+    "nickname": "Szkoła Rodzenia Brzuszkowo Wronki",
+    "szkolyrodzenia_wojewodztwo": "wielkopolskie",
+    "szkolyrodzenia_miasto": "Wronki"
+  },
+  {
+    "ID": "1196",
+    "user_login": "1144_agencja_swiadczen_medycznych_vita",
+    "user_nicename": "1144_agencja_swiadczen_medycznych_vita",
+    "display_name": "Agencja Świadczeń Medycznych Vita",
+    "nickname": "Agencja Świadczeń Medycznych Vita"
+  },
+  {
+    "ID": "1259",
+    "user_login": "1206_szkola_rodzenia_dar",
+    "user_nicename": "1206_szkola_rodzenia_dar",
+    "display_name": "Szkoła Rodzenia \"DAR\"",
+    "nickname": "Szkoła Rodzenia \"DAR\""
+  },
+  {
+    "ID": "1264",
+    "user_login": "1211_uczkin_",
+    "user_nicename": "1211_uczkin",
+    "display_name": "Uczkin",
+    "nickname": "Uczkin",
+    "szkolyrodzenia_wojewodztwo": "mazowieckie",
+    "szkolyrodzenia_miasto": "Warszawa",
+    "szkolyrodzenia_szpital": "Warszawa, I Katedra i Klinika Położnictwa i Ginekologii Warszawskiego Uniwersytetu Medycznego. Uniwersyteckie Centrum Zdrowia Kobiety i Noworodka"
+  },
+  {
+    "ID": "1273",
+    "user_login": "1220_szkola_rodzenia_starogard_gdanski",
+    "user_nicename": "1220_szkola_rodzenia_starogard_gdanski",
+    "display_name": "Szkoła Rodzenia Starogard Gdański",
+    "nickname": "Szkoła Rodzenia Starogard Gdański",
+    "szkolyrodzenia_wojewodztwo": "pomorskie",
+    "szkolyrodzenia_miasto": "Starogard Gdański",
+    "szkolyrodzenia_szpital": "Starogard Gdański, Kociewskie Centrum Zdrowia Sp. z o.o."
+  },
+  {
+    "ID": "1281",
+    "user_login": "1228_centrum_maluszka_i_rodzicow",
+    "user_nicename": "1228_centrum_maluszka_i_rodzicow",
+    "display_name": "Centrum Maluszka i Rodziców",
+    "nickname": "Centrum Maluszka i Rodziców",
+    "szkolyrodzenia_wojewodztwo": "małopolskie",
+    "szkolyrodzenia_miasto": "Wieliczka"
+  },
+  {
+    "ID": "1298",
+    "user_login": "1245_szkola_rodzenia_mamo",
+    "user_nicename": "1245_szkola_rodzenia_mamo",
+    "display_name": "Szkoła Rodzenia Ma&amp;Mo",
+    "nickname": "Szkoła Rodzenia Ma&amp;Mo",
+    "szkolyrodzenia_wojewodztwo": "warmińsko-mazurskie",
+    "szkolyrodzenia_miasto": "Olsztyn",
+    "userphoto": "1245_szkola_rodzenia_mamo_20210203_124653.jpg"
+  },
+  {
+    "ID": "1303",
+    "user_login": "1250_szkola_rodzenia_aktywni_rodzice",
+    "user_nicename": "1250_szkola_rodzenia_aktywni_rodzice",
+    "display_name": "Szkoła Rodzenia Aktywni Rodzice",
+    "nickname": "Szkoła Rodzenia Aktywni Rodzice",
+    "szkolyrodzenia_miasto": "Mielec",
+    "szkolyrodzenia_wojewodztwo": "podkarpackie",
+    "userphoto": "1250_szkola_rodzenia_aktywni_rodzice_Bez_tytułu_(1618_x_1000_px)_(2300_x_1422_px).png"
+  },
+  {
+    "ID": "1307",
+    "user_login": "1254_womed",
+    "user_nicename": "1254_womed",
+    "display_name": "Womed",
+    "nickname": "Womed",
+    "szkolyrodzenia_wojewodztwo": "warmińsko-mazurskie",
+    "szkolyrodzenia_miasto": "Elbląg"
+  },
+  {
+    "ID": "1309",
+    "user_login": "1256_szkola_rodzenia_szpitala_latawiec",
+    "user_nicename": "1256_szkola_rodzenia_szpitala_latawiec",
+    "display_name": "Szkoła Rodzenia Szpitala Latawiec",
+    "nickname": "Szkoła Rodzenia Szpitala Latawiec",
+    "szkolyrodzenia_wojewodztwo": "dolnośląskie",
+    "szkolyrodzenia_szpital": "Świdnica, Samodzielny Publiczny Zespół Opieki Zdrowotnej w Świdnicy. Regionalny Szpital Specjalistyczny Latawiec",
+    "szkolyrodzenia_miasto": "Świdnica"
+  },
+  {
+    "ID": "1328",
+    "user_login": "1275_donna-med_",
+    "user_nicename": "1275_donna-med",
+    "display_name": "Donna-med",
+    "nickname": "Donna-med",
+    "szkolyrodzenia_wojewodztwo": "dolnośląskie",
+    "szkolyrodzenia_miasto": "Kłodzko",
+    "szkolyrodzenia_szpital": ", ",
+    "userphoto": "1275_donna-med_FB_IMG_15721124533801923.jpg"
+  },
+  {
+    "ID": "1345",
+    "user_login": "1288_blekitna_szkola_ciazy_i_rodzenia",
+    "user_nicename": "1288_blekitna_szkola_ciazy_i_rodzenia",
+    "display_name": "Błękitna Szkoła Ciąży i Rodzenia",
+    "nickname": "Błękitna Szkoła Ciąży i Rodzenia",
+    "szkolyrodzenia_wojewodztwo": "małopolskie",
+    "szkolyrodzenia_szpital": ",",
+    "szkolyrodzenia_miasto": "Kraków",
+    "userphoto": "1288_blekitna_szkola_ciazy_i_rodzenia_BM_Ikona_1-074264.png"
+  },
+  {
+    "ID": "1448",
+    "user_login": "1380_pepowina_wiczlina._gdynia",
+    "user_nicename": "1380_pepowina_wiczlina-_gdynia",
+    "display_name": "Pępowina Wiczlina. Gdynia",
+    "nickname": "Pępowina Wiczlina. Gdynia",
+    "szkolyrodzenia_wojewodztwo": "pomorskie",
+    "szkolyrodzenia_miasto": "Gdynia",
+    "szkolyrodzenia_szpital": "Gdańsk, Uniwersyteckie Centrum Kliniczne - Klinika Położnictwa Szpital Gdańskiego Uniwersytetu Medycznego"
+  },
+  {
+    "ID": "1499",
+    "user_login": "1430_koala_rcp",
+    "user_nicename": "1430_koala_rcp",
+    "display_name": "Koala rcp",
+    "nickname": "Koala rcp",
+    "szkolyrodzenia_wojewodztwo": "małopolskie",
+    "szkolyrodzenia_miasto": "Kraków"
+  },
+  {
+    "ID": "1527",
+    "user_login": "1458_szkola_rodzenia_nzoz_twoj_lekarz",
+    "user_nicename": "1458_szkola_rodzenia_nzoz_twoj_lekarz",
+    "display_name": "Szkoła rodzenia NZOZ Twój Lekarz",
+    "nickname": "Szkoła rodzenia NZOZ Twój Lekarz",
+    "userphoto": "1458_szkola_rodzenia_nzoz_twoj_lekarz_FB_IMG_1624993338465.jpg",
+    "szkolyrodzenia_wojewodztwo": "dolnośląskie",
+    "szkolyrodzenia_miasto": "Wrocław"
+  },
+  {
+    "ID": "1551",
+    "user_login": "1481_szkola_rodzenia_mama_w_centrum__",
+    "user_nicename": "1481_szkola_rodzenia_mama_w_centrum",
+    "display_name": "Szkoła Rodzenia MAMA W CENTRUM",
+    "nickname": "Szkoła Rodzenia MAMA W CENTRUM",
+    "szkolyrodzenia_wojewodztwo": "śląskie",
+    "szkolyrodzenia_miasto": "Katowice",
+    "szkolyrodzenia_szpital": "Katowice, Uniwersyteckie Centrum Kliniczne im. prof. K. Gibińskiego Śląskiego Uniwersytetu Medycznego w Katowicach",
+    "userphoto": "1481_szkola_rodzenia_mama_w_centrum_DSC_1574.jpg"
+  },
+  {
+    "ID": "1561",
+    "user_login": "1491_szkola_rodzenia_brzuchatkowo_pruszcz_gdanski",
+    "user_nicename": "1491_szkola_rodzenia_brzuchatkowo_pruszcz_gdanski",
+    "display_name": "Szkoła Rodzenia Brzuchatkowo Pruszcz Gdański",
+    "nickname": "Szkoła Rodzenia Brzuchatkowo Pruszcz Gdański",
+    "szkolyrodzenia_wojewodztwo": "pomorskie",
+    "szkolyrodzenia_miasto": "Pruszcz Gdański",
+    "userphoto": "1491_szkola_rodzenia_brzuchatkowo_pruszcz_gdanski_1-logo-biale.png"
+  },
+  {
+    "ID": "1575",
+    "user_login": "1505_domowa_szkola_rodzenia",
+    "user_nicename": "1505_domowa_szkola_rodzenia",
+    "display_name": "Domowa szkoła rodzenia",
+    "nickname": "Domowa szkoła rodzenia",
+    "szkolyrodzenia_wojewodztwo": "małopolskie",
+    "szkolyrodzenia_miasto": "Bochnia",
+    "userphoto": "1505_domowa_szkola_rodzenia_małe.jpg"
+  },
+  {
+    "ID": "1579",
+    "user_login": "1509_szkola_rodzenia_brzdac_w_bydgoszczy",
+    "user_nicename": "1509_szkola_rodzenia_brzdac_w_bydgoszczy",
+    "display_name": "Szkoła Rodzenia Brzdąc w Bydgoszczy",
+    "nickname": "Szkoła Rodzenia Brzdąc w Bydgoszczy"
+  },
+  {
+    "ID": "1587",
+    "user_login": "1516_prywatna_szkola_rodzenia_d.fraj",
+    "user_nicename": "1516_prywatna_szkola_rodzenia_d-fraj",
+    "display_name": "Prywatna Szkoła Rodzenia D.Fraj",
+    "nickname": "Prywatna Szkoła Rodzenia D.Fraj"
+  },
+  {
+    "ID": "1604",
+    "user_login": "1533_szkola_rodzenia_sps_zoz_w_leborku_",
+    "user_nicename": "1533_szkola_rodzenia_sps_zoz_w_leborku",
+    "display_name": "Szkoła Rodzenia SPS ZOZ w Lęborku",
+    "nickname": "Szkoła Rodzenia SPS ZOZ w Lęborku"
+  },
+  {
+    "ID": "1608",
+    "user_login": "1537_szkola_mamy_i_taty_w_toruniu",
+    "user_nicename": "1537_szkola_mamy_i_taty_w_toruniu",
+    "display_name": "Szkoła Mamy i Taty w Toruniu",
+    "nickname": "Szkoła Mamy i Taty w Toruniu",
+    "szkolyrodzenia_wojewodztwo": "kujawsko-pomorskie",
+    "szkolyrodzenia_miasto": "Toruń"
+  },
+  {
+    "ID": "1623",
+    "user_login": "1552_nizanska_szkola_rodzenia",
+    "user_nicename": "1552_nizanska_szkola_rodzenia",
+    "display_name": "niżańska szkoła rodzenia",
+    "nickname": "niżańska szkoła rodzenia",
+    "szkolyrodzenia_wojewodztwo": "podkarpackie",
+    "szkolyrodzenia_miasto": "Nisko"
+  },
+  {
+    "ID": "1638",
+    "user_login": "1567_paula",
+    "user_nicename": "1567_paula",
+    "display_name": "PAULA",
+    "nickname": "PAULA"
+  },
+  {
+    "ID": "1658",
+    "user_login": "1587_na_dobry_poczatek_-_doula_malwina_wojtowicz",
+    "user_nicename": "1587_na_dobry_poczatek_-_doula_malwina_wojtowicz",
+    "display_name": "NA DOBRY POCZĄTEK - DOULA MALWINA WÓJTOWICZ",
+    "nickname": "NA DOBRY POCZĄTEK - DOULA MALWINA WÓJTOWICZ",
+    "szkolyrodzenia_wojewodztwo": "małopolskie",
+    "szkolyrodzenia_miasto": "Olkusz"
+  },
+  {
+    "ID": "1662",
+    "user_login": "1591_picolino",
+    "user_nicename": "1591_picolino",
+    "display_name": "Picolino",
+    "nickname": "Picolino",
+    "szkolyrodzenia_wojewodztwo": "małopolskie",
+    "szkolyrodzenia_miasto": "Kraków"
+  },
+  {
+    "ID": "1663",
+    "user_login": "1592_blisko_rodzicow._polozna_marta_majchrzak",
+    "user_nicename": "1592_blisko_rodzicow-_polozna_marta_majchrzak",
+    "display_name": "Blisko Rodziców. Położna Marta Majchrzak",
+    "nickname": "Blisko Rodziców. Położna Marta Majchrzak"
+  },
+  {
+    "ID": "1681",
+    "user_login": "1610_akademia_rodzica",
+    "user_nicename": "1610_akademia_rodzica",
+    "display_name": "Akademia Rodzica",
+    "nickname": "Akademia Rodzica",
+    "szkolyrodzenia_wojewodztwo": "podlaskie",
+    "szkolyrodzenia_miasto": "Łomża"
+  },
+  {
+    "ID": "1690",
+    "user_login": "1619_praktyka_poloznicza_monika_poslowska",
+    "user_nicename": "1619_praktyka_poloznicza_monika_poslowska",
+    "display_name": "Praktyka położnicza Monika Posłowska",
+    "nickname": "Praktyka położnicza Monika Posłowska",
+    "szkolyrodzenia_wojewodztwo": "świętokrzyskie",
+    "szkolyrodzenia_miasto": "Kielce"
+  },
+  {
+    "ID": "1697",
+    "user_login": "1626_edusiowo",
+    "user_nicename": "1626_edusiowo",
+    "display_name": "Edusiowo",
+    "nickname": "Edusiowo",
+    "szkolyrodzenia_wojewodztwo": "łódzkie",
+    "szkolyrodzenia_miasto": "Łódź"
+  },
+  {
+    "ID": "1727",
+    "user_login": "1654_doula_julita_j.hypki",
+    "user_nicename": "1654_doula_julita_j-hypki",
+    "display_name": "Doula Julita J.Hypki",
+    "nickname": "Doula Julita J.Hypki",
+    "szkolyrodzenia_wojewodztwo": "lubuskie",
+    "szkolyrodzenia_miasto": "Zielona Góra"
+  },
+  {
+    "ID": "1729",
+    "user_login": "1656_nasz_skarb",
+    "user_nicename": "1656_nasz_skarb",
+    "display_name": "\"Nasz skarb\"",
+    "nickname": "\"Nasz skarb\"",
+    "szkolyrodzenia_wojewodztwo": "podkarpackie",
+    "szkolyrodzenia_miasto": "Rzeszów",
+    "szkolyrodzenia_szpital": "Rzeszów, Szpital Wojewódzki nr 2 im. Świetej Jadwigi Królowej"
+  },
+  {
+    "ID": "1730",
+    "user_login": "1657_centrum_rodziny_",
+    "user_nicename": "1657_centrum_rodziny",
+    "display_name": "Centrum Rodziny",
+    "nickname": "Centrum Rodziny",
+    "szkolyrodzenia_wojewodztwo": "lubuskie",
+    "szkolyrodzenia_miasto": "Zielona Góra"
+  },
+  {
+    "ID": "1762",
+    "user_login": "1689_elzbieta_herbin_szkola_rodzenia",
+    "user_nicename": "1689_elzbieta_herbin_szkola_rodzenia",
+    "display_name": "Elżbieta Herbin Szkoła Rodzenia",
+    "nickname": "Elżbieta Herbin Szkoła Rodzenia"
+  },
+  {
+    "ID": "1766",
+    "user_login": "1693_szkola_mamy_i_taty_w_toruniu",
+    "user_nicename": "1693_szkola_mamy_i_taty_w_toruniu",
+    "display_name": "Szkoła Mamy i Taty w Toruniu",
+    "nickname": "Szkoła Mamy i Taty w Toruniu",
+    "szkolyrodzenia_wojewodztwo": "kujawsko-pomorskie",
+    "szkolyrodzenia_miasto": "Toruń"
+  },
+  {
+    "ID": "1776",
+    "user_login": "1703_bezplatna_szkola_rodzenia",
+    "user_nicename": "1703_bezplatna_szkola_rodzenia",
+    "display_name": "Bezpłatna szkoła rodzenia",
+    "nickname": "Bezpłatna szkoła rodzenia",
+    "szkolyrodzenia_miasto": "Turek",
+    "szkolyrodzenia_wojewodztwo": "wielkopolskie"
+  },
+  {
+    "ID": "1787",
+    "user_login": "1714_szkola_rodzenia_anny_los",
+    "user_nicename": "1714_szkola_rodzenia_anny_los",
+    "display_name": "Szkoła Rodzenia Anny Łoś",
+    "nickname": "Szkoła Rodzenia Anny Łoś",
+    "szkolyrodzenia_wojewodztwo": "małopolskie",
+    "szkolyrodzenia_miasto": "Sucha Beskidzka",
+    "userphoto": "1714_szkola_rodzenia_anny_los_142325221_234064351604047_2967186162070650121_n.jpg"
+  },
+  {
+    "ID": "1829",
+    "user_login": "1756_fundacja_edukacji_zdrowotnej_stim",
+    "user_nicename": "1756_fundacja_edukacji_zdrowotnej_stim",
+    "display_name": "Fundacja Edukacji Zdrowotnej STIM",
+    "nickname": "Fundacja Edukacji Zdrowotnej STIM",
+    "szkolyrodzenia_wojewodztwo": "śląskie",
+    "szkolyrodzenia_miasto": "Sosnowiec"
+  },
+  {
+    "ID": "1836",
+    "user_login": "1763_szkola_rodzenia_przy_centrum_familia",
+    "user_nicename": "1763_szkola_rodzenia_przy_centrum_familia",
+    "display_name": "Szkoła rodzenia przy Centrum Familia",
+    "nickname": "Szkoła rodzenia przy Centrum Familia",
+    "szkolyrodzenia_miasto": "Katowice",
+    "szkolyrodzenia_szpital": "Mysłowice, Mysłowickie Centrum Zdrowia Sp. z o.o"
+  },
+  {
+    "ID": "1868",
+    "user_login": "1795_szkola_rodzenia_pod_sercem",
+    "user_nicename": "1795_szkola_rodzenia_pod_sercem",
+    "display_name": "Szkoła Rodzenia ,,Pod Sercem\"",
+    "nickname": "Szkoła Rodzenia ,,Pod Sercem\""
+  },
+  {
+    "ID": "1870",
+    "user_login": "1797_blisko_szkola_rodzenia",
+    "user_nicename": "1797_blisko_szkola_rodzenia",
+    "display_name": "Blisko Szkoła Rodzenia",
+    "nickname": "Blisko Szkoła Rodzenia",
+    "szkolyrodzenia_wojewodztwo": "pomorskie",
+    "szkolyrodzenia_miasto": "Kartuzy",
+    "szkolyrodzenia_szpital": ", ",
+    "userphoto": "1797_blisko_szkola_rodzenia_BLISKO_NOWY_PROJ_KOPIA_1.jpg"
+  },
+  {
+    "ID": "1877",
+    "user_login": "1804_szkola_rodzenia_edyta_gregorczyk",
+    "user_nicename": "1804_szkola_rodzenia_edyta_gregorczyk",
+    "display_name": "Szkoła Rodzenia Edyta Gregorczyk",
+    "nickname": "Szkoła Rodzenia Edyta Gregorczyk",
+    "szkolyrodzenia_wojewodztwo": "mazowieckie",
+    "szkolyrodzenia_miasto": "Radom"
+  },
+  {
+    "ID": "1880",
+    "user_login": "1807_centrum_poloznicze_mamacare",
+    "user_nicename": "1807_centrum_poloznicze_mamacare",
+    "display_name": "Centrum Położnicze MamaCare",
+    "nickname": "Centrum Położnicze MamaCare",
+    "szkolyrodzenia_wojewodztwo": "dolnośląskie",
+    "szkolyrodzenia_miasto": "Oborniki Śląskie",
+    "szkolyrodzenia_szpital": "Wrocław, Szpital Specjalistyczny im. A. Falkiewicza"
+  },
+  {
+    "ID": "1881",
+    "user_login": "1808_szkola_rodzenia_babycare",
+    "user_nicename": "1808_szkola_rodzenia_babycare",
+    "display_name": "Szkoła Rodzenia Babycare",
+    "nickname": "Szkoła Rodzenia Babycare",
+    "szkolyrodzenia_wojewodztwo": "śląskie",
+    "szkolyrodzenia_miasto": "Piekary Śląskie"
+  },
+  {
+    "ID": "1898",
+    "user_login": "1825_perla_",
+    "user_nicename": "1825_perla",
+    "display_name": "Perła",
+    "nickname": "Perła",
+    "szkolyrodzenia_wojewodztwo": "mazowieckie",
+    "szkolyrodzenia_miasto": "Ostrołęka",
+    "userphoto": "1825_perla_Screenshot_2021-10-28-17-07-25-1.png"
+  },
+  {
+    "ID": "1933",
+    "user_login": "1859_slow_doula_",
+    "user_nicename": "1859_slow_doula",
+    "display_name": "Slow doula",
+    "nickname": "Slow doula",
+    "szkolyrodzenia_wojewodztwo": "małopolskie",
+    "szkolyrodzenia_miasto": "Kraków"
+  },
+  {
+    "ID": "1949",
+    "user_login": "1875_bocianie_sprawy",
+    "user_nicename": "1875_bocianie_sprawy",
+    "display_name": "Bocianie Sprawy",
+    "nickname": "Bocianie Sprawy",
+    "szkolyrodzenia_wojewodztwo": "mazowieckie",
+    "szkolyrodzenia_miasto": "Warszawa",
+    "szkolyrodzenia_szpital": "Warszawa, Szpital SOLEC Sp. z o.o."
+  },
+  {
+    "ID": "1959",
+    "user_login": "1885_mamma_mia_szkola_narodzin",
+    "user_nicename": "1885_mamma_mia_szkola_narodzin",
+    "display_name": "Mamma Mia! Szkoła Narodzin",
+    "nickname": "Mamma Mia! Szkoła Narodzin",
+    "szkolyrodzenia_wojewodztwo": "śląskie",
+    "szkolyrodzenia_miasto": "Tychy",
+    "userphoto": "1885_mamma_mia_szkola_narodzin_97CEC5A6-ECF8-4083-9927-789F21D93CF3.jpeg"
+  },
+  {
+    "ID": "1966",
+    "user_login": "1892_akademia_rodzenia_zakopane",
+    "user_nicename": "1892_akademia_rodzenia_zakopane",
+    "display_name": "Akademia Rodzenia Zakopane",
+    "nickname": "Akademia Rodzenia Zakopane",
+    "szkolyrodzenia_wojewodztwo": "małopolskie",
+    "szkolyrodzenia_miasto": "Zakopane"
+  },
+  {
+    "ID": "1979",
+    "user_login": "1905_ursynowska_szkola_narodzin",
+    "user_nicename": "1905_ursynowska_szkola_narodzin",
+    "display_name": "Ursynowska Szkoła Narodzin",
+    "nickname": "Ursynowska Szkoła Narodzin"
+  },
+  {
+    "ID": "2000",
+    "user_login": "1926_aaa",
+    "user_nicename": "1926_aaa",
+    "display_name": "aaa",
+    "nickname": "aaa"
+  },
+  {
+    "ID": "2019",
+    "user_login": "1945_szkola_rodzenia",
+    "user_nicename": "1945_szkola_rodzenia",
+    "display_name": "Szkoła Rodzenia",
+    "nickname": "Szkoła Rodzenia",
+    "szkolyrodzenia_wojewodztwo": "śląskie",
+    "szkolyrodzenia_miasto": "Żywiec",
+    "szkolyrodzenia_szpital": "Żywiec, Szpital Żywiec",
+    "userphoto": "1945_szkola_rodzenia_noworodek.jpg"
+  },
+  {
+    "ID": "2031",
+    "user_login": "1957_adoula-wsparcie_okoloporodowe",
+    "user_nicename": "1957_adoula-wsparcie_okoloporodowe",
+    "display_name": "Adoula-wsparcie okołoporodowe",
+    "nickname": "Adoula-wsparcie okołoporodowe"
+  },
+  {
+    "ID": "2066",
+    "user_login": "1992_pierwsze_chwile",
+    "user_nicename": "1992_pierwsze_chwile",
+    "display_name": "Pierwsze Chwile",
+    "nickname": "Pierwsze Chwile",
+    "szkolyrodzenia_miasto": "Warszawa"
+  },
+  {
+    "ID": "2086",
+    "user_login": "2012_w_czepku_urodzeni_",
+    "user_nicename": "2012_w_czepku_urodzeni",
+    "display_name": "W Czepku Urodzeni",
+    "nickname": "W Czepku Urodzeni",
+    "szkolyrodzenia_wojewodztwo": "mazowieckie",
+    "szkolyrodzenia_miasto": "Płock",
+    "userphoto": "2012_w_czepku_urodzeni_FB_IMG_1658234453065.jpg"
+  },
+  {
+    "ID": "2122",
+    "user_login": "2048_mamani",
+    "user_nicename": "2048_mamani",
+    "display_name": "Mamani",
+    "nickname": "Mamani",
+    "szkolyrodzenia_wojewodztwo": "śląskie",
+    "szkolyrodzenia_miasto": "Częstochowa",
+    "userphoto": "2048_mamani_IMG_1165.jpeg"
+  },
+  {
+    "ID": "2125",
+    "user_login": "2051_doula_wspiera_-_na_drodze_do_rodzicielstwa_",
+    "user_nicename": "2051_doula_wspiera_-_na_drodze_do_rodzicielstwa",
+    "display_name": "Doula wspiera - na drodze do rodzicielstwa",
+    "nickname": "Doula wspiera - na drodze do rodzicielstwa",
+    "szkolyrodzenia_wojewodztwo": "świętokrzyskie",
+    "szkolyrodzenia_miasto": "Włoszczowa",
+    "userphoto": "2051_doula_wspiera_-_na_drodze_do_rodzicielstwa_1.png"
+  },
+  {
+    "ID": "2130",
+    "user_login": "2056_babikon",
+    "user_nicename": "2056_babikon",
+    "display_name": "Babikon",
+    "nickname": "Babikon"
+  },
+  {
+    "ID": "2133",
+    "user_login": "2059_mp",
+    "user_nicename": "2059_mp",
+    "display_name": "Mp",
+    "nickname": "Mp"
+  },
+  {
+    "ID": "2146",
+    "user_login": "2072_asdfasdf",
+    "user_nicename": "2072_asdfasdf",
+    "display_name": "asdfasdf",
+    "nickname": "asdfasdf"
+  },
+  {
+    "ID": "2147",
+    "user_login": "2073_szkola_rodzenia_szpital_miejski_w_siemianowicach_slask",
+    "user_nicename": "2073_szkola_rodzenia_szpital_miejski_w_siemianowic",
+    "display_name": "Szkoła Rodzenia Szpital Miejski w Siemianowicach Śląskich",
+    "nickname": "Szkoła Rodzenia Szpital Miejski w Siemianowicach Śląskich",
+    "szkolyrodzenia_wojewodztwo": "śląskie",
+    "szkolyrodzenia_miasto": "Siemianowice Śląskie",
+    "szkolyrodzenia_szpital": "Siemianowice Śląskie, Szpital Miejski w Siemianowicach Śląskich Sp. z o.o.",
+    "userphoto": "2073_szkola_rodzenia_szpital_miejski_w_siemianowic_przy.png"
+  },
+  {
+    "ID": "2202",
+    "user_login": "2128_doula_kaja_bydelska",
+    "user_nicename": "2128_doula_kaja_bydelska",
+    "display_name": "Doula Kaja Bydelska",
+    "nickname": "Doula Kaja Bydelska"
+  },
+  {
+    "ID": "2203",
+    "user_login": "2129_szczesliwie_urodzeni",
+    "user_nicename": "2129_szczesliwie_urodzeni",
+    "display_name": "Szczęśliwie urodzeni",
+    "nickname": "Szczęśliwie urodzeni"
+  },
+  {
+    "ID": "2210",
+    "user_login": "2136_opole_",
+    "user_nicename": "2136_opole",
+    "display_name": "Opole",
+    "nickname": "Opole",
+    "szkolyrodzenia_wojewodztwo": "opolskie",
+    "szkolyrodzenia_miasto": "Opole",
+    "szkolyrodzenia_szpital": "Opole, Centrum Ginekologii Położnictwa i Neonatologii w Opolu"
+  },
+  {
+    "ID": "2221",
+    "user_login": "2147_jestem_doula",
+    "user_nicename": "2147_jestem_doula",
+    "display_name": "Jestem doulą",
+    "nickname": "Jestem doulą",
+    "szkolyrodzenia_wojewodztwo": "mazowieckie",
+    "szkolyrodzenia_miasto": "Warszawa"
+  },
+  {
+    "ID": "2224",
+    "user_login": "2150_szkola_rodzenia_cud_narodzin",
+    "user_nicename": "2150_szkola_rodzenia_cud_narodzin",
+    "display_name": "Szkoła Rodzenia Cud Narodzin",
+    "nickname": "Szkoła Rodzenia Cud Narodzin",
+    "szkolyrodzenia_wojewodztwo": "śląskie",
+    "szkolyrodzenia_miasto": "Lubliniec",
+    "szkolyrodzenia_szpital": "Lubliniec, Samodzielny Publiczny Zaspół Opieki Zdrowotnej"
+  },
+  {
+    "ID": "2239",
+    "user_login": "2163_swiadome_macierzynstwo_",
+    "user_nicename": "2163_swiadome_macierzynstwo",
+    "display_name": "Swiadome Macierzynstwo",
+    "nickname": "Swiadome Macierzynstwo",
+    "szkolyrodzenia_wojewodztwo": "śląskie",
+    "szkolyrodzenia_miasto": "Racibórz",
+    "szkolyrodzenia_szpital": "Racibórz, Szpital Rejonowy im. dr Józefa Rostka",
+    "userphoto": "2163_swiadome_macierzynstwo_278013516_154915503615071_6599009454830448741_n.jpg"
+  },
+  {
+    "ID": "2251",
+    "user_login": "2175_szkola_rodzenia_moi_mili",
+    "user_nicename": "2175_szkola_rodzenia_moi_mili",
+    "display_name": "Szkoła rodzenia Moi mili",
+    "nickname": "Szkoła rodzenia Moi mili",
+    "szkolyrodzenia_wojewodztwo": "wielkopolskie",
+    "szkolyrodzenia_miasto": "Poznań",
+    "userphoto": "2175_szkola_rodzenia_moi_mili_CCB5B8C3-7E49-4CBA-BF85-C0F593664B5A.jpeg"
+  },
+  {
+    "ID": "2261",
+    "user_login": "2185_wroclawska_szkola_rodzenia_fev",
+    "user_nicename": "2185_wroclawska_szkola_rodzenia_fev",
+    "display_name": "Wrocławska Szkoła Rodzenia FEV",
+    "nickname": "Wrocławska Szkoła Rodzenia FEV",
+    "szkolyrodzenia_wojewodztwo": "dolnośląskie",
+    "szkolyrodzenia_miasto": "Wrocław"
+  },
+  {
+    "ID": "2262",
+    "user_login": "2186_projekt_mama-_prywatna_szkola_rodzenia",
+    "user_nicename": "2186_projekt_mama-_prywatna_szkola_rodzenia",
+    "display_name": "Projekt Mama- Prywatna Szkoła Rodzenia",
+    "nickname": "Projekt Mama- Prywatna Szkoła Rodzenia",
+    "szkolyrodzenia_wojewodztwo": "lubelskie",
+    "szkolyrodzenia_miasto": "Międzyrzec Podlaski",
+    "userphoto": "2186_projekt_mama-_prywatna_szkola_rodzenia_logo_png.png"
+  },
+  {
+    "ID": "2265",
+    "user_login": "2189_szkola_rodzenia_rszs",
+    "user_nicename": "2189_szkola_rodzenia_rszs",
+    "display_name": "Szkoła Rodzenia RSzS",
+    "nickname": "Szkoła Rodzenia RSzS"
+  },
+  {
+    "ID": "2268",
+    "user_login": "2192_bezplatna_szkola_rodzenia_centrum_medycznego_warszawsk",
+    "user_nicename": "2192_bezplatna_szkola_rodzenia_centrum_medycznego",
+    "display_name": "Bezpłatna Szkoła Rodzenia Centrum Medycznego Warszawskiego Uniwersytetu Medycznego",
+    "nickname": "Bezpłatna Szkoła Rodzenia Centrum Medycznego Warszawskiego Uniwersytetu Medycznego",
+    "szkolyrodzenia_wojewodztwo": "mazowieckie",
+    "szkolyrodzenia_miasto": "Warszawa"
+  },
+  {
+    "ID": "2273",
+    "user_login": "2197_szkola_baby_care_dzialajaca_przy_szpitalu_inflanckaa",
+    "user_nicename": "2197_szkola_baby_care_dzialajaca_przy_szpitalu_inf",
+    "display_name": "Szkoła Baby Care działająca przy Szpitalu ,,Inflancka”",
+    "nickname": "Szkoła Baby Care działająca przy Szpitalu ,,Inflancka”"
+  },
+  {
+    "ID": "2274",
+    "user_login": "2198_szkola_rodzenia_przy_spzoz_w_szamotulach",
+    "user_nicename": "2198_szkola_rodzenia_przy_spzoz_w_szamotulach",
+    "display_name": "Szkoła Rodzenia przy SPZOZ w Szamotułach",
+    "nickname": "Szkoła Rodzenia przy SPZOZ w Szamotułach",
+    "szkolyrodzenia_wojewodztwo": "wielkopolskie",
+    "szkolyrodzenia_miasto": "Szamotuły",
+    "szkolyrodzenia_szpital": "Szamotuły, Samodzielny Publiczny Zespol Opieki Zdrowotnej Szamotuły"
+  },
+  {
+    "ID": "2301",
+    "user_login": "2225_blisko_siebie",
+    "user_nicename": "2225_blisko_siebie",
+    "display_name": "Blisko siebie",
+    "nickname": "Blisko siebie",
+    "szkolyrodzenia_wojewodztwo": "śląskie",
+    "szkolyrodzenia_miasto": "Żywiec",
+    "userphoto": "2225_blisko_siebie_png_20230222_090557_0000.png"
+  },
+  {
+    "ID": "2302",
+    "user_login": "2226_u-rodzeni_na_brodnie",
+    "user_nicename": "2226_u-rodzeni_na_brodnie",
+    "display_name": "U-rodzeni na Bródnie",
+    "nickname": "U-rodzeni na Bródnie",
+    "szkolyrodzenia_wojewodztwo": "mazowieckie",
+    "szkolyrodzenia_miasto": "Warszawa",
+    "szkolyrodzenia_szpital": "Warszawa, Mazowiecki Szpital Bródnowski Sp. z o.o. Bródnowskie Centrum Kliniczne Zespół Oddziałow Ginekologii Onkologicznej i Położnictwa Katedra i Klinika Położnictwa Chorób Kobiecych i Ginekologii Onkologicznej",
+    "userphoto": "2226_u-rodzeni_na_brodnie_logo_11.jpg"
+  },
+  {
+    "ID": "2308",
+    "user_login": "2232_oaza",
+    "user_nicename": "2232_oaza",
+    "display_name": "Oaza",
+    "nickname": "Oaza",
+    "szkolyrodzenia_wojewodztwo": "lubuskie",
+    "szkolyrodzenia_miasto": "Sulechów"
+  },
+  {
+    "ID": "2321",
+    "user_login": "2245_rodzimy_w_miejskim",
+    "user_nicename": "2245_rodzimy_w_miejskim",
+    "display_name": "Rodzimy w Miejskim",
+    "nickname": "Rodzimy w Miejskim"
+  },
+  {
+    "ID": "2324",
+    "user_login": "2248_lono_natury_",
+    "user_nicename": "2248_lono_natury",
+    "display_name": "Łono natury",
+    "nickname": "Łono natury",
+    "szkolyrodzenia_wojewodztwo": "mazowieckie",
+    "szkolyrodzenia_miasto": "Płock",
+    "userphoto": "2248_lono_natury_jpg_20230325_080402_0000.jpg"
+  },
+  {
+    "ID": "2333",
+    "user_login": "2257_szkola_rodzenia_w_spzzoz_lipsko_",
+    "user_nicename": "2257_szkola_rodzenia_w_spzzoz_lipsko",
+    "display_name": "Szkoła rodzenia w SPZZOZ LIPSKO",
+    "nickname": "Szkoła rodzenia w SPZZOZ LIPSKO",
+    "szkolyrodzenia_wojewodztwo": "mazowieckie",
+    "szkolyrodzenia_miasto": "Lipsko",
+    "szkolyrodzenia_szpital": "Lipsko, Samodzielny Publiczny Zespół Zakładów Opieki Zdrowotnej Szpital Powiatowy"
+  },
+  {
+    "ID": "2361",
+    "user_login": "2285_maternity_concierge_warsaw",
+    "user_nicename": "2285_maternity_concierge_warsaw",
+    "display_name": "Maternity Concierge Warsaw",
+    "nickname": "Maternity Concierge Warsaw",
+    "szkolyrodzenia_wojewodztwo": "mazowieckie",
+    "szkolyrodzenia_miasto": "Warszawa"
+  },
+  {
+    "ID": "2381",
+    "user_login": "2305_akademia_swiadomej_ciazy_",
+    "user_nicename": "2305_akademia_swiadomej_ciazy",
+    "display_name": "Akademia Świadomej Ciąży",
+    "nickname": "Akademia Świadomej Ciąży",
+    "szkolyrodzenia_wojewodztwo": "małopolskie",
+    "szkolyrodzenia_miasto": "Kraków",
+    "userphoto": "2305_akademia_swiadomej_ciazy_IMG_6037.jpeg"
+  },
+  {
+    "ID": "2393",
+    "user_login": "2316_donna-med_",
+    "user_nicename": "2316_donna-med",
+    "display_name": "Donna-med",
+    "nickname": "Donna-med"
+  },
+  {
+    "ID": "2410",
+    "user_login": "2333_przyszpitalna_szkola_rodzenia_w_blachowni",
+    "user_nicename": "2333_przyszpitalna_szkola_rodzenia_w_blachowni",
+    "display_name": "Przyszpitalna Szkoła Rodzenia w Blachowni",
+    "nickname": "Przyszpitalna Szkoła Rodzenia w Blachowni",
+    "szkolyrodzenia_wojewodztwo": "śląskie",
+    "szkolyrodzenia_miasto": "Blachownia",
+    "szkolyrodzenia_szpital": "Blachownia, Szpital im. R. Weigla"
+  },
+  {
+    "ID": "2412",
+    "user_login": "2335_picolino",
+    "user_nicename": "2335_picolino",
+    "display_name": "PICOLINO",
+    "nickname": "PICOLINO"
+  },
+  {
+    "ID": "2471",
+    "user_login": "2394_rodze_w_pultusku",
+    "user_nicename": "2394_rodze_w_pultusku",
+    "display_name": "Rodzę w Pułtusku",
+    "nickname": "Rodzę w Pułtusku",
+    "szkolyrodzenia_wojewodztwo": "mazowieckie",
+    "szkolyrodzenia_miasto": "Pułtusk",
+    "szkolyrodzenia_szpital": "Pułtusk, Szpital Powiatowy Gajda-Med Sp. z o.o."
+  },
+  {
+    "ID": "2500",
+    "user_login": "2422_edukacja_przedporodowa_zwana_szkola_rodzenia",
+    "user_nicename": "2422_edukacja_przedporodowa_zwana_szkola_rodzenia",
+    "display_name": "Edukacja Przedporodowa zwana Szkołą Rodzenia",
+    "nickname": "Edukacja Przedporodowa zwana Szkołą Rodzenia"
+  },
+  {
+    "ID": "2502",
+    "user_login": "2424_szkola_rodzenia_ryszarda_kania",
+    "user_nicename": "2424_szkola_rodzenia_ryszarda_kania",
+    "display_name": "Szkoła Rodzenia, Ryszarda Kania",
+    "nickname": "Szkoła Rodzenia, Ryszarda Kania"
+  },
+  {
+    "ID": "2560",
+    "user_login": "2482_szkola_rodzenia_wioski_wsparcia",
+    "user_nicename": "2482_szkola_rodzenia_wioski_wsparcia",
+    "display_name": "Szkoła Rodzenia Wioski Wsparcia",
+    "nickname": "Szkoła Rodzenia Wioski Wsparcia",
+    "szkolyrodzenia_wojewodztwo": "łódzkie",
+    "szkolyrodzenia_miasto": "Piotrków Trybunalski",
+    "userphoto": "2482_szkola_rodzenia_wioski_wsparcia_Aleksandra_Krzysztofik.png"
+  },
+  {
+    "ID": "2566",
+    "user_login": "2488_edukacja_przedporodowa_zwana_szkola_rodzenia",
+    "user_nicename": "2488_edukacja_przedporodowa_zwana_szkola_rodzenia",
+    "display_name": "Edukacja Przedporodowa zwana Szkołą Rodzenia",
+    "nickname": "Edukacja Przedporodowa zwana Szkołą Rodzenia",
+    "szkolyrodzenia_wojewodztwo": "łódzkie",
+    "szkolyrodzenia_miasto": "Pabianice",
+    "userphoto": "2488_edukacja_przedporodowa_zwana_szkola_rodzenia_Jaś.jpg"
+  },
+  {
+    "ID": "2581",
+    "user_login": "2502_edukacja_i_wsparcie_okoloporodowe",
+    "user_nicename": "2502_edukacja_i_wsparcie_okoloporodowe",
+    "display_name": "Edukacja i wsparcie okołoporodowe",
+    "nickname": "Edukacja i wsparcie okołoporodowe",
+    "szkolyrodzenia_wojewodztwo": "małopolskie",
+    "szkolyrodzenia_miasto": "Wieliczka"
+  },
+  {
+    "ID": "2889",
+    "user_login": "2537_omamo_szkola_rodzenia",
+    "user_nicename": "2537_omamo_szkola_rodzenia",
+    "display_name": "OMAMO Szkoła Rodzenia",
+    "nickname": "OMAMO Szkoła Rodzenia",
+    "szkolyrodzenia_wojewodztwo": "warmińsko-mazurskie",
+    "szkolyrodzenia_miasto": "Olsztyn",
+    "userphoto": "2537_omamo_szkola_rodzenia_Ostatnie_wolne_miejsce_na_piątkową_grupę_OMAMO_Szkoła_Rodzenia.png"
+  },
+  {
+    "ID": "2907",
+    "user_login": "2554_mombella_edukacja_i_wsparcie_okoloporodowe",
+    "user_nicename": "2554_mombella_edukacja_i_wsparcie_okoloporodowe",
+    "display_name": "MomBella Edukacja i wsparcie okołoporodowe",
+    "nickname": "MomBella Edukacja i wsparcie okołoporodowe",
+    "szkolyrodzenia_wojewodztwo": "zachodniopomorskie",
+    "szkolyrodzenia_miasto": "Kamień Pomorski",
+    "userphoto": "2554_mombella_edukacja_i_wsparcie_okoloporodowe_Projekt_bez_nazwy_20230920_145223_0000.png"
+  },
+  {
+    "ID": "2915",
+    "user_login": "2561_szkola_rodzenia_lemurek",
+    "user_nicename": "2561_szkola_rodzenia_lemurek",
+    "display_name": "Szkoła Rodzenia Lemurek",
+    "nickname": "Szkoła Rodzenia Lemurek",
+    "szkolyrodzenia_wojewodztwo": "mazowieckie",
+    "szkolyrodzenia_miasto": "Grójec"
+  },
+  {
+    "ID": "2918",
+    "user_login": "2564_szkola_rodzenia_w_blachowni",
+    "user_nicename": "2564_szkola_rodzenia_w_blachowni",
+    "display_name": "Szkoła Rodzenia w Blachowni",
+    "nickname": "Szkoła Rodzenia w Blachowni",
+    "szkolyrodzenia_szpital": "Blachownia, Szpital im. R. Weigla",
+    "szkolyrodzenia_miasto": "Blachownia",
+    "szkolyrodzenia_wojewodztwo": "śląskie",
+    "userphoto": "2564_szkola_rodzenia_w_blachowni_Szkoła_Rodzenia_profilowe.png"
+  },
+  {
+    "ID": "2921",
+    "user_login": "2567_strzelin",
+    "user_nicename": "2567_strzelin",
+    "display_name": "Strzelin",
+    "nickname": "Strzelin"
+  },
+  {
+    "ID": "2990",
+    "user_login": "2636_centrum_swiadomego_rodzicielstwa_s.c",
+    "user_nicename": "2636_centrum_swiadomego_rodzicielstwa_s-c",
+    "display_name": "Centrum Świadomego Rodzicielstwa s.c",
+    "nickname": "Centrum Świadomego Rodzicielstwa s.c",
+    "szkolyrodzenia_wojewodztwo": "podlaskie",
+    "szkolyrodzenia_miasto": "Wasilków"
+  },
+  {
+    "ID": "2994",
+    "user_login": "2640_zdrowa_rodzina",
+    "user_nicename": "2640_zdrowa_rodzina",
+    "display_name": "Zdrowa Rodzina",
+    "nickname": "Zdrowa Rodzina",
+    "szkolyrodzenia_wojewodztwo": "opolskie",
+    "szkolyrodzenia_miasto": "Opole"
+  },
+  {
+    "ID": "3013",
+    "user_login": "2659_mamani",
+    "user_nicename": "2659_mamani",
+    "display_name": "Mamani",
+    "nickname": "Mamani"
+  },
+  {
+    "ID": "3020",
+    "user_login": "2666_doula_sowa",
+    "user_nicename": "2666_doula_sowa",
+    "display_name": "Doula Sowa",
+    "nickname": "Doula Sowa"
+  },
+  {
+    "ID": "3021",
+    "user_login": "2667_doula_sowa",
+    "user_nicename": "2667_doula_sowa",
+    "display_name": "Doula Sowa",
+    "nickname": "Doula Sowa"
+  },
+  {
+    "ID": "3034",
+    "user_login": "2680_szkola_rodzenia_przy_siemianowickiej_porodowce",
+    "user_nicename": "2680_szkola_rodzenia_przy_siemianowickiej_porodowc",
+    "display_name": "Szkoła Rodzenia przy Siemianowickiej Porodówce",
+    "nickname": "Szkoła Rodzenia przy Siemianowickiej Porodówce"
+  },
+  {
+    "ID": "3035",
+    "user_login": "2681_doula_hanna_krawczyk",
+    "user_nicename": "2681_doula_hanna_krawczyk",
+    "display_name": "Doula Hanna Krawczyk",
+    "nickname": "Doula Hanna Krawczyk",
+    "szkolyrodzenia_wojewodztwo": "wielkopolskie",
+    "szkolyrodzenia_miasto": "Wolsztyn"
+  },
+  {
+    "ID": "3061",
+    "user_login": "2707_medi3_-_polozne_szkola_rodzenia",
+    "user_nicename": "2707_medi3_-_polozne_szkola_rodzenia",
+    "display_name": "Medi3 - Położne Szkoła Rodzenia",
+    "nickname": "Medi3 - Położne Szkoła Rodzenia",
+    "szkolyrodzenia_wojewodztwo": "podkarpackie",
+    "szkolyrodzenia_miasto": "Mielec",
+    "userphoto": "2707_medi3_-_polozne_szkola_rodzenia_Bez_tytułu_(1618_x_1000_px)_(2300_x_1422_px).png"
+  },
+  {
+    "ID": "3075",
+    "user_login": "2721_nas_troje",
+    "user_nicename": "2721_nas_troje",
+    "display_name": "Nas Troje",
+    "nickname": "Nas Troje",
+    "szkolyrodzenia_wojewodztwo": "łódzkie",
+    "szkolyrodzenia_miasto": "Łódź"
+  },
+  {
+    "ID": "3092",
+    "user_login": "2738_nas_troje",
+    "user_nicename": "2738_nas_troje",
+    "display_name": "Nas Troje",
+    "nickname": "Nas Troje",
+    "szkolyrodzenia_wojewodztwo": "łódzkie"
+  },
+  {
+    "ID": "3097",
+    "user_login": "2743_porozmawiajmy",
+    "user_nicename": "2743_porozmawiajmy",
+    "display_name": "Porozmawiajmy",
+    "nickname": "Porozmawiajmy"
+  },
+  {
+    "ID": "3102",
+    "user_login": "2748_szkola_rodzenia_-_uniwersyteckie_centrum_zdrowia_kobie",
+    "user_nicename": "2748_szkola_rodzenia_-_uniwersyteckie_centrum_zdro",
+    "display_name": "Szkoła Rodzenia - Uniwersyteckie Centrum Zdrowia Kobiet przy Rozwoju Położnictwa Wydziału Nauk o Zdrowiu UM w Lublinie",
+    "nickname": "Szkoła Rodzenia - Uniwersyteckie Centrum Zdrowia Kobiet przy Rozwoju Położnictwa Wydziału Nauk o Zdrowiu UM w Lublinie"
+  },
+  {
+    "ID": "3103",
+    "user_login": "2749_vita",
+    "user_nicename": "2749_vita",
+    "display_name": "VITA",
+    "nickname": "VITA"
+  },
+  {
+    "ID": "7112",
+    "user_login": "6758_szkola_rodzenia_nowa",
+    "user_nicename": "6758_szkola_rodzenia_nowa",
+    "display_name": "szkoła rodzenia nowa",
+    "nickname": "szkoła rodzenia nowa"
+  },
+  {
+    "ID": "7182",
+    "user_login": "2832_blisko_kobiet",
+    "user_nicename": "2832_blisko_kobiet",
+    "display_name": "Blisko Kobiet",
+    "nickname": "Blisko Kobiet"
+  },
+  {
+    "ID": "7187",
+    "user_login": "2837_szkola_rodzenia_mamababy",
+    "user_nicename": "2837_szkola_rodzenia_mamababy",
+    "display_name": "Szkoła Rodzenia Mama&amp;Baby",
+    "nickname": "Szkoła Rodzenia Mama&amp;Baby"
+  },
+  {
+    "ID": "7190",
+    "user_login": "2839_akademia_swiadomych_narodzin",
+    "user_nicename": "2839_akademia_swiadomych_narodzin",
+    "display_name": "Akademia Świadomych Narodzin",
+    "nickname": "Akademia Świadomych Narodzin",
+    "szkolyrodzenia_wojewodztwo": "małopolskie",
+    "szkolyrodzenia_miasto": "Nowy Targ",
+    "szkolyrodzenia_szpital": "Nowy Targ, Podhalański Szpital Specjalistyczny im. Jana Pawła II",
+    "userphoto": "2839_akademia_swiadomych_narodzin_1.png"
+  },
+  {
+    "ID": "7214",
+    "user_login": "2863_",
+    "user_nicename": "2863",
+    "display_name": "Elwira Berezowska",
+    "nickname": "2863_",
+    "szkolyrodzenia_wojewodztwo": "zachodniopomorskie",
+    "szkolyrodzenia_miasto": "Szczecin",
+    "userphoto": "2863_mamma_jpeg.jpg"
+  },
+  {
+    "ID": "7219",
+    "user_login": "2868_szkola_rodzenia",
+    "user_nicename": "2868_szkola_rodzenia",
+    "display_name": "Szkoła Rodzenia",
+    "nickname": "Szkoła Rodzenia"
+  },
+  {
+    "ID": "7276",
+    "user_login": "2925_zaglebiowska_szkola_rodzenia",
+    "user_nicename": "2925_zaglebiowska_szkola_rodzenia",
+    "display_name": "Zagłębiowska Szkoła Rodzenia",
+    "nickname": "Zagłębiowska Szkoła Rodzenia",
+    "szkolyrodzenia_wojewodztwo": "śląskie",
+    "szkolyrodzenia_szpital": "Dąbrowa Górnicza, Zaglabiowskie Centrum Onkologii Szpital Specjalistyczny",
+    "szkolyrodzenia_miasto": "Dąbrowa Górnicza"
+  },
+  {
+    "ID": "7282",
+    "user_login": "2931_szkola_rodzenia_przy_radomskim_szpitalu_specjalistyczn",
+    "user_nicename": "2931_szkola_rodzenia_przy_radomskim_szpitalu_specj",
+    "display_name": "Szkoła Rodzenia przy Radomskim Szpitalu Specjalistycznym",
+    "nickname": "Szkoła Rodzenia przy Radomskim Szpitalu Specjalistycznym",
+    "szkolyrodzenia_wojewodztwo": "mazowieckie",
+    "szkolyrodzenia_miasto": "Radom",
+    "szkolyrodzenia_szpital": "Radom, Radomski Szpital Specjalistyczny im. dr T. Chałubińskiego"
+  },
+  {
+    "ID": "7283",
+    "user_login": "2932_sila_rodzenia",
+    "user_nicename": "2932_sila_rodzenia",
+    "display_name": "Siła Rodzenia",
+    "nickname": "Siła Rodzenia",
+    "szkolyrodzenia_wojewodztwo": "wielkopolskie",
+    "szkolyrodzenia_miasto": "Poznań"
+  },
+  {
+    "ID": "7288",
+    "user_login": "2937_szkola_rodzenia_przy_klinicznym_centrum_ginekologii_p",
+    "user_nicename": "2937_szkola_rodzenia_przy_klinicznym_centrum_ginek",
+    "display_name": "Szkoła Rodzenia przy Klinicznym Centrum Ginekologii, Położnictwa i Neonatologii w Opolu",
+    "nickname": "Szkoła Rodzenia przy Klinicznym Centrum Ginekologii, Położnictwa i Neonatologii w Opolu"
+  },
+  {
+    "ID": "7326",
+    "user_login": "2975_centrum_edukacji_okoloporodowej",
+    "user_nicename": "2975_centrum_edukacji_okoloporodowej",
+    "display_name": "Centrum Edukacji Okołoporodowej",
+    "nickname": "Centrum Edukacji Okołoporodowej",
+    "szkolyrodzenia_wojewodztwo": "łódzkie",
+    "szkolyrodzenia_miasto": "Kutno"
+  },
+  {
+    "ID": "7333",
+    "user_login": "2981_doullaby",
+    "user_nicename": "2981_doullaby",
+    "display_name": "Doullaby",
+    "nickname": "Doullaby"
+  },
+  {
+    "ID": "7334",
+    "user_login": "2982_",
+    "user_nicename": "2982",
+    "display_name": "Barbara Konieczna",
+    "nickname": "2982_"
+  },
+  {
+    "ID": "7380",
+    "user_login": "3027_blekitna_szkola_ciazy_i_rodzenia",
+    "user_nicename": "3027_blekitna_szkola_ciazy_i_rodzenia",
+    "display_name": "Błękitna Szkoła Ciąży i Rodzenia",
+    "nickname": "Błękitna Szkoła Ciąży i Rodzenia",
+    "szkolyrodzenia_wojewodztwo": "małopolskie",
+    "szkolyrodzenia_miasto": "Kraków"
+  }
+]
