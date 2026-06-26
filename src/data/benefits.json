@@ -1,0 +1,555 @@
+{
+  "_meta": {
+    "version": "1.0.0",
+    "valid_from": "2026-06-01",
+    "valid_to": "2027-05-31",
+    "last_verified": "2026-06-09",
+    "currency": "PLN",
+    "notes": "Wszystkie kwoty zweryfikowane na podstawie oficjalnych źródeł ZUS i gov.pl na dzień 2026-06-09. Każde świadczenie ma podstawę prawną z konkretną ustawą. Aplikacja powinna mieć mechanizm aktualizacji tej bazy (push z serwera) co najmniej raz na kwartał."
+  },
+  "benefits": [
+    {
+      "id": "becikowe",
+      "slug": "becikowe",
+      "name": "Becikowe",
+      "official_name": "Jednorazowa zapomoga z tytułu urodzenia się dziecka",
+      "amount_pln": 1000,
+      "amount_display": "1 000 zł",
+      "unit": "one-time",
+      "unit_display": "jednorazowo",
+      "income_means_tested": true,
+      "income_limit_per_capita_pln": 1922,
+      "income_limit_note": "Dochód netto na osobę w rodzinie nie może przekraczać 1 922 zł.",
+      "channel": "gmina",
+      "channel_display": "Urząd gminy (USC, OPS) lub przez Emp@tię",
+      "submission_methods": ["urząd gminy osobiście", "Emp@tia online"],
+      "deadline_rule": {
+        "type": "after_birth_months",
+        "value": 12,
+        "description": "12 miesięcy od urodzenia dziecka"
+      },
+      "criteria": [
+        "Dochód netto rodziny ≤ 1 922 zł na osobę",
+        "Matka pozostawała pod opieką medyczną od najpóźniej 10. tygodnia ciąży (zaświadczenie od lekarza/położnej)",
+        "Wniosek złożony w ciągu 12 miesięcy od urodzenia dziecka"
+      ],
+      "required_documents": [
+        "Wniosek o jednorazową zapomogę (formularz gminny)",
+        "Skrócony odpis aktu urodzenia dziecka",
+        "Zaświadczenie lekarskie o opiece w ciąży od 10. tygodnia",
+        "Oświadczenie o dochodach rodziny",
+        "PIT-y członków rodziny za rok bazowy"
+      ],
+      "steps": [
+        "Pobierz zaświadczenie lekarskie o opiece medycznej w ciąży (od 10. tygodnia)",
+        "Zarejestruj urodzenie dziecka w USC, odbierz skrócony akt urodzenia",
+        "Wypełnij wniosek w urzędzie gminy lub przez Emp@tię",
+        "Dołącz akt urodzenia, zaświadczenie lekarskie, dokumenty o dochodach",
+        "Złóż w terminie 12 miesięcy od urodzenia dziecka"
+      ],
+      "legal_basis": {
+        "act": "Ustawa z dnia 28 listopada 2003 r. o świadczeniach rodzinnych",
+        "journal": "Dz.U. 2003 nr 228 poz. 2255",
+        "article": "art. 15b",
+        "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20032282255"
+      },
+      "source_citations": [
+        {
+          "label": "Ministerstwo Rodziny — becikowe",
+          "url": "https://www.gov.pl/web/rodzina/jednorazowa-zapomoga-z-tytulu-urodzenia-sie-dziecka",
+          "verified": "2026-06-09"
+        }
+      ],
+      "common_mistakes": [
+        "Brak zaświadczenia o opiece w ciąży od 10. tygodnia — automatyczne odrzucenie wniosku",
+        "Złożenie po 12 miesiącach od urodzenia — utrata prawa",
+        "Pominięcie dochodów partnera mieszkającego z matką dziecka"
+      ]
+    },
+    {
+      "id": "800plus",
+      "slug": "rodzina-800-plus",
+      "name": "Rodzina 800+",
+      "official_name": "Świadczenie wychowawcze",
+      "amount_pln": 800,
+      "amount_display": "800 zł",
+      "unit": "monthly",
+      "unit_display": "miesięcznie",
+      "income_means_tested": false,
+      "channel": "zus",
+      "channel_display": "ZUS przez aplikację mZUS, PUE/eZUS, bankowość lub Emp@tię",
+      "submission_methods": ["mZUS", "PUE/eZUS", "bankowość elektroniczna", "Emp@tia"],
+      "deeplinks": {
+        "mzus_android": "market://details?id=pl.zus.eskladka",
+        "pue_zus": "https://www.zus.pl/portal/logowanie.npi",
+        "empatia": "https://wnioski.mpips.gov.pl/"
+      },
+      "deadline_rule": {
+        "type": "after_birth_months",
+        "value": 3,
+        "description": "3 miesiące od urodzenia dziecka dla zachowania prawa do wyrównania od dnia urodzenia. Wniosek można składać aż do 18 r.ż. dziecka, ale później bez wyrównania wstecz.",
+        "yearly_window": {
+          "best_by": "04-30",
+          "still_with_back": "06-30",
+          "description": "Dla nowych okresów świadczeniowych (1 czerwca - 31 maja kolejnego roku): wniosek do 30 kwietnia gwarantuje wypłatę od 1 czerwca, do 30 czerwca z wyrównaniem od czerwca, po 30 czerwca bez wyrównania."
+        }
+      },
+      "criteria": [
+        "Dziecko do ukończenia 18. roku życia",
+        "Wniosek składa jeden z rodziców (przy opiece naprzemiennej — oboje, każde dostaje 400 zł)",
+        "Bez kryterium dochodowego — niezależne od dochodów rodziny",
+        "Wniosek wyłącznie elektroniczny"
+      ],
+      "required_documents": [
+        "PESEL dziecka (po zarejestrowaniu w USC)",
+        "Numer rachunku bankowego do wypłaty",
+        "Akt urodzenia (jeśli ZUS poprosi)"
+      ],
+      "steps": [
+        "Zarejestruj urodzenie w USC, poczekaj na nadanie numeru PESEL (zwykle 1-3 dni)",
+        "Zaloguj się do mZUS, PUE/eZUS lub bankowości elektronicznej",
+        "Wybierz wniosek SW-R (świadczenie wychowawcze)",
+        "Wpisz dane dziecka i numer PESEL",
+        "Podaj numer konta bankowego",
+        "Złóż w ciągu 3 miesięcy od urodzenia, by mieć wyrównanie od dnia urodzenia"
+      ],
+      "legal_basis": {
+        "act": "Ustawa z dnia 11 lutego 2016 r. o pomocy państwa w wychowywaniu dzieci",
+        "journal": "Dz.U. 2016 poz. 195",
+        "article": "art. 4",
+        "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20160000195"
+      },
+      "source_citations": [
+        {
+          "label": "ZUS — świadczenie wychowawcze 800+",
+          "url": "https://www.zus.pl/swiadczenia/swiadczenia-dla-rodzin/swiadczenie-wychowawcze-800-plus",
+          "verified": "2026-06-09",
+          "key_quote": "Jeśli złożysz wniosek o świadczenie wychowawcze na nowo narodzone dziecko w ciągu 3 miesięcy od dnia urodzenia dziecka, otrzymasz świadczenie od dnia urodzenia dziecka."
+        }
+      ],
+      "common_mistakes": [
+        "Złożenie wniosku przed nadaniem PESEL dziecku — automatyczne odrzucenie",
+        "Spóźnienie powyżej 3 miesięcy — utrata wyrównania (do kilku tysięcy zł)",
+        "Złożenie wniosku przez oboje rodziców gdy nie ma opieki naprzemiennej — dublowanie świadczeń"
+      ]
+    },
+    {
+      "id": "macierzynski",
+      "slug": "zasilek-macierzynski",
+      "name": "Zasiłek macierzyński",
+      "official_name": "Zasiłek macierzyński za okres urlopu macierzyńskiego i rodzicielskiego",
+      "amount_pln": null,
+      "amount_display": "100% / 81,5% / 70% wynagrodzenia",
+      "unit": "monthly_based_on_salary",
+      "unit_display": "% miesięcznego wynagrodzenia",
+      "income_means_tested": false,
+      "channel": "zus_via_employer",
+      "channel_display": "ZUS przez pracodawcę (UoP) lub bezpośrednio (B2B z ubezpieczeniem chorobowym)",
+      "submission_methods": ["pracodawca (UoP)", "PUE/eZUS (B2B)"],
+      "deadline_rule": {
+        "type": "after_birth_days",
+        "value": 21,
+        "description": "21 dni od porodu dla zachowania wariantu 81,5% jednolitej stawki przez cały okres urlopu (macierzyński + rodzicielski razem). Po 21 dniach: 100% za 20 tygodni macierzyńskiego, potem 70% za rodzicielski."
+      },
+      "parental_leave_note": "Od 26.04.2023 urlop rodzicielski to 41 tygodni (1 dziecko) lub 43 tyg. (ciąża mnoga). 9 tygodni jest nieprzenoszalnych dla każdego z rodziców — matka może skorzystać z maksymalnie 32 tyg. rodzicielskiego (z 41).",
+      "variants": [
+        {
+          "name": "Wariant 100% / 70%",
+          "description": "Wniosek tylko o macierzyński (20 tygodni): 100% wynagrodzenia. Potem osobny wniosek o rodzicielski: 70% wynagrodzenia.",
+          "total_average_pct": "~80,9%",
+          "duration_weeks": "macierzyński 20 tyg. + rodzicielski max 32 tyg. dla matki (z puli 41 tyg.; 9 tyg. zarezerwowane wyłącznie dla ojca — zawsze 70%)"
+        },
+        {
+          "name": "Wariant 81,5%",
+          "description": "Wniosek o cały urlop (macierzyński + rodzicielski razem) w ciągu 21 dni od porodu: 81,5% wynagrodzenia przez cały czas. Uwaga: nieprzenoszalne 9 tygodni ojca i tak płatne 70%, niezależnie od wyboru matki.",
+          "total_average_pct": "81,5% (część matki) / 70% (9 tyg. ojca — zawsze)",
+          "duration_weeks": "macierzyński 20 tyg. + rodzicielski max 32 tyg. dla matki (z puli 41 tyg.; 9 tyg. zarezerwowane wyłącznie dla ojca — zawsze 70%)"
+        }
+      ],
+      "criteria": [
+        "Tytuł do ubezpieczenia chorobowego: umowa o pracę, zlecenie z dobrowolnym chorobowym, B2B z dobrowolnym chorobowym, służba mundurowa, rolnicy w KRUS",
+        "Co najmniej 1 dzień ubezpieczenia chorobowego przed dniem porodu (dla UoP)",
+        "Przy B2B: pełny miesiąc ubezpieczenia chorobowego przed porodem dla pełnej podstawy"
+      ],
+      "required_documents": [
+        "Skrócony odpis aktu urodzenia dziecka",
+        "Wniosek o urlop macierzyński/rodzicielski (u pracodawcy)",
+        "Zaświadczenie Z-3 lub Z-3b (B2B)"
+      ],
+      "steps": [
+        "Zarejestruj urodzenie w USC, odbierz akt urodzenia",
+        "W ciągu 21 dni od porodu złóż wniosek u pracodawcy o cały urlop (macierzyński + rodzicielski) — wariant 81,5%",
+        "Lub: złóż wniosek tylko o macierzyński (100%), potem osobno o rodzicielski (70%)",
+        "Pracodawca przekazuje dokumenty do ZUS, ZUS wypłaca zasiłek",
+        "Dla B2B: złóż Z-3b bezpośrednio przez PUE/eZUS"
+      ],
+      "legal_basis": {
+        "act": "Ustawa z dnia 25 czerwca 1999 r. o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa",
+        "journal": "Dz.U. 1999 nr 60 poz. 636",
+        "article": "art. 29-31",
+        "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19990600636"
+      },
+      "source_citations": [
+        {
+          "label": "ZUS — zasiłek macierzyński",
+          "url": "https://www.zus.pl/swiadczenia/zasilki/zasilek-macierzynski",
+          "verified": "2026-06-09"
+        }
+      ],
+      "common_mistakes": [
+        "Spóźnienie z wnioskiem powyżej 21 dni — utrata opcji 81,5% (różnica może wynosić tysiące zł rocznie)",
+        "B2B bez dobrowolnego chorobowego — brak prawa do zasiłku w ogóle",
+        "Błędne założenie, że urlop rodzicielski to 32 tygodnie — od 26.04.2023 łączna pula rodzicielska to 41 tygodni (1 dziecko) lub 43 tyg. (ciąża mnoga)",
+        "Liczenie 9 tygodni ojca jako płatnych 81,5% — nieprzenoszalne 9 tyg. ojca jest ZAWSZE płatne 70%, niezależnie od wyboru matki",
+        "Nieużyte 9 tygodni nieprzenoszalne dla ojca — przepada bezpowrotnie, nie można przekazać matce"
+      ]
+    },
+    {
+      "id": "kosiniakowe",
+      "slug": "kosiniakowe",
+      "name": "Świadczenie rodzicielskie (\"kosiniakowe\")",
+      "official_name": "Świadczenie rodzicielskie",
+      "amount_pln": 1000,
+      "amount_display": "1 000 zł",
+      "unit": "monthly",
+      "unit_display": "miesięcznie przez 52 tygodnie (1 dziecko)",
+      "income_means_tested": false,
+      "channel": "gmina",
+      "channel_display": "Urząd gminy (OPS) lub Emp@tia",
+      "submission_methods": ["urząd gminy osobiście", "Emp@tia online"],
+      "deadline_rule": {
+        "type": "after_birth_months",
+        "value": 3,
+        "description": "Wniosek można złożyć w ciągu 3 miesięcy od urodzenia, by otrzymać świadczenie od dnia urodzenia. Po 3 miesiącach — tylko od miesiąca złożenia wniosku."
+      },
+      "duration_weeks_by_children": {
+        "1": 52,
+        "2": 65,
+        "3": 67,
+        "4": 69,
+        "5+": 71
+      },
+      "criteria": [
+        "Brak prawa do zasiłku macierzyńskiego (studenci, bezrobotni, osoby na umowie o dzieło, B2B bez dobrowolnego chorobowego)",
+        "Świadczenie przysługuje matce; ojcu tylko w wyjątkowych przypadkach (śmierć matki, porzucenie dziecka)",
+        "Nie łączy się z zasiłkiem macierzyńskim",
+        "Bez kryterium dochodowego"
+      ],
+      "required_documents": [
+        "Wniosek o świadczenie rodzicielskie",
+        "Skrócony odpis aktu urodzenia dziecka",
+        "Dowód osobisty wnioskodawcy",
+        "Numer konta bankowego"
+      ],
+      "steps": [
+        "Zarejestruj urodzenie w USC, odbierz akt urodzenia",
+        "Wypełnij wniosek w urzędzie gminy lub przez Emp@tię",
+        "Dołącz akt urodzenia, dane konta",
+        "Świadczenie wypłacane przez 52 tygodnie (przy 1 dziecku)"
+      ],
+      "legal_basis": {
+        "act": "Ustawa z dnia 28 listopada 2003 r. o świadczeniach rodzinnych",
+        "journal": "Dz.U. 2003 nr 228 poz. 2255",
+        "article": "art. 17c",
+        "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20032282255"
+      },
+      "source_citations": [
+        {
+          "label": "Ministerstwo Rodziny — świadczenie rodzicielskie",
+          "url": "https://www.gov.pl/web/rodzina/swiadczenie-rodzicielskie",
+          "verified": "2026-06-09"
+        }
+      ],
+      "common_mistakes": [
+        "Próba łączenia z zasiłkiem macierzyńskim — nielegalne, zwrot z odsetkami",
+        "Studentka z umową zlecenia BEZ chorobowego dobrowolnego — pomyłka, że \"nie należy się\" (należy)"
+      ]
+    },
+    {
+      "id": "aktywni-rodzice-w-pracy",
+      "slug": "aktywni-rodzice-w-pracy",
+      "name": "Aktywni rodzice w pracy",
+      "official_name": "Świadczenie aktywni rodzice w pracy (program Aktywny Rodzic)",
+      "amount_pln": 1500,
+      "amount_display": "1 500 zł (1 900 zł z niepełnosprawnością)",
+      "unit": "monthly",
+      "unit_display": "miesięcznie",
+      "income_means_tested": false,
+      "channel": "zus",
+      "channel_display": "ZUS przez mZUS, PUE/eZUS, bankowość lub Emp@tię",
+      "submission_methods": ["mZUS", "PUE/eZUS", "bankowość elektroniczna", "Emp@tia"],
+      "deadline_rule": {
+        "type": "child_age_months_range",
+        "value_min": 12,
+        "value_max": 35,
+        "description": "Dziecko musi mieć skończone 12 miesięcy, świadczenie wypłacane do końca miesiąca, w którym ukończy 35 miesięcy. Wniosek w ciągu 2 miesięcy od dnia uprawnienia daje wyrównanie."
+      },
+      "criteria": [
+        "Dziecko w wieku 12-35 miesięcy",
+        "Oboje rodzice aktywni zawodowo z minimalną podstawą wymiaru składek (~równowartość minimalnej krajowej)",
+        "Nie łączy się z 'Aktywnie w żłobku' ani 'Aktywnie w domu' na to samo dziecko w tym samym miesiącu",
+        "Wniosek wyłącznie elektroniczny"
+      ],
+      "required_documents": [
+        "PESEL dziecka",
+        "Numer konta bankowego",
+        "Dane partnera (przy dwojgu rodziców)"
+      ],
+      "steps": [
+        "Poczekaj do 12. miesiąca życia dziecka",
+        "Upewnij się, że oboje rodzice mają aktywne ubezpieczenie z minimalną podstawą",
+        "Złóż wniosek przez mZUS lub bankowość",
+        "Wskaż numer konta, podaj dane drugiego rodzica"
+      ],
+      "legal_basis": {
+        "act": "Ustawa z dnia 15 maja 2024 r. o wspieraniu rodziców w aktywności zawodowej i wychowaniu dziecka — Aktywny Rodzic",
+        "journal": "Dz.U. 2024 poz. 858",
+        "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20240000858"
+      },
+      "source_citations": [
+        {
+          "label": "ZUS — Aktywny Rodzic",
+          "url": "https://www.zus.pl/aktywnyrodzic",
+          "verified": "2026-06-09"
+        }
+      ],
+      "common_mistakes": [
+        "Wniosek przed 12. miesiącem dziecka — odrzucenie",
+        "Brak ubezpieczenia jednego z rodziców — utrata świadczenia",
+        "Łączenie z 'Aktywnie w żłobku' — trzeba wybrać jedno"
+      ]
+    },
+    {
+      "id": "aktywnie-w-zlobku",
+      "slug": "aktywnie-w-zlobku",
+      "name": "Aktywnie w żłobku",
+      "official_name": "Świadczenie aktywnie w żłobku (program Aktywny Rodzic)",
+      "amount_pln": 1500,
+      "amount_display": "do 1 500 zł (do 1 900 zł z niepełnosprawnością)",
+      "unit": "monthly_capped_by_fee",
+      "unit_display": "miesięcznie, nie więcej niż opłata za pobyt",
+      "income_means_tested": false,
+      "channel": "zus",
+      "channel_display": "ZUS przez mZUS, PUE/eZUS, bankowość lub Emp@tię. Wypłata bezpośrednio do żłobka.",
+      "submission_methods": ["mZUS", "PUE/eZUS", "bankowość elektroniczna", "Emp@tia"],
+      "deadline_rule": {
+        "type": "after_enrollment_months",
+        "value": 2,
+        "description": "Wniosek w ciągu 2 miesięcy od rozpoczęcia uczęszczania do żłobka daje wyrównanie od dnia rozpoczęcia. Później — tylko od miesiąca złożenia wniosku."
+      },
+      "maximum_fee_limit_pln": 2200,
+      "maximum_fee_limit_period": "2026-04-01 do 2027-03-31",
+      "criteria": [
+        "Dziecko uczęszcza do żłobka, klubu dziecięcego lub dziennego opiekuna wpisanego do rejestru",
+        "Opłata za pobyt (bez wyżywienia) nie przekracza 2 200 zł/mies. — JEŻELI przekracza, świadczenie NIE PRZYSŁUGUJE w ogóle",
+        "Nie łączy się z 'Aktywni rodzice w pracy' ani 'Aktywnie w domu' na to samo dziecko"
+      ],
+      "required_documents": [
+        "PESEL dziecka",
+        "Numer placówki żłobka w rejestrze (MRiPS)",
+        "Numer konta żłobka (wypłata trafia do żłobka, nie rodzica)"
+      ],
+      "steps": [
+        "Zapisz dziecko do żłobka wpisanego do rejestru żłobków",
+        "Sprawdź, że opłata za pobyt (bez wyżywienia) nie przekracza 2 200 zł",
+        "Złóż wniosek przez mZUS w ciągu 2 miesięcy od rozpoczęcia",
+        "Wskaż dane żłobka — ZUS wypłaca do 20. dnia miesiąca bezpośrednio na konto żłobka"
+      ],
+      "legal_basis": {
+        "act": "Ustawa z dnia 15 maja 2024 r. o wspieraniu rodziców w aktywności zawodowej i wychowaniu dziecka — Aktywny Rodzic",
+        "journal": "Dz.U. 2024 poz. 858",
+        "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20240000858"
+      },
+      "source_citations": [
+        {
+          "label": "ZUS — Aktywnie w żłobku",
+          "url": "https://www.zus.pl/aktywnyrodzic/wiadczenie-aktywnie-w-zlobku",
+          "verified": "2026-06-09",
+          "key_quote": "Świadczenie wynosi do 1500 zł miesięcznie na dziecko. Jeśli dziecko posiada orzeczenie o niepełnosprawności (...) do 1900 zł miesięcznie. Od 1 kwietnia 2026 r. do 31 marca 2027 r. limit opłaty za pobyt uprawniającej do świadczenia wynosi 2200 zł."
+        }
+      ],
+      "common_mistakes": [
+        "Wybór żłobka z opłatą >2200 zł — utrata całego świadczenia",
+        "Spóźnienie powyżej 2 miesięcy — utrata wyrównania",
+        "Opłata za pobyt uwzględnia kwotę po zniżkach — liczy się faktyczna opłata rodzica, nie cena katalogowa"
+      ]
+    },
+    {
+      "id": "aktywnie-w-domu",
+      "slug": "aktywnie-w-domu",
+      "name": "Aktywnie w domu",
+      "official_name": "Świadczenie aktywnie w domu (program Aktywny Rodzic)",
+      "amount_pln": 500,
+      "amount_display": "500 zł",
+      "unit": "monthly",
+      "unit_display": "miesięcznie",
+      "income_means_tested": false,
+      "channel": "zus",
+      "channel_display": "ZUS przez mZUS, PUE/eZUS, bankowość lub Emp@tię",
+      "submission_methods": ["mZUS", "PUE/eZUS", "bankowość elektroniczna", "Emp@tia"],
+      "deadline_rule": {
+        "type": "child_age_months_range",
+        "value_min": 12,
+        "value_max": 35,
+        "description": "Dziecko w wieku 12-35 miesięcy. Łącznie 12 000 zł przez 24 miesiące."
+      },
+      "criteria": [
+        "Dziecko w wieku 12-35 miesięcy",
+        "Rodzice NIE pracują lub nie korzystają z dofinansowania do żłobka",
+        "Alternatywa dla rodzin wybierających opiekę domową",
+        "Nie łączy się z 'Aktywni rodzice w pracy' ani 'Aktywnie w żłobku'"
+      ],
+      "required_documents": [
+        "PESEL dziecka",
+        "Numer konta bankowego rodzica"
+      ],
+      "steps": [
+        "Poczekaj do 12. miesiąca życia dziecka",
+        "Złóż wniosek przez mZUS",
+        "Wskaż numer konta"
+      ],
+      "legal_basis": {
+        "act": "Ustawa z dnia 15 maja 2024 r. o wspieraniu rodziców w aktywności zawodowej i wychowaniu dziecka — Aktywny Rodzic",
+        "journal": "Dz.U. 2024 poz. 858",
+        "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20240000858"
+      },
+      "source_citations": [
+        {
+          "label": "ZUS — Aktywnie w domu",
+          "url": "https://www.zus.pl/aktywnyrodzic",
+          "verified": "2026-06-09"
+        }
+      ]
+    },
+    {
+      "id": "rko",
+      "slug": "rodzinny-kapital-opiekunczy",
+      "name": "Rodzinny Kapitał Opiekuńczy (RKO) — WYCOFANE",
+      "official_name": "Rodzinny Kapitał Opiekuńczy",
+      "status": "retired",
+      "withdrawn_since": "2024-10-01",
+      "replaced_by": "aktywnie-w-domu",
+      "amount_pln": 12000,
+      "amount_display": "12 000 zł łącznie — świadczenie historyczne, niedostępne dla nowych wniosków",
+      "unit": "lump_sum_in_installments",
+      "unit_display": "łącznie, w ratach miesięcznych",
+      "income_means_tested": false,
+      "channel": "zus",
+      "channel_display": "NIEDOSTĘPNE — wniosek niemożliwy od 1.10.2024",
+      "submission_methods": [],
+      "deadline_rule": {
+        "type": "retired",
+        "description": "Od 1.10.2024 nie można złożyć wniosku o RKO. Świadczenie zostało zastąpione przez 'Aktywnie w domu' (500 zł × 24 mies., wiek dziecka 12–35 miesięcy)."
+      },
+      "criteria": [
+        "ŚWIADCZENIE WYCOFANE — nie przysługuje na dzieci urodzone od 1.10.2024",
+        "Zastąpione świadczeniem 'Aktywnie w domu' z programu Aktywny Rodzic"
+      ],
+      "required_documents": [],
+      "steps": [
+        "RKO jest niedostępne dla nowych wniosków od 1.10.2024",
+        "Dla dzieci urodzonych od 1.10.2024 odpowiednikiem jest 'Aktywnie w domu' (500 zł/mies. od 12. do 35. miesiąca)",
+        "Złóż wniosek o 'Aktywnie w domu' przez mZUS po ukończeniu przez dziecko 12. miesiąca"
+      ],
+      "legal_basis": {
+        "act": "Ustawa z dnia 17 listopada 2021 r. o rodzinnym kapitale opiekuńczym (wygaszona dla nowych wniosków od 1.10.2024)",
+        "journal": "Dz.U. 2021 poz. 2270",
+        "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20210002270"
+      },
+      "source_citations": [
+        {
+          "label": "ZUS — RKO (informacja o wygaszeniu)",
+          "url": "https://www.zus.pl/swiadczenia/swiadczenia-dla-rodzin/rodzinny-kapital-opiekunczy",
+          "verified": "2026-06-20",
+          "key_quote": "Od 1 października 2024 r. nie możesz złożyć wniosku o Rodzinny kapitał opiekuńczy (RKO)."
+        }
+      ],
+      "common_mistakes": [
+        "Mylenie RKO z 'Aktywnie w domu' — to inne świadczenia; RKO jest wycofane dla dzieci urodzonych od 1.10.2024",
+        "Próba złożenia wniosku o RKO przez mZUS — system nie przyjmie wniosku od 1.10.2024"
+      ]
+    }
+  ],
+  "non_zus_obligations": [
+    {
+      "id": "akt-urodzenia",
+      "name": "Rejestracja urodzenia w USC",
+      "deadline_rule": {
+        "type": "after_birth_days",
+        "value": 21,
+        "description": "21 dni od porodu na zgłoszenie urodzenia w USC właściwym dla miejsca urodzenia."
+      },
+      "channel": "usc",
+      "channel_display": "USC właściwy dla miejsca urodzenia (online przez mObywatel lub osobiście)",
+      "required_documents": [
+        "Karta urodzenia ze szpitala",
+        "Dowody osobiste obojga rodziców",
+        "Akt małżeństwa (lub zaświadczenie o nazwisku dziecka)"
+      ],
+      "result": "Skrócony odpis aktu urodzenia (bezpłatnie 1 egz.) + nadanie PESEL + zameldowanie dziecka",
+      "legal_basis": {
+        "act": "Ustawa z dnia 28 listopada 2014 r. — Prawo o aktach stanu cywilnego",
+        "journal": "Dz.U. 2014 poz. 1741",
+        "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20140001741"
+      }
+    },
+    {
+      "id": "nfz-deklaracja",
+      "name": "Deklaracja wyboru lekarza POZ i pielęgniarki dla dziecka",
+      "deadline_rule": {
+        "type": "after_pesel_days",
+        "value": null,
+        "description": "Brak twardego terminu, ale wymagane dla wizyt patronażowych w pierwszych tygodniach życia. Zalecane w ciągu pierwszego miesiąca."
+      },
+      "channel": "poz",
+      "channel_display": "Przychodnia POZ — lekarz POZ + pielęgniarka POZ + położna POZ",
+      "required_documents": [
+        "PESEL dziecka",
+        "Dowód osobisty rodzica"
+      ],
+      "result": "Dziecko zapisane do POZ, prawo do wizyt patronażowych, szczepień obowiązkowych, bilansów"
+    },
+    {
+      "id": "mobywatel",
+      "name": "Dopisanie dziecka do mObywatela",
+      "deadline_rule": {
+        "type": "after_pesel_days",
+        "value": null,
+        "description": "Po nadaniu PESEL. Brak twardego terminu."
+      },
+      "channel": "mobywatel",
+      "channel_display": "Aplikacja mObywatel",
+      "required_documents": [
+        "PESEL dziecka"
+      ],
+      "result": "Profil dziecka w aplikacji, dostęp do mLegitymacji szkolnej (gdy dziecko zacznie szkołę)"
+    },
+    {
+      "id": "ubezpieczenie-zdrowotne",
+      "name": "Zgłoszenie dziecka do ubezpieczenia zdrowotnego",
+      "deadline_rule": {
+        "type": "after_birth_days",
+        "value": 7,
+        "description": "7 dni od urodzenia (od momentu nadania PESEL realnie). Zgłoszenie u pracodawcy ZUS ZCNA."
+      },
+      "channel": "employer_or_zus",
+      "channel_display": "Pracodawca (UoP) lub PUE/eZUS samodzielnie (B2B)",
+      "required_documents": [
+        "PESEL dziecka",
+        "Skrócony odpis aktu urodzenia"
+      ],
+      "result": "Dziecko ma prawo do bezpłatnej opieki zdrowotnej NFZ"
+    },
+    {
+      "id": "urlop-macierzynski-wniosek",
+      "name": "Wniosek o urlop macierzyński/rodzicielski u pracodawcy",
+      "deadline_rule": {
+        "type": "after_birth_days",
+        "value": 21,
+        "description": "21 dni od porodu dla wariantu 81,5% jednolitej stawki."
+      },
+      "channel": "employer",
+      "channel_display": "Dział kadr pracodawcy"
+    }
+  ]
+}
