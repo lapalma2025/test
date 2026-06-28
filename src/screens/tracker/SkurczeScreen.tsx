@@ -4,6 +4,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { useRouter } from 'expo-router';
 
 import { Icon } from '@/components/ui';
+import { MedInfoCard } from '@/components/ui/MedInfoCard';
 import { useTrackersStore, type ContractionSession } from '@/stores/trackers';
 import { colors } from '@/theme/tokens';
 import { useT } from '@/i18n';
@@ -193,6 +194,21 @@ export default function SkurczeScreen() {
             </Text>
           </Pressable>
 
+          {/* Med info */}
+          <View style={{ marginTop: 16 }}>
+            <MedInfoCard
+              title="Jak mierzyć skurcze?"
+              items={[
+                'Odstęp (interwał): czas od początku jednego skurczu do początku następnego',
+                'Czas trwania: ile sekund trwa jeden skurcz od startu do stopu',
+                'Skurcze Braxtona-Hicksa: nieregularne, łagodne, ustępują przy zmianie pozycji lub piciu wody',
+                'Prawdziwy poród: skurcze stopniowo silniejsze, dłuższe i regularniejsze – nie ustępują',
+                'Reguła 5-1-1 (ACOG): skurcze co 5 minut, trwające ≥1 minutę, przez 1 godzinę → jedź do szpitala',
+              ]}
+              warning="Jedź natychmiast, jeśli: odeszły wody płodowe, pojawia się krwawienie, dziecko przestało się ruszać lub ból jest bardzo silny."
+            />
+          </View>
+
           {/* Alert 5-1-1 */}
           {near && (
             <View style={{
@@ -285,6 +301,29 @@ export default function SkurczeScreen() {
               </View>
             </View>
           )}
+
+          <View style={{
+            marginTop: 26,
+            backgroundColor: '#FCFBF7',
+            borderRadius: 16,
+            borderWidth: 0.5,
+            borderColor: colors.line.DEFAULT,
+            padding: 14,
+            gap: 6,
+          }}>
+            <Text style={{ fontSize: 14, fontFamily: 'Geist_500Medium', color: colors.ink.DEFAULT }}>
+              {t.contractions.infoTitle}
+            </Text>
+            <Text style={{ fontSize: 12.5, color: colors.ink.soft, lineHeight: 18 }}>
+              • {t.contractions.infoWhy}
+            </Text>
+            <Text style={{ fontSize: 12.5, color: colors.ink.soft, lineHeight: 18 }}>
+              • {t.contractions.infoHow}
+            </Text>
+            <Text style={{ fontSize: 12.5, color: colors.terracotta.dark, lineHeight: 18 }}>
+              • {t.contractions.infoWhen}
+            </Text>
+          </View>
         </ScrollView>
       </SafeAreaView>
     </View>

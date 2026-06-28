@@ -56,6 +56,11 @@ export const supabase = createClient(
   }
 );
 
+// ============ KIDELO MOBILE SCHEMA ============
+
+/** Klient z domyślnym schematem kidelo_mobile — używaj do wszystkich zapytań mobilki */
+export const kideloDb = supabase.schema('kidelo_mobile');
+
 // ============ HELPERS ============
 
 export function isSupabaseConfigured(): boolean {

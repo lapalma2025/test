@@ -17,7 +17,7 @@ import { useLanguageStore } from '@/stores/language';
 // @ts-ignore
 import weekDataJson from '../../../assets/ciaza-tydzien-po-tygodniu.json';
 
-// ============ PREGNANCY WEEK HELPERS ============
+// ============ HELPERS ============
 
 const FRUIT_EMOJI: Record<string, string> = {
   'brak': '🌱', 'mak': '🌱', 'sezam': '🌿', 'soczewica': '🫘', 'borówka': '🫐',
@@ -31,6 +31,13 @@ const FRUIT_EMOJI: Record<string, string> = {
   'kokos': '🥥', 'kapust': '🥬', 'ananas': '🍍', 'melon': '🍈',
   'burak': '🥬', 'por': '🌿', 'arbuz': '🍉',
 };
+
+const TRI_MAP: Record<number, { bg: string; text: string; border: string; labelKey: 'trimester1' | 'trimester2' | 'trimester3' }> = {
+  1: { bg: 'bg-sage-soft',   text: 'text-evergreen',      border: 'border-sage/40',      labelKey: 'trimester1' },
+  2: { bg: 'bg-blush-soft',  text: 'text-terracotta-dark', border: 'border-terracotta/20', labelKey: 'trimester2' },
+  3: { bg: 'bg-mustard/20',  text: 'text-ink',             border: 'border-mustard/30',   labelKey: 'trimester3' },
+};
+const TRI_DEFAULT = { bg: 'bg-sage-soft', text: 'text-evergreen', border: 'border-sage/40', labelKey: 'trimester1' as const };
 
 function fruitEmoji(porownanie: string): string {
   const lower = (porownanie ?? '').toLowerCase();
@@ -52,19 +59,34 @@ function calcPregnancyWeek(dueDateStr: string | null | undefined, now: Date): nu
   }
 }
 
-function weekForStage(stageId: string, currentWeek: number | null, isCurrentStage: boolean, isPastStage: boolean): number | null {
-  if (!currentWeek) return null;
-  if (isCurrentStage) return currentWeek;
-  const STAGE_WEEKS: Record<string, [number, number]> = {
-    t1: [1, 13], t2: [14, 27], t3: [28, 42],
-    d07: [38, 40], d830: [40, 42], d31180: [40, 42],
-    m612: [40, 42], m1235: [40, 42],
-  };
-  const range = STAGE_WEEKS[stageId];
-  if (!range) return null;
+const PREGNANCY_STAGE_WEEKS: Record<string, [number, number]> = {
+  t1: [1, 13], t2: [14, 27], t3: [28, 42],
+};
+
+const PREGNANCY_STAGE_IDS = ['t1', 't2', 't3'];
+
+function weekForStage(
+  stageId: string,
+  currentWeek: number | null,
+  isCurrentStage: boolean,
+  isPastStage: boolean,
+): number | null {
+  if (!PREGNANCY_STAGE_IDS.includes(stageId)) return null;
+  const range = PREGNANCY_STAGE_WEEKS[stageId]!;
+  if (isCurrentStage) return currentWeek ?? range[0];
   if (isPastStage) return range[1];
-  return range[0];
+  return range[0]; // etap przyszły — pokaż pierwszy tydzień
 }
+
+function formatPLN(amount: number): string {
+  return new Intl.NumberFormat('pl-PL', {
+    style: 'currency',
+    currency: 'PLN',
+    maximumFractionDigits: 0,
+  }).format(amount);
+}
+
+// ============ MAIN SCREEN ============
 
 export default function TrasaScreen() {
   const router = useRouter();
@@ -140,7 +162,6 @@ export default function TrasaScreen() {
 
         {/* Stage + navigation */}
         <View className="px-5 py-3">
-
           {/* Stage bar */}
           <View className="flex-row gap-1 mb-4">
             {timeline.stages.map((s, i) => (
@@ -205,73 +226,43 @@ export default function TrasaScreen() {
             </Pressable>
           </View>
 
-          {/* Stage title */}
-          <Kicker>{viewStage.kicker}</Kicker>
-          <Text className="font-serif text-[32px] text-ink leading-none mt-1">{viewStage.big}</Text>
-          <Text className="text-ink-soft text-[14px] mt-2 leading-snug">{viewStage.sub}</Text>
-
-          {/* Browsing past/future badge */}
-          {isBrowsing && (
-            <View className={`flex-row items-center gap-1.5 mt-3 self-start px-3 py-1.5 rounded-full ${
-              viewIdx < currentIdx ? 'bg-sage-soft' : 'bg-blush-soft'
-            }`}>
-              <Icon
-                name={viewIdx < currentIdx ? 'check' : 'clock'}
-                size={12}
-                color={viewIdx < currentIdx ? colors.evergreen.DEFAULT : colors.terracotta.DEFAULT}
-              />
-              <Text className={`text-[11px] font-sans-medium ${
-                viewIdx < currentIdx ? 'text-evergreen' : 'text-terracotta-dark'
-              }`}>
-                {viewIdx < currentIdx ? t.route.browsingPast : t.route.browsingFuture}
-              </Text>
-            </View>
-          )}
         </View>
 
-        {/* HERO */}
-        <View className="px-5 pt-3">
-          <Pressable
-            onPress={() => handleOpenLink(viewStage.hero.link)}
-            className={`rounded-hero p-5 active:opacity-90 ${
-              isBrowsing
-                ? viewIdx < currentIdx
-                  ? 'bg-sage'
-                  : 'bg-ink'
-                : 'bg-evergreen'
-            }`}
-          >
-            <View className="flex-row justify-between items-center mb-2.5">
-              <Text className="text-cream/70 text-[11px] uppercase tracking-wider font-sans-medium">
-                {isBrowsing
-                  ? viewIdx < currentIdx ? t.route.past : t.route.upcoming
-                  : viewStage.hero.urgent ? t.route.urgentNow : t.route.nowLabel}
-              </Text>
-              {!isBrowsing && viewStage.hero.urgent && (
-                <View className="bg-mustard px-2 py-0.5 rounded-full flex-row items-center gap-1">
-                  <Icon name="clock" size={11} color="#2C1A0A" />
-                  <Text className="text-[10px] font-sans-medium" style={{ color: '#2C1A0A' }}>{t.route.deadlineSoon}</Text>
-                </View>
-              )}
-            </View>
-            <Text className="text-cream font-sans-medium text-[18px] leading-tight">
-              {viewStage.hero.title}
+        {/* 1. TWÓJ TYDZIEŃ CIĄŻY */}
+        <WeekCard
+          stageId={viewStage.id}
+          currentWeek={currentPregnancyWeek}
+          isCurrentStage={viewIdx === currentIdx}
+          isPastStage={viewIdx < currentIdx}
+          onPress={(w) => router.push(`/week/${w}` as any)}
+          t={t}
+        />
+
+        {/* 2. TERAZ — hero jako karta zadania */}
+        <View className="px-5 pt-6">
+          <View className="flex-row justify-between items-baseline mb-3">
+            <Text className="text-ink text-[15px] font-sans-medium">
+              {isBrowsing
+                ? viewIdx < currentIdx ? t.route.past : t.route.upcoming
+                : viewStage.hero.urgent ? t.route.urgentNow : t.route.nowLabel}
             </Text>
-            <Text className="text-cream/70 text-[13px] leading-snug mt-1.5 mb-4">
-              {viewStage.hero.note}
-            </Text>
-            {viewStage.hero.link && (
-              <View className="flex-row gap-2">
-                <View className="bg-cream/15 px-4 py-2 rounded-card flex-row items-center gap-1.5">
-                  <Text className="text-cream font-sans-medium text-[13px]">{t.route.open}</Text>
-                  <Icon name="arrow" size={14} color={colors.cream.DEFAULT} />
-                </View>
+            {!isBrowsing && viewStage.hero.urgent && (
+              <View className="bg-mustard px-2 py-0.5 rounded-full flex-row items-center gap-1">
+                <Icon name="clock" size={10} color="#2C1A0A" />
+                <Text className="text-[10px] font-sans-medium" style={{ color: '#2C1A0A' }}>{t.route.deadlineSoon}</Text>
               </View>
             )}
-          </Pressable>
+          </View>
+          <HeroTaskCard
+            title={viewStage.hero.title}
+            note={viewStage.hero.note}
+            urgent={viewStage.hero.urgent}
+            hasLink={!!viewStage.hero.link}
+            onPress={() => handleOpenLink(viewStage.hero.link)}
+          />
         </View>
 
-        {/* Stage tasks */}
+        {/* 3. ZADANIA ZA 30 DNI */}
         <View className="px-5 pt-6">
           <View className="flex-row justify-between items-baseline mb-3">
             <Text className="text-ink text-[15px] font-sans-medium">
@@ -288,19 +279,7 @@ export default function TrasaScreen() {
           </View>
         </View>
 
-        {/* Pregnancy week card — only for t1/t2/t3 stages */}
-        {['t1', 't2', 't3'].includes(viewStage.id) && (
-          <WeekCard
-            stageId={viewStage.id}
-            currentWeek={currentPregnancyWeek}
-            isCurrentStage={viewIdx === currentIdx}
-            isPastStage={viewIdx < currentIdx}
-            onPress={(w) => router.push(`/week/${w}` as any)}
-            t={t}
-          />
-        )}
-
-        {/* Benefits card */}
+        {/* 4. NALEŻY CI SIĘ */}
         <View className="px-5 pt-6">
           <Pressable
             onPress={() => router.push('/(tabs)/pieniadze')}
@@ -327,6 +306,43 @@ export default function TrasaScreen() {
   );
 }
 
+// ============ HERO TASK CARD ============
+
+function HeroTaskCard({
+  title,
+  note,
+  urgent,
+  hasLink,
+  onPress,
+}: {
+  title: string;
+  note: string;
+  urgent?: boolean;
+  hasLink: boolean;
+  onPress: () => void;
+}) {
+  return (
+    <Pressable
+      onPress={hasLink ? onPress : undefined}
+      className="bg-sage-soft border border-sage/40 rounded-card p-3.5 flex-row items-center gap-3 active:opacity-80"
+      style={{ opacity: hasLink ? 1 : 1 }}
+    >
+      <View style={{
+        width: 36, height: 36, borderRadius: 10,
+        backgroundColor: colors.evergreen.DEFAULT + '18',
+        alignItems: 'center', justifyContent: 'center',
+      }}>
+        <Icon name={urgent ? 'clock' : 'layers'} size={17} color={colors.evergreen.DEFAULT} />
+      </View>
+      <View className="flex-1">
+        <Text className="text-evergreen font-sans-medium text-[14px]">{title}</Text>
+        <Text className="text-ink-soft text-[12px] mt-0.5" numberOfLines={2}>{note}</Text>
+      </View>
+      {hasLink && <Icon name="chevron" size={16} color={colors.evergreen.DEFAULT} />}
+    </Pressable>
+  );
+}
+
 // ============ WEEK CARD ============
 
 function WeekCard({
@@ -345,75 +361,99 @@ function WeekCard({
   t: ReturnType<typeof useT>;
 }) {
   const displayWeek = weekForStage(stageId, currentWeek, isCurrentStage, isPastStage);
-  if (!displayWeek) return null;
+  if (displayWeek == null) return null;
 
-  const weekObj = (weekDataJson as any).tygodnie.find((t: any) => t.tydzien === displayWeek);
+  const weekObj = (weekDataJson as any).tygodnie.find((w: any) => w.tydzien === displayWeek);
   if (!weekObj) return null;
 
   const emoji = fruitEmoji(weekObj.rozmiar_dziecka.porownanie);
-  const tri = weekObj.trymestr;
-  const trimBg = tri === 1 ? 'bg-sage-soft' : tri === 2 ? 'bg-blush-soft' : 'bg-mustard/20';
-  const trimText = tri === 1 ? 'text-evergreen' : tri === 2 ? 'text-terracotta-dark' : 'text-ink';
+  const tri = TRI_MAP[weekObj.trymestr as number] ?? TRI_DEFAULT;
+  const hasSize = weekObj.rozmiar_dziecka.dlugosc !== '—' || weekObj.rozmiar_dziecka.waga !== '—';
+  const isFutureStage = !isCurrentStage && !isPastStage;
 
   return (
     <View className="px-5 pt-5">
-      <Text className="text-ink text-[15px] font-sans-medium mb-3">{t.route.yourPregnancyWeek}</Text>
-      <Pressable
-        onPress={() => onPress(displayWeek)}
-        className={`rounded-card border border-line overflow-hidden active:opacity-80 ${trimBg}`}
-      >
-        {/* Header */}
-        <View className="flex-row items-center px-4 pt-4 pb-3">
-          <View className="flex-1">
-            {isCurrentStage ? null : (
-              <Text className="text-ink-faint text-[10px] uppercase tracking-wide mb-1">
-                {isPastStage ? t.route.lastWeekOfStage : t.route.firstWeekOfStage}
-              </Text>
-            )}
-            <Text className={`font-serif text-[24px] leading-none ${trimText}`}>
-              {t.week.title(displayWeek)}
-            </Text>
-            <Text className={`font-sans-medium text-[13px] mt-0.5 ${trimText}`}>
-              {weekObj.etap_nazwa}
-            </Text>
-          </View>
-          <View className="items-center ml-4">
-            <Text className="text-[44px]">{emoji}</Text>
-            <Text className="text-ink-faint text-[10px] text-center mt-0.5" numberOfLines={1}>
-              {weekObj.rozmiar_dziecka.porownanie}
-            </Text>
-          </View>
-        </View>
-
-        {/* Size strip */}
-        {(weekObj.rozmiar_dziecka.dlugosc !== '—' || weekObj.rozmiar_dziecka.waga !== '—') && (
-          <View className="flex-row px-4 pb-3 gap-5">
-            {weekObj.rozmiar_dziecka.dlugosc !== '—' && (
-              <View>
-                <Text className="text-ink-faint text-[10px] uppercase">{t.week.length}</Text>
-                <Text className={`font-sans-medium text-[13px] ${trimText}`}>
-                  {weekObj.rozmiar_dziecka.dlugosc}
-                </Text>
-              </View>
-            )}
-            {weekObj.rozmiar_dziecka.waga !== '—' && (
-              <View>
-                <Text className="text-ink-faint text-[10px] uppercase">{t.week.weight}</Text>
-                <Text className={`font-sans-medium text-[13px] ${trimText}`}>
-                  {weekObj.rozmiar_dziecka.waga}
-                </Text>
-              </View>
-            )}
+      <View className="flex-row items-center justify-between mb-3">
+        <Text className="text-ink text-[15px] font-sans-medium">{t.route.yourPregnancyWeek}</Text>
+        {isPastStage && (
+          <View className="bg-line px-2 py-0.5 rounded-full flex-row items-center gap-1">
+            <Icon name="clock" size={10} color={colors.ink.soft} />
+            <Text className="text-ink-soft text-[10px] font-sans-medium">{t.route.past}</Text>
           </View>
         )}
+        {isFutureStage && (
+          <View className="bg-line px-2 py-0.5 rounded-full">
+            <Text className="text-ink-soft text-[10px] font-sans-medium">{t.route.upcoming}</Text>
+          </View>
+        )}
+      </View>
+      <Pressable
+        onPress={() => onPress(displayWeek)}
+        className={`rounded-hero border overflow-hidden active:opacity-90 ${tri.bg} ${tri.border}`}
+      >
+        {/* Hero — identyczny układ jak ekran szczegółów */}
+        <View className="p-5">
+          <View className="flex-row items-start justify-between">
+            <View className="flex-1">
+              {/* Trymestr badge + miesiąc */}
+              <View className="flex-row items-center gap-2 mb-2">
+                <View className="px-2 py-0.5 rounded-full bg-white/60">
+                  <Text className={`text-[11px] font-sans-medium ${tri.text}`}>
+                    {t.week[tri.labelKey]}
+                  </Text>
+                </View>
+                <Text className="text-ink-faint text-[11px]">
+                  {t.week.month} {weekObj.miesiac_ciazy}
+                </Text>
+              </View>
+              {/* Tytuł tygodnia */}
+              <Text className="font-serif text-[28px] text-ink leading-none">
+                {t.week.title(displayWeek)}
+              </Text>
+              {/* Etap */}
+              <Text className={`font-sans-medium text-[15px] mt-1 ${tri.text}`}>
+                {weekObj.etap_nazwa}
+              </Text>
+            </View>
+            {/* Emoji + porównanie */}
+            <View className="items-center ml-3">
+              <Text className="text-[48px]">{emoji}</Text>
+              <Text className="text-ink-faint text-[10px] text-center mt-1" numberOfLines={2}>
+                {weekObj.rozmiar_dziecka.porownanie}
+              </Text>
+            </View>
+          </View>
 
-        {/* Summary snippet */}
-        <View className="bg-white/50 px-4 py-3 flex-row items-center gap-3">
+          {/* Rozmiar — oddzielony linią */}
+          {hasSize && (
+            <View className="flex-row gap-4 mt-4 pt-4 border-t border-black/10">
+              {weekObj.rozmiar_dziecka.dlugosc !== '—' && (
+                <View>
+                  <Text className="text-ink-faint text-[10px] uppercase tracking-wide">{t.week.length}</Text>
+                  <Text className={`font-sans-medium text-[14px] mt-0.5 ${tri.text}`}>
+                    {weekObj.rozmiar_dziecka.dlugosc}
+                  </Text>
+                </View>
+              )}
+              {weekObj.rozmiar_dziecka.waga !== '—' && (
+                <View>
+                  <Text className="text-ink-faint text-[10px] uppercase tracking-wide">{t.week.weight}</Text>
+                  <Text className={`font-sans-medium text-[14px] mt-0.5 ${tri.text}`}>
+                    {weekObj.rozmiar_dziecka.waga}
+                  </Text>
+                </View>
+              )}
+            </View>
+          )}
+        </View>
+
+        {/* Podsumowanie + link — białe tło jak w szczegółach */}
+        <View className="bg-white/50 px-5 py-3 flex-row items-center gap-3">
           <Text className="text-ink text-[12px] leading-snug flex-1" numberOfLines={2}>
             {weekObj.podsumowanie}
           </Text>
           <View className="flex-row items-center gap-1 shrink-0">
-            <Text className="text-evergreen text-[12px] font-sans-medium">{t.route.more}</Text>
+            <Text className={`text-[12px] font-sans-medium ${tri.text}`}>{t.route.more}</Text>
             <Icon name="arrow" size={12} color={colors.evergreen.DEFAULT} />
           </View>
         </View>
@@ -443,12 +483,4 @@ function TaskCard({ task, onPress }: { task: TaskItem; onPress: () => void }) {
       <Icon name="chevron" size={16} color={colors.ink.faint} />
     </Pressable>
   );
-}
-
-function formatPLN(amount: number): string {
-  return new Intl.NumberFormat('pl-PL', {
-    style: 'currency',
-    currency: 'PLN',
-    maximumFractionDigits: 0,
-  }).format(amount);
 }

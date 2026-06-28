@@ -25,10 +25,12 @@ import { useFonts, Newsreader_400Regular, Newsreader_500Medium } from '@expo-goo
 import { Geist_400Regular, Geist_500Medium } from '@expo-google-fonts/geist';
 import { GeistMono_400Regular } from '@expo-google-fonts/geist-mono';
 import { AppState, type AppStateStatus, View, Text, Pressable, Platform, ScrollView } from 'react-native';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 import { AppErrorBoundary } from '@/components/ErrorBoundary';
 import { useProfileStore } from '@/stores/profile';
 import { useAuth } from '@/hooks/useAuth';
+import { useCloudSync } from '@/hooks/useCloudSync';
 import { initSentry } from '@/services/monitoring';
 import { colors } from '@/theme/tokens';
 
@@ -111,14 +113,16 @@ export default function RootLayout() {
   }
 
   return (
-    <AppErrorBoundary>
-      <QueryClientProvider client={queryClient}>
-        <SafeAreaProvider>
-          <StatusBar style="dark" backgroundColor={colors.cream.DEFAULT} />
-          <NavGuard />
-        </SafeAreaProvider>
-      </QueryClientProvider>
-    </AppErrorBoundary>
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      <AppErrorBoundary>
+        <QueryClientProvider client={queryClient}>
+          <SafeAreaProvider>
+            <StatusBar style="dark" backgroundColor={colors.cream.DEFAULT} />
+            <NavGuard />
+          </SafeAreaProvider>
+        </QueryClientProvider>
+      </AppErrorBoundary>
+    </GestureHandlerRootView>
   );
 }
 
@@ -126,20 +130,35 @@ function NavGuard() {
   const router = useRouter();
   const segments = useSegments();
   const isOnboarded = useProfileStore((s) => s.isOnboarded);
+  const hasSkippedAuth = useProfileStore((s) => s.hasSkippedAuth);
   const auth = useAuth();
+  useCloudSync();
 
   useEffect(() => {
+    if (auth.isLoading) return;
+
     const first = segments[0] as string | undefined;
     if (!first) return;
     const inOnboarding = first === 'onboarding';
     const inAuth = first === 'auth';
 
-    if (!isOnboarded && !inOnboarding && !inAuth) {
+    // Czy użytkownik może przejść dalej (zalogowany lub świadomy tryb gościa)
+    const canProceed = auth.isAuthenticated || hasSkippedAuth;
+
+    if (!canProceed && !inAuth) {
+      // Niezalogowany i nie wybrał trybu gościa → ekran logowania
+      router.replace('/auth');
+    } else if (canProceed && !isOnboarded && !inOnboarding) {
+      // Zalogowany/gość, ale nie ma jeszcze profilu → onboarding
       router.replace('/onboarding');
-    } else if (isOnboarded && inOnboarding) {
+    } else if (canProceed && isOnboarded && inOnboarding) {
+      // Profil ustawiony, był na onboardingu → tabs
+      router.replace('/(tabs)/trasa');
+    } else if (canProceed && isOnboarded && inAuth) {
+      // Zalogowany/gość i onboarded, był na auth → tabs
       router.replace('/(tabs)/trasa');
     }
-  }, [isOnboarded, segments, auth.isAuthenticated]);
+  }, [isOnboarded, hasSkippedAuth, segments, auth.isAuthenticated, auth.isLoading]);
 
   return (
     <Stack

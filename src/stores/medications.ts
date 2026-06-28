@@ -17,6 +17,7 @@ export interface Medication {
   name: string;
   type: MedType;
   schedule: MedScheduleItem[];
+  dosageNote?: string;
   notificationIds: string[];
   createdAt: number;
 }
@@ -247,12 +248,15 @@ interface MedicationsState {
   doseRecords: DoseRecord[];
   notifPrefs: NotifPrefs;
   addMedication: (m: Omit<Medication, 'id' | 'createdAt' | 'notificationIds'>) => string;
+  updateMedication: (id: string, data: Omit<Medication, 'id' | 'createdAt' | 'notificationIds'>) => void;
   updateNotificationIds: (id: string, notificationIds: string[]) => void;
   deleteMedication: (id: string) => Medication | null;
   recordDose: (medicationId: string, scheduleItemId: string) => void;
   skipDose: (medicationId: string, scheduleItemId: string) => void;
   undoDose: (medicationId: string, scheduleItemId: string) => void;
+  setDoseRecord: (medicationId: string, scheduleItemId: string, dateKey: string, status: 'taken' | 'skipped' | 'none') => void;
   setNotifPrefs: (prefs: NotifPrefs) => void;
+  replaceFromCloud: (data: { medications: Medication[]; doseRecords: DoseRecord[] }) => void;
 }
 
 export const useMedicationsStore = create<MedicationsState>()(
@@ -267,6 +271,14 @@ export const useMedicationsStore = create<MedicationsState>()(
         const med: Medication = { ...medData, id, createdAt: Date.now(), notificationIds: [] };
         set((s) => ({ medications: [...s.medications, med] }));
         return id;
+      },
+
+      updateMedication: (id, data) => {
+        set((s) => ({
+          medications: s.medications.map((m) =>
+            m.id === id ? { ...m, ...data } : m,
+          ),
+        }));
       },
 
       updateNotificationIds: (id, notificationIds) => {
@@ -341,7 +353,27 @@ export const useMedicationsStore = create<MedicationsState>()(
         }));
       },
 
+      setDoseRecord: (medicationId, scheduleItemId, dateKey, status) => {
+        set((s) => {
+          const filtered = s.doseRecords.filter(
+            (r) => !(r.medicationId === medicationId && r.scheduleItemId === scheduleItemId && r.dateKey === dateKey),
+          );
+          if (status === 'none') return { doseRecords: filtered };
+          return {
+            doseRecords: [
+              ...filtered,
+              { id: uid(), medicationId, scheduleItemId, dateKey, takenAt: status === 'taken' ? Date.now() : null },
+            ],
+          };
+        });
+      },
+
       setNotifPrefs: (prefs) => set({ notifPrefs: prefs }),
+
+      replaceFromCloud: (data) => set({
+        medications: data.medications,
+        doseRecords: data.doseRecords,
+      }),
     }),
     {
       name: 'kidelo-medications-v1',

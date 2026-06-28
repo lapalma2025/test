@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Kidelo — wszystkie ekrany</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Geist:wght@400;500&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --cream:#FAF7F2; --ink:#2B2620; --ink-soft:#6E6457; --ink-faint:#AAA193;
+    --line:#E5DFD3; --evergreen:#3D5147; --sage-soft:#DCE6DD;
+    --serif:'Newsreader',Georgia,serif; --sans:'Geist',system-ui,sans-serif; --mono:'Geist Mono',monospace;
+    --scale:0.6; --fw:430px; --fh:900px;
+  }
+  *{ box-sizing:border-box; }
+  body{ margin:0; background:#EFEADF; color:var(--ink); font-family:var(--sans);
+    -webkit-font-smoothing:antialiased; padding:48px 32px 80px; }
+  .wrap{ max-width:1180px; margin:0 auto; }
+  header.head{ margin-bottom:44px; }
+  .eyebrow{ font:500 13px var(--sans); letter-spacing:.05em; color:var(--ink-faint); margin:0 0 10px; }
+  h1{ font:500 42px/1.04 var(--serif); letter-spacing:-.02em; margin:0 0 12px; }
+  .lede{ font:400 16px/1.6 var(--sans); color:var(--ink-soft); max-width:46ch; margin:0 0 18px; }
+  .open{ display:inline-flex; align-items:center; gap:8px; text-decoration:none; background:var(--evergreen);
+    color:#F2EEE4; font:500 14px var(--sans); padding:12px 20px; border-radius:12px; }
+  .sec{ margin-top:46px; }
+  .sec__h{ display:flex; align-items:baseline; gap:12px; margin:0 0 22px; padding-bottom:12px; border-bottom:0.5px solid var(--line); }
+  .sec__t{ font:500 20px var(--serif); margin:0; letter-spacing:-.01em; }
+  .sec__n{ font:400 13px var(--mono); color:var(--ink-faint); }
+  .grid{ display:flex; flex-wrap:wrap; gap:34px 28px; }
+  .cell{ width:calc(var(--fw) * var(--scale)); }
+  .cell__label{ display:flex; align-items:baseline; gap:8px; margin:0 0 12px; }
+  .cell__num{ font:500 12px var(--mono); color:var(--ink-faint); }
+  .cell__t{ font:500 14px var(--sans); color:var(--ink); }
+  .frame{ display:block; width:calc(var(--fw) * var(--scale)); border-radius:26px; overflow:hidden;
+    outline:0.5px solid var(--line); background:var(--cream); position:relative; transition:outline-color .15s; }
+  .frame:hover{ outline-color:var(--evergreen); }
+  .frame img{ display:block; width:100%; height:auto; aspect-ratio:430/900; object-fit:cover; object-position:top; background:var(--cream); }
+  footer{ margin-top:60px; font:400 13px var(--mono); color:var(--ink-faint); text-align:center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="head">
+    <p class="eyebrow">Kidelo · aplikacja dla rodziców</p>
+    <h1>Wszystkie ekrany</h1>
+    <p class="lede">Pełny przegląd interfejsu — od logowania przez oś czasu po szczegóły świadczeń. Kliknij dowolny ekran, by otworzyć go w działającym prototypie.</p>
+    <a class="open" href="Kidelo.html" target="_blank">Otwórz działającą aplikację →</a>
+  </header>
+
+  <section class="sec">
+    <div class="sec__h"><h2 class="sec__t">Wejście</h2><span class="sec__n">2 ekrany</span></div>
+    <div class="grid" id="g-entry"></div>
+  </section>
+
+  <section class="sec">
+    <div class="sec__h"><h2 class="sec__t">Moduły · nawigacja dolna</h2><span class="sec__n">5 ekranów</span></div>
+    <div class="grid" id="g-modules"></div>
+  </section>
+
+  <section class="sec">
+    <div class="sec__h"><h2 class="sec__t">Szczegóły</h2><span class="sec__n">4 ekrany</span></div>
+    <div class="grid" id="g-detail"></div>
+  </section>
+
+  <section class="sec">
+    <div class="sec__h"><h2 class="sec__t">Narzędzia</h2><span class="sec__n">10 ekranów</span></div>
+    <div class="grid" id="g-tools"></div>
+  </section>
+
+  <footer>Kidelo · projekt interfejsu · czerwiec 2026</footer>
+</div>
+
+<script>
+  const SCREENS = {
+    entry: [
+      { s: "login", t: "Logowanie", img: "screens/01-a.jpg" },
+      { s: "onboarding&step=0", t: "Onboarding", img: "screens/02-a.jpg" },
+    ],
+    modules: [
+      { s: "trasa", t: "Trasa", img: "screens/03-a.jpg" },
+      { s: "szkoly", t: "Szkoły", img: "screens/04-a.jpg" },
+      { s: "pieniadze", t: "Pieniądze", img: "screens/05-a.jpg" },
+      { s: "lista", t: "Lista", img: "screens/06-a.jpg" },
+      { s: "profil", t: "Profil", img: "screens/01-b.jpg" },
+    ],
+    detail: [
+      { s: "benefit-becikowe", t: "Świadczenie", img: "screens/02-b.jpg" },
+      { s: "school-zofia", t: "Szpital / szkoła", img: "screens/03-b.jpg" },
+      { s: "task", t: "Zadanie (USC)", img: "screens/04-b.jpg" },
+      { s: "compare", t: "Porównywarka", img: "screens/05-b.jpg" },
+    ],
+    tools: [
+      { s: "tools", t: "Hub Narzędzia", img: "screens/01-c.jpg" },
+      { s: "tool-week", t: "Tydzień ciąży", img: "screens/02-c.jpg" },
+      { s: "tool-duedate", t: "Kalkulator terminu", img: "screens/03-c.jpg" },
+      { s: "tool-kick", t: "Licznik kopnięć", img: "screens/04-c.jpg" },
+      { s: "tool-contraction", t: "Timer skurczów", img: "screens/05-c.jpg" },
+      { s: "tool-tests", t: "Dziennik badań", img: "screens/01-d.jpg" },
+      { s: "tool-feeding", t: "Karmienie", img: "screens/02-d.jpg" },
+      { s: "tool-vaccine", t: "Szczepienia", img: "screens/03-d.jpg" },
+      { s: "tool-album", t: "Album brzuszka", img: "screens/04-d.jpg" },
+      { s: "tool-notes", t: "Notatki", img: "screens/05-d.jpg" },
+    ],
+  };
+  let n = 0;
+  function build(key, mountId) {
+    const host = document.getElementById(mountId);
+    SCREENS[key].forEach((it) => {
+      n++;
+      const num = String(n).padStart(2, "0");
+      const cell = document.createElement("div");
+      cell.className = "cell";
+      cell.innerHTML =
+        '<div class="cell__label"><span class="cell__num">' + num + '</span><span class="cell__t">' + it.t + '</span></div>' +
+        '<a class="frame" href="Kidelo.html?screen=' + it.s + '" target="_blank">' +
+        '<img src="' + it.img + '" alt="' + it.t + '"></a>';
+      host.appendChild(cell);
+    });
+  }
+  build("entry", "g-entry");
+  build("modules", "g-modules");
+  build("detail", "g-detail");
+  build("tools", "g-tools");
+</script>
+</body>
+</html>

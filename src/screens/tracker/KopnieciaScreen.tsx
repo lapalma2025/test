@@ -4,6 +4,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { useRouter } from 'expo-router';
 
 import { Icon } from '@/components/ui';
+import { MedInfoCard } from '@/components/ui/MedInfoCard';
 import { useTrackersStore, type KickSession } from '@/stores/trackers';
 import { colors } from '@/theme/tokens';
 import { useT } from '@/i18n';
@@ -198,6 +199,21 @@ export default function KopnieciaScreen() {
             </Pressable>
           </View>
 
+          {/* Med info */}
+          <View style={{ paddingHorizontal: 22, marginBottom: 24 }}>
+            <MedInfoCard
+              title="Jak liczyć ruchy dziecka?"
+              items={[
+                'Od 26–28. tygodnia ciąży licz codziennie ruchy dziecka',
+                'Cel: 10 ruchów w ciągu 2 godzin (metoda Cardiff – zalecana przez WHO i PTG)',
+                'Co się liczy: kopnięcia, obroty, szarpnięcia, wyczuwalne bąbelki',
+                'Najlepsza pora: wieczorem po posiłku, leżąc spokojnie na lewym boku',
+                'Każda sesja jest inna – ważna jest zmiana w stosunku do normy Twojego dziecka',
+              ]}
+              warning="Mniej niż 10 ruchów w 2 godziny lub nagły, wyraźny spadek aktywności – zadzwoń do ginekologa lub położnej tego samego dnia."
+            />
+          </View>
+
           {/* History */}
           {pastSessions.length > 0 && (
             <View style={{ paddingHorizontal: 22 }}>
@@ -219,6 +235,30 @@ export default function KopnieciaScreen() {
               </View>
             </View>
           )}
+
+          <View style={{
+            marginHorizontal: 22,
+            marginTop: 26,
+            backgroundColor: '#FCFBF7',
+            borderRadius: 16,
+            borderWidth: 0.5,
+            borderColor: colors.line.DEFAULT,
+            padding: 14,
+            gap: 6,
+          }}>
+            <Text style={{ fontSize: 14, fontFamily: 'Geist_500Medium', color: colors.ink.DEFAULT }}>
+              {t.kicks.infoTitle}
+            </Text>
+            <Text style={{ fontSize: 12.5, color: colors.ink.soft, lineHeight: 18 }}>
+              • {t.kicks.infoWhy}
+            </Text>
+            <Text style={{ fontSize: 12.5, color: colors.ink.soft, lineHeight: 18 }}>
+              • {t.kicks.infoHow}
+            </Text>
+            <Text style={{ fontSize: 12.5, color: colors.terracotta.dark, lineHeight: 18 }}>
+              • {t.kicks.infoWhen}
+            </Text>
+          </View>
         </ScrollView>
       </SafeAreaView>
 

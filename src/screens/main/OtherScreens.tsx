@@ -6,13 +6,15 @@
  * dla dalszej rozbudowy w Etapie 4 wg ROADMAP.md).
  */
 
-import React from 'react';
-import { View, Text, ScrollView, Pressable } from 'react-native';
+import React, { useState } from 'react';
+import { View, Text, ScrollView, Pressable, Alert, ActivityIndicator } from 'react-native';
 import { useRouter } from 'expo-router';
 
 import { Card, Chip, Icon, IconBadge, Pill, Button, LanguageSwitcher } from '@/components/ui';
 import { MainScreenShell } from '@/components/layout/MainScreenShell';
 import { useProfileStore } from '@/stores/profile';
+import { useAuth } from '@/hooks/useAuth';
+import { signOut } from '@/services/auth';
 import { colors } from '@/theme/tokens';
 import { useT } from '@/i18n';
 
@@ -153,11 +155,33 @@ function ChecklistCard({ item }: { item: ChecklistItem }) {
 export function ProfilScreen() {
   const router = useRouter();
   const profile = useProfileStore();
+  const auth = useAuth();
   const t = useT();
+  const [loggingOut, setLoggingOut] = useState(false);
 
   const handleReset = () => {
     profile.reset();
     router.replace('/' as any);
+  };
+
+  const handleLogout = () => {
+    Alert.alert(
+      'Wyloguj się',
+      'Czy na pewno chcesz się wylogować? Dane lokalne pozostaną na urządzeniu.',
+      [
+        { text: 'Anuluj', style: 'cancel' },
+        {
+          text: 'Wyloguj',
+          style: 'destructive',
+          onPress: async () => {
+            setLoggingOut(true);
+            profile.setField('hasSkippedAuth', false);
+            await signOut();
+            setLoggingOut(false);
+          },
+        },
+      ],
+    );
   };
 
   return (
@@ -170,10 +194,7 @@ export function ProfilScreen() {
 
         {/* Karta rodzic */}
         <View className="px-5 mb-4">
-          <Pressable
-            onPress={() => router.push('/edit-profile' as any)}
-            className="bg-surface border border-line rounded-card p-4 flex-row items-center gap-3 active:opacity-80"
-          >
+          <View className="bg-surface border border-line rounded-card p-4 flex-row items-center gap-3">
             <View className="w-14 h-14 bg-evergreen rounded-full items-center justify-center">
               <Text className="text-cream font-serif text-[24px]">
                 {(profile.parentName?.[0] ?? '?').toUpperCase()}
@@ -181,12 +202,27 @@ export function ProfilScreen() {
             </View>
             <View className="flex-1">
               <Text className="text-ink font-sans-medium text-[16px]">{profile.parentName || '—'}</Text>
-              <Text className="text-ink-soft text-[12px] mt-0.5">
-                {profile.city || '—'}, {profile.voivodeship}
-              </Text>
+              {auth.isAuthenticated && auth.user?.email ? (
+                <Text className="text-ink-soft text-[12px] mt-0.5" numberOfLines={1}>
+                  {auth.user.email}
+                </Text>
+              ) : (
+                <Text className="text-ink-soft text-[12px] mt-0.5">
+                  {profile.city || '—'}{profile.city && profile.voivodeship ? ', ' : ''}{profile.voivodeship}
+                </Text>
+              )}
             </View>
-            <Icon name="pencil" size={16} color={colors.ink.faint} />
-          </Pressable>
+            {auth.isAuthenticated && (
+              <View style={{
+                backgroundColor: colors.sage.soft, borderRadius: 8,
+                paddingHorizontal: 8, paddingVertical: 4,
+              }}>
+                <Text style={{ fontSize: 11, color: colors.evergreen.DEFAULT, fontFamily: 'Geist_500Medium' }}>
+                  Zsynchronizowano
+                </Text>
+              </View>
+            )}
+          </View>
         </View>
 
         {/* Karta dziecko */}
@@ -241,11 +277,51 @@ export function ProfilScreen() {
             {t.profile.yourData}
           </Text>
           <View className="bg-surface border border-line rounded-card overflow-hidden">
-            <Row icon="briefcase" label={t.profile.employment} value={profile.employment} onPress={() => router.push('/edit-profile' as any)} />
-            <Divider />
-            <Row icon="pin" label={t.profile.location} value={`${profile.city || '—'}, ${profile.voivodeship}`} onPress={() => router.push('/edit-profile' as any)} />
-            <Divider />
             <Row icon="pencil" label={t.profile.editProfile} onPress={() => router.push('/edit-profile' as any)} />
+          </View>
+        </View>
+
+        {/* Konto */}
+        <View className="px-5 mb-2 mt-5">
+          <Text className="text-ink-soft text-[12px] font-sans-medium uppercase tracking-wide mb-2">
+            Konto
+          </Text>
+          <View className="bg-surface border border-line rounded-card overflow-hidden">
+            {auth.isAuthenticated ? (
+              <Pressable
+                onPress={handleLogout}
+                disabled={loggingOut}
+                style={{ flexDirection: 'row', alignItems: 'center', gap: 12, padding: 14, opacity: loggingOut ? 0.6 : 1 }}
+              >
+                <View style={{ width: 32, height: 32, alignItems: 'center', justifyContent: 'center' }}>
+                  {loggingOut
+                    ? <ActivityIndicator size="small" color={colors.terracotta.DEFAULT} />
+                    : <Icon name="logout" size={18} color={colors.terracotta.DEFAULT} />
+                  }
+                </View>
+                <Text style={{ flex: 1, fontSize: 14, color: colors.terracotta.DEFAULT, fontFamily: 'Geist_500Medium' }}>
+                  Wyloguj się
+                </Text>
+              </Pressable>
+            ) : (
+              <Pressable
+                onPress={() => router.push('/auth' as any)}
+                style={{ flexDirection: 'row', alignItems: 'center', gap: 12, padding: 14 }}
+              >
+                <View style={{ width: 32, height: 32, alignItems: 'center', justifyContent: 'center' }}>
+                  <Icon name="user" size={18} color={colors.evergreen.DEFAULT} />
+                </View>
+                <View style={{ flex: 1 }}>
+                  <Text style={{ fontSize: 14, color: colors.evergreen.DEFAULT, fontFamily: 'Geist_500Medium' }}>
+                    Zaloguj się
+                  </Text>
+                  <Text style={{ fontSize: 12, color: colors.ink.faint, marginTop: 1 }}>
+                    Twoje dane będą bezpieczne w chmurze
+                  </Text>
+                </View>
+                <Icon name="chevron" size={14} color={colors.ink.faint} />
+              </Pressable>
+            )}
           </View>
         </View>
 

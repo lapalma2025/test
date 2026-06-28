@@ -78,6 +78,13 @@ export interface AlbumPhoto {
   addedAt: number;
 }
 
+export interface UsgPhoto {
+  id: string;
+  week: number;
+  uri: string;
+  addedAt: number;
+}
+
 // ============ STORE ============
 
 interface TrackersState {
@@ -140,6 +147,11 @@ interface TrackersState {
   setAlbumPhoto: (week: number, uri: string) => void;
   removeAlbumPhoto: (week: number) => void;
 
+  // USG ALBUM ACTIONS
+  usgPhotos: UsgPhoto[];
+  addUsgPhotos: (items: { uri: string; week: number }[]) => void;
+  removeUsgPhoto: (id: string) => void;
+
   // KICK SESSION MANAGEMENT
   deleteKickSession: (id: string) => void;
   setKickSessionCount: (id: string, count: number) => void;
@@ -147,6 +159,16 @@ interface TrackersState {
   // CONTRACTION MANAGEMENT
   deleteContractionSession: (id: string) => void;
   deleteContraction: (sessionId: string, contractionId: string) => void;
+
+  // CLOUD SYNC
+  replaceFromCloud: (data: {
+    kickSessions: KickSession[];
+    contractionSessions: ContractionSession[];
+    testResults: TestResult[];
+    feedingSessions: FeedingSession[];
+    vaccinations: Vaccination[];
+    bumpEntries: BumpEntry[];
+  }) => void;
 }
 
 // ============ DOMYŚLNE SZCZEPIENIA (PL 2024) ============
@@ -217,6 +239,7 @@ export const useTrackersStore = create<TrackersState>()(
       vaccinations: [],
       bumpEntries: [],
       albumPhotos: [],
+      usgPhotos: [],
 
       // ── KICK ──────────────────────────────────────────
 
@@ -464,6 +487,22 @@ export const useTrackersStore = create<TrackersState>()(
         }));
       },
 
+      // ── CLOUD SYNC ────────────────────────────────────
+
+      replaceFromCloud: (data) => {
+        set({
+          kickSessions: data.kickSessions,
+          contractionSessions: data.contractionSessions,
+          testResults: data.testResults,
+          feedingSessions: data.feedingSessions,
+          vaccinations: data.vaccinations,
+          bumpEntries: data.bumpEntries,
+          activeKickSessionId: null,
+          activeContractionSessionId: null,
+          activeFeedingSessionId: null,
+        });
+      },
+
       // ── ALBUM PHOTOS ─────────────────────────────────
 
       setAlbumPhoto: (week, uri) => {
@@ -477,6 +516,19 @@ export const useTrackersStore = create<TrackersState>()(
 
       removeAlbumPhoto: (week) => {
         set((s) => ({ albumPhotos: s.albumPhotos.filter((p) => p.week !== week) }));
+      },
+
+      addUsgPhotos: (items) => {
+        set((s) => ({
+          usgPhotos: [
+            ...s.usgPhotos,
+            ...items.map((item) => ({ ...item, id: uid(), addedAt: Date.now() })),
+          ],
+        }));
+      },
+
+      removeUsgPhoto: (id) => {
+        set((s) => ({ usgPhotos: s.usgPhotos.filter((p) => p.id !== id) }));
       },
 
       // ── BUMP DIARY ────────────────────────────────────

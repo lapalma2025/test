@@ -28,6 +28,7 @@ export interface ProfileState {
   partnerName: string | null;
   partnerIncluded: boolean;
   monthlyNetIncomePln: number;
+  partnerMonthlyNetIncomePln: number;
   householdSize: number;
   hasDisability: boolean;
   prenatalCareSince10thWeek: boolean;
@@ -41,10 +42,14 @@ export interface ProfileState {
     newBenefits: boolean;
   };
 
+  // Czy użytkownik świadomie wybrał tryb gościa (nie pokazuj auth ponownie)
+  hasSkippedAuth: boolean;
+
   // Actions
   setField: <K extends keyof ProfileState>(key: K, value: ProfileState[K]) => void;
   setMany: (partial: Partial<ProfileState>) => void;
   completeOnboarding: () => void;
+  skipAuth: () => void;
   reset: () => void;
 
   // Computed
@@ -55,6 +60,7 @@ export interface ProfileState {
 
 const initialState = {
   isOnboarded: false,
+  hasSkippedAuth: false,
   childName: '',
   childDueDate: null,
   childBirthDate: null,
@@ -67,6 +73,7 @@ const initialState = {
   partnerName: null,
   partnerIncluded: false,
   monthlyNetIncomePln: 0,
+  partnerMonthlyNetIncomePln: 0,
   householdSize: 2,
   hasDisability: false,
   prenatalCareSince10thWeek: false,
@@ -92,6 +99,8 @@ export const useProfileStore = create<ProfileState>()(
 
       completeOnboarding: () => set({ isOnboarded: true }),
 
+      skipAuth: () => set({ hasSkippedAuth: true }),
+
       reset: () => set(initialState),
 
       toUserProfile: (): UserProfile => {
@@ -107,7 +116,7 @@ export const useProfileStore = create<ProfileState>()(
           city: s.city,
           household: {
             sizeInPersons: s.householdSize,
-            monthlyNetIncomePln: s.monthlyNetIncomePln,
+            monthlyNetIncomePln: s.monthlyNetIncomePln + s.partnerMonthlyNetIncomePln,
           },
           hasDisability: s.hasDisability,
           prenatalCareSince10thWeek: s.prenatalCareSince10thWeek,

@@ -71,13 +71,6 @@ export default function PieniadzeScreen() {
                 <Icon name="phone" size={14} color={colors.ink.DEFAULT} />
                 <Text className="text-ink text-[13px] font-sans-medium">{t.money.applyViaZus}</Text>
               </Pressable>
-              <Pressable
-                onPress={() => router.push('/timeline' as any)}
-                className="border border-cream/30 rounded-card px-4 py-2.5 flex-row items-center gap-1.5 active:opacity-80"
-              >
-                <Icon name="layers" size={14} color={colors.cream.DEFAULT} />
-                <Text className="text-cream text-[13px] font-sans-medium">{t.money.timelineBtn}</Text>
-              </Pressable>
             </View>
           </View>
         </View>

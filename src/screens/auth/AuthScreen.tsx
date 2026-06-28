@@ -1,138 +1,436 @@
-import React, { useState } from 'react';
-import { View, Text, TextInput, Pressable, Alert, ActivityIndicator } from 'react-native';
+import React, { useState, useRef, forwardRef } from 'react';
+import {
+  View, Text, TextInput, Pressable, ActivityIndicator,
+  KeyboardAvoidingView, ScrollView, Platform,
+  type TextInputProps,
+} from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useRouter } from 'expo-router';
 
-import { Button, Icon } from '@/components/ui';
-import { signInWithEmail, signInWithOAuth } from '@/services/auth';
-import { isSupabaseConfigured } from '@/services/supabase';
+import { Icon } from '@/components/ui';
+import { signInWithPassword, signUpWithPassword, resetPassword } from '@/services/auth';
+import { useProfileStore } from '@/stores/profile';
 import { colors } from '@/theme/tokens';
-import { useT } from '@/i18n';
+
+type Tab = 'login' | 'register';
+
+// ─── MAIN SCREEN ──────────────────────────────────────────────────────────────
 
 export default function AuthScreen() {
   const router = useRouter();
-  const t = useT();
+  const skipAuth = useProfileStore((s) => s.skipAuth);
+  const isOnboarded = useProfileStore((s) => s.isOnboarded);
+  const nextRoute = isOnboarded ? '/(tabs)/trasa' : '/onboarding';
+  const [tab, setTab] = useState<Tab>('login');
   const [email, setEmail] = useState('');
-  const [isLoading, setIsLoading] = useState(false);
-  const [emailSent, setEmailSent] = useState(false);
+  const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
+  const [error, setError] = useState('');
+  const [busy, setBusy] = useState(false);
+  const [confirmed, setConfirmed] = useState(false);
+  const [forgotMode, setForgotMode] = useState(false);
+  const [resetSent, setResetSent] = useState(false);
 
-  if (!isSupabaseConfigured()) {
-    return (
-      <SafeAreaView className="flex-1 bg-cream items-center justify-center px-8">
-        <Text className="font-serif text-[24px] text-ink text-center">{t.auth.offlineTitle}</Text>
-        <Text className="text-ink-soft text-[14px] text-center mt-2 leading-snug">
-          {t.auth.offlineDesc}
-        </Text>
-        <View className="mt-6 w-full">
-          <Button variant="primary" full onPress={() => router.replace('/(tabs)/trasa')}>
-            {t.auth.continueAsGuest}
-          </Button>
-        </View>
-      </SafeAreaView>
-    );
-  }
+  const passwordRef = useRef<TextInput>(null);
+  const confirmRef = useRef<TextInput>(null);
 
-  const handleEmail = async () => {
-    if (!email.includes('@')) {
-      Alert.alert(t.auth.invalidEmail);
+  const switchTab = (t: Tab) => {
+    setTab(t);
+    setError('');
+    setPassword('');
+    setConfirmPassword('');
+    setConfirmed(false);
+    setForgotMode(false);
+    setResetSent(false);
+  };
+
+  const validate = (): string | null => {
+    if (!email.includes('@') || !email.includes('.'))
+      return 'Podaj prawidłowy adres e-mail.';
+    if (forgotMode) return null;
+    if (password.length < 8)
+      return 'Hasło musi mieć co najmniej 8 znaków.';
+    if (tab === 'register' && password !== confirmPassword)
+      return 'Hasła nie są takie same.';
+    return null;
+  };
+
+  const handleSubmit = async () => {
+    setError('');
+    const validationError = validate();
+    if (validationError) { setError(validationError); return; }
+
+    setBusy(true);
+    const trimmedEmail = email.trim().toLowerCase();
+
+    if (tab === 'login') {
+      const result = await signInWithPassword(trimmedEmail, password);
+      setBusy(false);
+      if (!result.ok) { setError(result.error ?? 'Nieznany błąd.'); return; }
+      router.replace(nextRoute);
+    } else {
+      const result = await signUpWithPassword(trimmedEmail, password);
+      setBusy(false);
+      if (!result.ok) { setError(result.error ?? 'Nieznany błąd.'); return; }
+      if (result.needsConfirmation) {
+        setConfirmed(true);
+      } else {
+        router.replace(nextRoute);
+      }
+    }
+  };
+
+  const handleReset = async () => {
+    setError('');
+    if (!email.includes('@') || !email.includes('.')) {
+      setError('Podaj prawidłowy adres e-mail.');
       return;
     }
-    setIsLoading(true);
-    const result = await signInWithEmail(email);
-    setIsLoading(false);
-    if (result.ok) {
-      setEmailSent(true);
-    } else {
-      Alert.alert(t.auth.error, result.error ?? t.auth.unknownError);
-    }
+    setBusy(true);
+    const result = await resetPassword(email);
+    setBusy(false);
+    if (!result.ok) { setError(result.error ?? 'Nieznany błąd.'); return; }
+    setResetSent(true);
   };
 
-  const handleOAuth = async (provider: 'google' | 'apple') => {
-    setIsLoading(true);
-    const result = await signInWithOAuth(provider);
-    setIsLoading(false);
-    if (result.ok) {
-      router.replace('/(tabs)/trasa');
-    } else if (result.error !== 'cancel') {
-      Alert.alert(t.auth.error, result.error ?? t.auth.unknownError);
-    }
-  };
-
-  if (emailSent) {
+  // ── Stan: link resetujący wysłany ──────────────────────────────────────────
+  if (resetSent) {
     return (
-      <SafeAreaView className="flex-1 bg-cream items-center justify-center px-8">
-        <View className="w-20 h-20 bg-sage-soft rounded-full items-center justify-center">
-          <Icon name="check" size={36} color={colors.evergreen.DEFAULT} strokeWidth={2} />
+      <SafeAreaView style={{ flex: 1, backgroundColor: colors.cream.DEFAULT }} edges={['top', 'bottom']}>
+        <View style={{ flex: 1, paddingHorizontal: 28, justifyContent: 'center', alignItems: 'center' }}>
+          <View style={{
+            width: 72, height: 72, borderRadius: 36,
+            backgroundColor: colors.sage.soft,
+            alignItems: 'center', justifyContent: 'center', marginBottom: 24,
+          }}>
+            <Icon name="check" size={34} color={colors.evergreen.DEFAULT} strokeWidth={2} />
+          </View>
+          <Text style={{
+            fontFamily: 'Newsreader_400Regular', fontSize: 26,
+            color: colors.ink.DEFAULT, textAlign: 'center', marginBottom: 10,
+          }}>
+            Sprawdź skrzynkę
+          </Text>
+          <Text style={{
+            fontSize: 15, color: colors.ink.soft, textAlign: 'center', lineHeight: 22,
+          }}>
+            Wysłaliśmy link do zresetowania hasła na{' '}
+            <Text style={{ color: colors.ink.DEFAULT, fontFamily: 'Geist_500Medium' }}>{email}</Text>
+            .{'\n'}Kliknij go, a następnie wróć i zaloguj się nowym hasłem.
+          </Text>
+          <Pressable
+            onPress={() => { setResetSent(false); setForgotMode(false); }}
+            style={{
+              marginTop: 32, backgroundColor: colors.evergreen.DEFAULT,
+              borderRadius: 16, paddingVertical: 17, paddingHorizontal: 32,
+            }}
+          >
+            <Text style={{ fontSize: 15, fontFamily: 'Geist_500Medium', color: '#FFFFFF' }}>
+              Wróć do logowania
+            </Text>
+          </Pressable>
         </View>
-        <Text className="font-serif text-[26px] text-ink text-center mt-5 leading-tight">
-          {t.auth.checkInbox}
-        </Text>
-        <Text className="text-ink-soft text-[14px] text-center mt-2 leading-snug">
-          {t.auth.magicLinkSentTo(email)}
-        </Text>
-        <Pressable onPress={() => setEmailSent(false)} className="mt-6">
-          <Text className="text-sage text-[13px] font-sans-medium">{t.auth.changeEmail}</Text>
-        </Pressable>
       </SafeAreaView>
     );
   }
 
-  return (
-    <SafeAreaView className="flex-1 bg-cream" edges={['top', 'bottom']}>
-      <View className="flex-1 px-5 justify-center">
-        <View className="items-center mb-8">
-          <View className="w-16 h-16 bg-evergreen rounded-card items-center justify-center">
-            <Icon name="routeAlt" size={32} color={colors.cream.DEFAULT} />
+  // ── Stan: potwierdzenie e-mail po rejestracji ──────────────────────────────
+  if (confirmed) {
+    return (
+      <SafeAreaView style={{ flex: 1, backgroundColor: colors.cream.DEFAULT }} edges={['top', 'bottom']}>
+        <View style={{ flex: 1, paddingHorizontal: 28, justifyContent: 'center', alignItems: 'center' }}>
+          <View style={{
+            width: 72, height: 72, borderRadius: 36,
+            backgroundColor: colors.sage.soft,
+            alignItems: 'center', justifyContent: 'center', marginBottom: 24,
+          }}>
+            <Icon name="check" size={34} color={colors.evergreen.DEFAULT} strokeWidth={2} />
           </View>
-          <Text className="font-serif text-[32px] text-ink mt-4">Kidelo</Text>
-          <Text className="text-ink-soft text-[14px] text-center mt-2 leading-snug">
-            {t.auth.tagline}
+          <Text style={{
+            fontFamily: 'Newsreader_400Regular', fontSize: 26,
+            color: colors.ink.DEFAULT, textAlign: 'center', marginBottom: 10,
+          }}>
+            Sprawdź skrzynkę
           </Text>
+          <Text style={{
+            fontSize: 15, color: colors.ink.soft, textAlign: 'center', lineHeight: 22,
+          }}>
+            Wysłaliśmy link aktywacyjny na{' '}
+            <Text style={{ color: colors.ink.DEFAULT, fontFamily: 'Geist_500Medium' }}>
+              {email}
+            </Text>
+            .{'\n'}Kliknij go, a następnie wróć i się zaloguj.
+          </Text>
+          <Pressable
+            onPress={() => { setConfirmed(false); setTab('login'); }}
+            style={{
+              marginTop: 32, backgroundColor: colors.evergreen.DEFAULT,
+              borderRadius: 16, paddingVertical: 17, paddingHorizontal: 32,
+            }}
+          >
+            <Text style={{ fontSize: 15, fontFamily: 'Geist_500Medium', color: '#FFFFFF' }}>
+              Przejdź do logowania
+            </Text>
+          </Pressable>
         </View>
+      </SafeAreaView>
+    );
+  }
 
-        <View className="gap-3">
-          <View className="bg-surface border border-line rounded-card px-4 py-3.5">
-            <Text className="text-[11px] text-ink-faint uppercase tracking-wide mb-1">Email</Text>
-            <TextInput
+  // ── Główny widok ────────────────────────────────────────────────────────────
+  return (
+    <SafeAreaView style={{ flex: 1, backgroundColor: colors.cream.DEFAULT }} edges={['top', 'bottom']}>
+      <KeyboardAvoidingView
+        style={{ flex: 1 }}
+        behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
+      >
+        <ScrollView
+          contentContainerStyle={{ flexGrow: 1, paddingHorizontal: 22, paddingBottom: 32 }}
+          keyboardShouldPersistTaps="handled"
+          showsVerticalScrollIndicator={false}
+        >
+          {/* ── Logo ─────────────────────────────────────────────────────── */}
+          <View style={{ alignItems: 'center', paddingTop: 44, marginBottom: 32 }}>
+            <View style={{
+              width: 76, height: 76, borderRadius: 24,
+              backgroundColor: colors.evergreen.DEFAULT,
+              alignItems: 'center', justifyContent: 'center', marginBottom: 18,
+              shadowColor: colors.evergreen.DEFAULT,
+              shadowOpacity: 0.25, shadowRadius: 16,
+              shadowOffset: { width: 0, height: 8 }, elevation: 6,
+            }}>
+              <Icon name="baby" size={36} color="#FFFFFF" />
+            </View>
+            <Text style={{
+              fontFamily: 'Newsreader_400Regular', fontSize: 32,
+              color: colors.ink.DEFAULT, letterSpacing: -0.5,
+            }}>
+              Filipek
+            </Text>
+            <Text style={{ fontSize: 14, color: colors.ink.soft, marginTop: 5 }}>
+              Towarzysz w ciąży i po porodzie
+            </Text>
+          </View>
+
+          {/* ── Karta z formularzem ───────────────────────────────────────── */}
+          <View style={{
+            backgroundColor: colors.surface.DEFAULT,
+            borderRadius: 24, padding: 22,
+            shadowColor: '#000',
+            shadowOpacity: 0.06, shadowRadius: 16,
+            shadowOffset: { width: 0, height: 4 }, elevation: 3,
+          }}>
+            {/* Tab switcher */}
+            <View style={{
+              flexDirection: 'row', backgroundColor: colors.cream.DEFAULT,
+              borderRadius: 14, padding: 4, marginBottom: 22,
+            }}>
+              {(['login', 'register'] as Tab[]).map((t) => (
+                <Pressable
+                  key={t}
+                  onPress={() => switchTab(t)}
+                  style={{
+                    flex: 1, paddingVertical: 11, borderRadius: 11, alignItems: 'center',
+                    backgroundColor: tab === t ? '#FFFFFF' : 'transparent',
+                    shadowColor: tab === t ? '#000' : 'transparent',
+                    shadowOpacity: tab === t ? 0.07 : 0,
+                    shadowRadius: 4, elevation: tab === t ? 2 : 0,
+                  }}
+                >
+                  <Text style={{
+                    fontSize: 14,
+                    fontFamily: tab === t ? 'Geist_500Medium' : 'Geist_400Regular',
+                    color: tab === t ? colors.ink.DEFAULT : colors.ink.soft,
+                  }}>
+                    {t === 'login' ? 'Zaloguj się' : 'Utwórz konto'}
+                  </Text>
+                </Pressable>
+              ))}
+            </View>
+
+            {/* E-mail */}
+            <AuthInput
+              label="E-mail"
               value={email}
               onChangeText={setEmail}
-              placeholder="anna@kidelo.pl"
-              placeholderTextColor={colors.ink.faint}
+              placeholder="anna@example.pl"
               keyboardType="email-address"
               autoCapitalize="none"
               autoCorrect={false}
-              className="text-ink text-[15px]"
+              returnKeyType="next"
+              onSubmitEditing={() => passwordRef.current?.focus()}
             />
+
+            {/* Hasło — ukryte w trybie reset */}
+            {!forgotMode && (
+              <View style={{ marginTop: 11 }}>
+                <AuthInput
+                  ref={passwordRef}
+                  label="Hasło"
+                  value={password}
+                  onChangeText={setPassword}
+                  placeholder="Minimum 8 znaków"
+                  secureTextEntry={!showPassword}
+                  returnKeyType={tab === 'login' ? 'done' : 'next'}
+                  onSubmitEditing={() =>
+                    tab === 'register' ? confirmRef.current?.focus() : handleSubmit()
+                  }
+                  rightElement={
+                    <Pressable
+                      onPress={() => setShowPassword((v) => !v)}
+                      hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}
+                    >
+                      <Text style={{
+                        fontSize: 12.5, color: colors.ink.faint,
+                        fontFamily: 'Geist_500Medium',
+                      }}>
+                        {showPassword ? 'Ukryj' : 'Pokaż'}
+                      </Text>
+                    </Pressable>
+                  }
+                />
+              </View>
+            )}
+
+            {/* Potwierdź hasło — tylko przy rejestracji */}
+            {tab === 'register' && !forgotMode && (
+              <View style={{ marginTop: 11 }}>
+                <AuthInput
+                  ref={confirmRef}
+                  label="Potwierdź hasło"
+                  value={confirmPassword}
+                  onChangeText={setConfirmPassword}
+                  placeholder="Wpisz hasło ponownie"
+                  secureTextEntry={!showPassword}
+                  returnKeyType="done"
+                  onSubmitEditing={handleSubmit}
+                />
+              </View>
+            )}
+
+            {/* Błąd */}
+            {error ? (
+              <View style={{
+                flexDirection: 'row', gap: 9, alignItems: 'flex-start',
+                backgroundColor: colors.terracotta.soft, borderRadius: 12,
+                padding: 13, marginTop: 14,
+              }}>
+                <Icon name="info" size={15} color={colors.terracotta.DEFAULT} />
+                <Text style={{ flex: 1, fontSize: 13.5, color: colors.ink.DEFAULT, lineHeight: 20 }}>
+                  {error}
+                </Text>
+              </View>
+            ) : null}
+
+            {/* Przycisk CTA */}
+            <Pressable
+              onPress={forgotMode ? handleReset : handleSubmit}
+              disabled={busy}
+              style={{
+                marginTop: 18, backgroundColor: colors.evergreen.DEFAULT,
+                borderRadius: 16, paddingVertical: 17, alignItems: 'center',
+                opacity: busy ? 0.7 : 1,
+              }}
+            >
+              {busy ? (
+                <ActivityIndicator color="#FFFFFF" />
+              ) : (
+                <Text style={{ fontSize: 15, fontFamily: 'Geist_500Medium', color: '#FFFFFF' }}>
+                  {forgotMode ? 'Wyślij link resetujący' : tab === 'login' ? 'Zaloguj się' : 'Utwórz konto'}
+                </Text>
+              )}
+            </Pressable>
+
+            {/* Zapomniane hasło — tylko login */}
+            {tab === 'login' && !forgotMode && (
+              <Pressable
+                onPress={() => { setForgotMode(true); setError(''); setPassword(''); }}
+                style={{ alignItems: 'center', marginTop: 14 }}
+              >
+                <Text style={{ fontSize: 13, color: colors.ink.faint }}>
+                  Nie pamiętasz hasła?{' '}
+                  <Text style={{ color: colors.evergreen.DEFAULT, fontFamily: 'Geist_500Medium' }}>
+                    Zresetuj
+                  </Text>
+                </Text>
+              </Pressable>
+            )}
+
+            {/* Wróć z trybu reset */}
+            {forgotMode && (
+              <Pressable
+                onPress={() => { setForgotMode(false); setError(''); }}
+                style={{ alignItems: 'center', marginTop: 14 }}
+              >
+                <Text style={{ fontSize: 13, color: colors.ink.faint }}>
+                  ← Wróć do logowania
+                </Text>
+              </Pressable>
+            )}
           </View>
 
-          <Button variant="primary" full iconRight="arrow" onPress={handleEmail} disabled={isLoading}>
-            {isLoading ? t.auth.sending : t.auth.sendMagicLink}
-          </Button>
-
-          <View className="flex-row items-center gap-3 my-2">
-            <View className="flex-1 h-px bg-line" />
-            <Text className="text-ink-faint text-[12px]">{t.common.or}</Text>
-            <View className="flex-1 h-px bg-line" />
+          {/* ── Bez konta ─────────────────────────────────────────────────── */}
+          <View style={{ alignItems: 'center', marginTop: 20 }}>
+            <Pressable
+              onPress={() => { skipAuth(); router.replace(nextRoute); }}
+              style={{ paddingVertical: 12, paddingHorizontal: 16 }}
+            >
+              <Text style={{ fontSize: 13.5, color: colors.ink.soft }}>
+                Kontynuuj bez konta
+              </Text>
+            </Pressable>
+            <Text style={{ fontSize: 11.5, color: colors.ink.faint, textAlign: 'center', marginTop: 4, paddingHorizontal: 32, lineHeight: 17 }}>
+              Dane będą przechowywane tylko na tym urządzeniu
+            </Text>
           </View>
-
-          <Button variant="light" full icon="shield" onPress={() => handleOAuth('apple')}>
-            {t.auth.continueWithApple}
-          </Button>
-          <Button variant="light" full icon="globe" onPress={() => handleOAuth('google')}>
-            {t.auth.continueWithGoogle}
-          </Button>
-
-          <Pressable onPress={() => router.replace('/(tabs)/trasa')} className="py-3 items-center">
-            <Text className="text-ink-soft text-[13px]">{t.auth.continueOffline}</Text>
-          </Pressable>
-        </View>
-
-        {isLoading && (
-          <View className="absolute inset-0 bg-cream/80 items-center justify-center">
-            <ActivityIndicator color={colors.evergreen.DEFAULT} />
-          </View>
-        )}
-      </View>
+        </ScrollView>
+      </KeyboardAvoidingView>
     </SafeAreaView>
   );
 }
+
+// ─── INPUT COMPONENT ─────────────────────────────────────────────────────────
+
+interface AuthInputProps extends TextInputProps {
+  label: string;
+  rightElement?: React.ReactNode;
+}
+
+const AuthInput = forwardRef<TextInput, AuthInputProps>(
+  ({ label, rightElement, ...textInputProps }, ref) => {
+    return (
+      <View style={{
+        backgroundColor: colors.cream.DEFAULT,
+        borderRadius: 14, borderWidth: 1, borderColor: colors.line.DEFAULT,
+        paddingHorizontal: 16, paddingTop: 11, paddingBottom: 13,
+      }}>
+        <Text style={{
+          fontSize: 11, fontFamily: 'Geist_500Medium',
+          color: colors.ink.faint, letterSpacing: 0.5,
+          textTransform: 'uppercase', marginBottom: 5,
+        }}>
+          {label}
+        </Text>
+        <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+          <TextInput
+            ref={ref}
+            placeholderTextColor={colors.ink.faint}
+            style={{
+              flex: 1, fontSize: 15,
+              color: colors.ink.DEFAULT,
+              fontFamily: 'Geist_400Regular',
+              paddingVertical: 0,
+            }}
+            {...textInputProps}
+          />
+          {rightElement && (
+            <View style={{ marginLeft: 8 }}>
+              {rightElement}
+            </View>
+          )}
+        </View>
+      </View>
+    );
+  }
+);

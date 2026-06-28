@@ -38,6 +38,7 @@ interface NotesState {
   toggleDone: (id: string) => void;
   deleteNote: (id: string) => void;
   editNote: (id: string, text: string) => void;
+  replaceFromCloud: (notes: NoteItem[]) => void;
 }
 
 // ============ STORE ============
@@ -79,6 +80,8 @@ export const useNotesStore = create<NotesState>()(
           notes: s.notes.map((n) => (n.id === id ? { ...n, text: trimmed } : n)),
         }));
       },
+
+      replaceFromCloud: (notes) => set({ notes }),
     }),
     {
       name: 'kidelo-notes',

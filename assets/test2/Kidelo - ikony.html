@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="design_doc_mode" content="canvas" />
+<title>Kidelo — ikony aplikacji</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --cream:#FAF7F2; --ink:#2B2620; --ink-soft:#6E6457; --ink-faint:#AAA193;
+    --line:#E5DFD3; --evergreen:#3D5147; --sage:#8C9F8E; --sage-soft:#DCE6DD;
+    --terracotta:#BD6A4E; --clay:#F5DDD0; --sand:#EFE9DC;
+    --serif:'Newsreader',Georgia,serif; --sans:'Geist',system-ui,sans-serif; --mono:'Geist Mono',monospace;
+  }
+  *{ box-sizing:border-box; }
+  body{ margin:0; font-family:var(--sans); color:var(--ink); -webkit-font-smoothing:antialiased; }
+  .frame{ position:absolute; }
+
+  /* Nagłówek */
+  .head{ width:560px; }
+  .head__eyebrow{ font:500 13px var(--sans); letter-spacing:.06em; color:var(--ink-faint); text-transform:uppercase; margin:0 0 14px; }
+  .head__h1{ font:500 46px/1.04 var(--serif); letter-spacing:-.02em; margin:0 0 16px; }
+  .head__p{ font:400 16px/1.6 var(--sans); color:var(--ink-soft); margin:0; }
+
+  /* Karta koncepcji */
+  .card{ width:440px; background:var(--cream); border:0.5px solid var(--line); border-radius:28px; padding:34px 34px 30px;
+    box-shadow:0 1px 0 rgba(0,0,0,.02); }
+  .card__num{ font:500 12px var(--mono); color:var(--ink-faint); letter-spacing:.04em; }
+  .card__big{ display:flex; justify-content:center; padding:26px 0 30px; }
+  .card__big svg{ width:300px; height:300px; filter:drop-shadow(0 18px 30px rgba(43,38,32,.16)); }
+  .card__name{ font:500 26px/1.1 var(--serif); letter-spacing:-.01em; margin:0 0 8px; }
+  .card__desc{ font:400 14.5px/1.55 var(--sans); color:var(--ink-soft); margin:0 0 24px; min-height:3em; }
+  .card__sizes{ display:flex; align-items:flex-end; gap:18px; padding:20px 0 6px; border-top:0.5px solid var(--line); }
+  .card__sizes svg{ display:block; }
+  .card__sizecol{ display:flex; flex-direction:column; align-items:center; gap:9px; }
+  .card__sizelbl{ font:500 11px var(--mono); color:var(--ink-faint); }
+  .card__pal{ display:flex; gap:7px; margin-top:18px; }
+  .card__sw{ width:22px; height:22px; border-radius:7px; border:0.5px solid rgba(0,0,0,.06); }
+
+  /* Telefon — ekran główny */
+  .phone{ width:360px; height:740px; background:#0f0d0b; border-radius:54px; padding:13px; box-shadow:0 30px 60px rgba(43,38,32,.3); }
+  .phone__scr{ width:100%; height:100%; border-radius:42px; overflow:hidden; position:relative;
+    background:
+      radial-gradient(120% 80% at 20% 0%, #EFE9DC 0%, transparent 55%),
+      radial-gradient(120% 90% at 90% 100%, #DCE6DD 0%, transparent 50%),
+      linear-gradient(160deg, #F4EFE6 0%, #EAE3D6 100%); }
+  .phone__notch{ position:absolute; top:12px; left:50%; transform:translateX(-50%); width:104px; height:28px; background:#0f0d0b; border-radius:16px; z-index:3; }
+  .phone__time{ position:absolute; top:20px; left:30px; font:600 15px var(--sans); color:var(--ink); z-index:2; }
+  .phone__bat{ position:absolute; top:22px; right:28px; display:flex; gap:5px; align-items:center; z-index:2; color:var(--ink); }
+  .grid{ position:absolute; top:78px; left:0; right:0; padding:0 28px; display:grid; grid-template-columns:repeat(4,1fr); gap:22px 20px; z-index:1; }
+  .appicon{ display:flex; flex-direction:column; align-items:center; gap:7px; }
+  .appicon svg, .appicon .ph{ width:60px; height:60px; border-radius:15px; display:block; }
+  .appicon .ph{ background:rgba(255,255,255,.5); border:0.5px solid rgba(0,0,0,.05); }
+  .appicon .ph.d{ background:rgba(140,159,142,.32); }
+  .appicon .ph.c{ background:rgba(189,106,78,.2); }
+  .appicon__lbl{ font:500 10.5px var(--sans); color:var(--ink); opacity:.7; }
+  .appicon__lbl.live{ opacity:1; font-weight:600; }
+  .dock{ position:absolute; bottom:26px; left:18px; right:18px; height:92px; border-radius:30px;
+    background:rgba(255,255,255,.45); backdrop-filter:blur(14px); border:0.5px solid rgba(255,255,255,.6);
+    display:flex; align-items:center; justify-content:space-around; padding:0 18px; z-index:2; }
+  .dock svg, .dock .ph{ width:58px; height:58px; border-radius:15px; }
+  .dock .ph{ background:rgba(255,255,255,.6); }
+  .phone__cap{ position:absolute; bottom:-2px; left:50%; transform:translateX(-50%); width:120px; height:5px; background:rgba(0,0,0,.25); border-radius:3px; z-index:3; }
+
+  .foot{ width:520px; font:400 13px/1.6 var(--mono); color:var(--ink-faint); }
+</style>
+</head>
+<body>
+
+  <div class="frame head" style="left:80px; top:70px;">
+    <p class="head__eyebrow">Kidelo · ikona aplikacji</p>
+    <h1 class="head__h1">Trzy kierunki na ekran telefonu</h1>
+    <p class="head__p">Każda ikona bez nazwy — sam znak. Paleta Kidelo, nowoczesne i czytelne nawet w małym rozmiarze. Wybierz jedną, a wyeksportuję ją jako PNG dla iOS i Androida.</p>
+  </div>
+
+  <div class="frame" id="c1" style="left:80px; top:340px;"></div>
+  <div class="frame" id="c2" style="left:560px; top:340px;"></div>
+  <div class="frame" id="c3" style="left:1040px; top:340px;"></div>
+
+  <div class="frame" id="phone" style="left:1560px; top:340px;"></div>
+
+  <div class="frame foot" style="left:80px; top:1150px;">
+    Podgląd na ekranie głównym po prawej · ikony pokazane wśród przykładowych aplikacji · bez podpisu, zgodnie z prośbą.
+  </div>
+
+<script>
+  // ===== Definicje ikon (viewBox 512, własne tło-squircle) =====
+  function embrace(){ return `
+    <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+      <rect width="512" height="512" rx="116" fill="#3D5147"/>
+      <path d="M126 244 A130 130 0 1 0 386 244" fill="none" stroke="#F4F1E9" stroke-width="40" stroke-linecap="round"/>
+      <circle cx="256" cy="244" r="46" fill="#E3A488"/>
+    </svg>`; }
+
+  function bloom(){ return `
+    <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+      <rect width="512" height="512" rx="116" fill="#FAF7F2"/>
+      <circle cx="256" cy="292" r="128" fill="none" stroke="#3D5147" stroke-width="40"/>
+      <path d="M256 164 C256 132 256 110 256 86" fill="none" stroke="#3D5147" stroke-width="22" stroke-linecap="round"/>
+      <path d="M258 118 C284 86 322 84 338 88 C326 128 290 140 258 118 Z" fill="#BD6A4E"/>
+    </svg>`; }
+
+  function bump(){ return `
+    <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+      <rect width="512" height="512" rx="116" fill="#8C9F8E"/>
+      <g fill="none" stroke="#FAF7F2" stroke-width="34" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M206 196 C192 244 192 304 206 356"/>
+        <path d="M234 192 C306 210 332 300 252 352"/>
+        <path d="M206 356 C224 372 244 368 252 352"/>
+      </g>
+      <circle cx="206" cy="142" r="36" fill="#FAF7F2"/>
+    </svg>`; }
+
+  const CONCEPTS = [
+    { num:"Koncept 01", fn:embrace, name:"Objęcie",
+      desc:"Dłonie-misa obejmujące dziecko. Geometryczny, ciepły znak rodzicielstwa — terakotowa kropka jako nowe życie.",
+      pal:["#3D5147","#F4F1E9","#E3A488"] },
+    { num:"Koncept 02", fn:bloom, name:"Rozkwit",
+      desc:"Brzuszek jako okrąg, z którego wyrasta listek. Metafora rosnącego życia — minimalistyczna i organiczna.",
+      pal:["#FAF7F2","#3D5147","#BD6A4E"] },
+    { num:"Koncept 03", fn:bump, name:"Sylwetka",
+      desc:"Subtelny profil kobiety w ciąży jednym pociągnięciem. Najbardziej dosłowny, a wciąż elegancki i nowoczesny.",
+      pal:["#8C9F8E","#FAF7F2","#3D5147"] },
+  ];
+
+  function buildCard(host, c){
+    const sizes = [
+      { px:96, lbl:"96" }, { px:64, lbl:"64" }, { px:48, lbl:"48" },
+    ];
+    host.innerHTML = `
+      <div class="card">
+        <div class="card__num">${c.num}</div>
+        <div class="card__big">${c.fn()}</div>
+        <h2 class="card__name">${c.name}</h2>
+        <p class="card__desc">${c.desc}</p>
+        <div class="card__sizes">
+          ${sizes.map(s=>`<div class="card__sizecol">
+              <div style="width:${s.px}px;height:${s.px}px">${c.fn().replace('<svg ', `<svg style="width:${s.px}px;height:${s.px}px;border-radius:${Math.round(s.px*0.226)}px" `)}</div>
+              <div class="card__sizelbl">${s.lbl}px</div>
+            </div>`).join('')}
+          <div class="card__sizecol" style="margin-left:auto">
+            <div class="card__pal">${c.pal.map(p=>`<span class="card__sw" style="background:${p}"></span>`).join('')}</div>
+            <div class="card__sizelbl">paleta</div>
+          </div>
+        </div>
+      </div>`;
+  }
+  buildCard(document.getElementById('c1'), CONCEPTS[0]);
+  buildCard(document.getElementById('c2'), CONCEPTS[1]);
+  buildCard(document.getElementById('c3'), CONCEPTS[2]);
+
+  // ===== Telefon / ekran główny =====
+  function smallIcon(fn){ return fn().replace('<svg ', '<svg width="60" height="60" style="border-radius:15px" '); }
+  const ph = (cls='')=>`<div class="ph ${cls}"></div>`;
+  const lbl = (t,live=false)=>`<div class="appicon__lbl${live?' live':''}">${t}</div>`;
+
+  // Układ siatki 4x5: rozmieszczamy nasze 3 ikony wśród zaślepek
+  const cells = [
+    ph(),                  lbl('Zdrowie'),
+    ph('c'),               lbl('Kalendarz'),
+    {ic:embrace, l:''},    // nasza 01
+    ph('d'),               lbl('Notatki'),
+  ];
+
+  function appCell(inner, label){
+    return `<div class="appicon">${inner}${label!==undefined?`<div class="appicon__lbl">${label}</div>`:'<div class="appicon__lbl"></div>'}</div>`;
+  }
+
+  const grid = [
+    appCell(ph(), 'Zdrowie'),
+    appCell(ph('c'), 'Foto'),
+    appCell(ph(), 'Mapa'),
+    appCell(ph('d'), 'Muzyka'),
+
+    appCell(smallIcon(embrace), ''),     // 01
+    appCell(ph(), 'Notatki'),
+    appCell(ph('c'), 'Pogoda'),
+    appCell(ph(), 'Sklep'),
+
+    appCell(ph('d'), 'Poczta'),
+    appCell(smallIcon(bloom), ''),       // 02
+    appCell(ph(), 'Bank'),
+    appCell(ph('c'), 'Kalend.'),
+
+    appCell(ph(), 'Pliki'),
+    appCell(ph('d'), 'Zegar'),
+    appCell(smallIcon(bump), ''),        // 03
+    appCell(ph(), 'Ustaw.'),
+  ].join('');
+
+  document.getElementById('phone').innerHTML = `
+    <div class="phone">
+      <div class="phone__scr">
+        <div class="phone__notch"></div>
+        <div class="phone__time">9:41</div>
+        <div class="phone__bat">
+          <svg width="22" height="14" viewBox="0 0 24 14" fill="none"><rect x="1" y="2" width="19" height="10" rx="3" stroke="currentColor" stroke-width="1.4"/><rect x="3" y="4" width="13" height="6" rx="1.5" fill="currentColor"/><rect x="21" y="5" width="2" height="4" rx="1" fill="currentColor"/></svg>
+        </div>
+        <div class="grid">${grid}</div>
+        <div class="dock">
+          ${ph()}${smallIcon(embrace).replace('width="60" height="60"','width="58" height="58"')}${ph()}${ph()}
+        </div>
+        <div class="phone__cap"></div>
+      </div>
+    </div>`;
+</script>
+</body>
+</html>

@@ -1,7 +1,6 @@
 import { Redirect } from 'expo-router';
-import { useProfileStore } from '@/stores/profile';
 
+// NavGuard w _layout.tsx obsługuje całą logikę routingu — tu tylko punkt startowy.
 export default function Index() {
-  const isOnboarded = useProfileStore((s) => s.isOnboarded);
-  return <Redirect href={isOnboarded ? '/(tabs)/trasa' : '/onboarding'} />;
+  return <Redirect href="/auth" />;
 }

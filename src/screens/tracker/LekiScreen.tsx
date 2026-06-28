@@ -29,6 +29,7 @@ import {
   type TodayEntry,
   type Medication,
   type NotifPrefs,
+  type DoseRecord,
 } from '@/stores/medications';
 import {
   scheduleMedNotifications,
@@ -83,12 +84,13 @@ export default function LekiScreen() {
   const t = useT();
   const {
     medications, doseRecords, notifPrefs,
-    addMedication, updateNotificationIds, deleteMedication,
-    recordDose, skipDose, setNotifPrefs,
+    addMedication, updateMedication, updateNotificationIds, deleteMedication,
+    recordDose, skipDose, setDoseRecord, setNotifPrefs,
   } = useMedicationsStore();
 
   const [activeTab, setActiveTab] = useState<Tab>('today');
-  const [showAddModal, setShowAddModal] = useState(false);
+  const [editingMed, setEditingMed] = useState<Medication | null>(null);
+  const [showMedModal, setShowMedModal] = useState(false);
   const [showPrefsModal, setShowPrefsModal] = useState(false);
   const [exactAlarmOk, setExactAlarmOk] = useState(true);
   const [tick, setTick] = useState(0);
@@ -149,7 +151,7 @@ export default function LekiScreen() {
           </Pressable>
           {activeTab === 'medications' && (
             <Pressable
-              onPress={() => setShowAddModal(true)}
+              onPress={() => { setEditingMed(null); setShowMedModal(true); }}
               style={{
                 width: 40, height: 40, borderRadius: 12,
                 backgroundColor: colors.evergreen.DEFAULT,
@@ -217,9 +219,13 @@ export default function LekiScreen() {
           countdownMs={countdownMs}
           todaySchedule={todaySchedule}
           medications={medications}
-          onAdd={() => setShowAddModal(true)}
+          doseRecords={doseRecords}
+          onAdd={() => { setEditingMed(null); setShowMedModal(true); }}
           onTake={(medicationId, scheduleItemId) => recordDose(medicationId, scheduleItemId)}
           onSkip={(medicationId, scheduleItemId) => skipDose(medicationId, scheduleItemId)}
+          onSetRecord={(medicationId, scheduleItemId, dateKey, status) =>
+            setDoseRecord(medicationId, scheduleItemId, dateKey, status)
+          }
           onSnooze={(entry) => {
             snoozeMedNotification(entry.medication, entry.item, notifPrefs).catch(() => {});
             Alert.alert(t.medications.snoozed, t.medications.snoozedMsg);
@@ -229,7 +235,8 @@ export default function LekiScreen() {
       {activeTab === 'medications' && (
         <MedicationsTab
           medications={medications}
-          onAdd={() => setShowAddModal(true)}
+          onAdd={() => { setEditingMed(null); setShowMedModal(true); }}
+          onEdit={(med) => { setEditingMed(med); setShowMedModal(true); }}
           onDelete={(id) => {
             Alert.alert(t.medications.deleteAlertTitle, t.medications.deleteAlertMsg, [
               { text: t.medications.cancel, style: 'cancel' },
@@ -265,17 +272,28 @@ export default function LekiScreen() {
         }}
       />
 
-      {/* Add Medication Modal */}
-      <AddMedicationModal
-        visible={showAddModal}
-        onClose={() => setShowAddModal(false)}
+      {/* Add / Edit Medication Modal */}
+      <MedFormModal
+        visible={showMedModal}
+        initialData={editingMed ?? undefined}
+        onClose={() => { setShowMedModal(false); setEditingMed(null); }}
         onSave={(data) => {
-          const newId = addMedication(data);
-          setShowAddModal(false);
-          const med: Medication = { ...data, id: newId, createdAt: Date.now(), notificationIds: [] };
-          scheduleMedNotifications(med, notifPrefs)
-            .then((ids) => { if (ids.length > 0) updateNotificationIds(newId, ids); })
-            .catch(() => {});
+          if (editingMed) {
+            updateMedication(editingMed.id, data);
+            cancelMedNotifications(editingMed.notificationIds).catch(() => {});
+            const updated: Medication = { ...editingMed, ...data };
+            scheduleMedNotifications(updated, notifPrefs)
+              .then((ids) => { if (ids.length > 0) updateNotificationIds(editingMed.id, ids); })
+              .catch(() => {});
+          } else {
+            const newId = addMedication(data);
+            const med: Medication = { ...data, id: newId, createdAt: Date.now(), notificationIds: [] };
+            scheduleMedNotifications(med, notifPrefs)
+              .then((ids) => { if (ids.length > 0) updateNotificationIds(newId, ids); })
+              .catch(() => {});
+          }
+          setShowMedModal(false);
+          setEditingMed(null);
         }}
       />
     </SafeAreaView>
@@ -284,27 +302,57 @@ export default function LekiScreen() {
 
 // ─── TODAY TAB ────────────────────────────────────────────────────────────────
 
+function buildHistoryDays(
+  medications: Medication[],
+  doseRecords: DoseRecord[],
+  days = 14,
+): { dateKey: string; label: string; entries: TodayEntry[] }[] {
+  const now = new Date();
+  const dayNames = ['Niedziela', 'Poniedziałek', 'Wtorek', 'Środa', 'Czwartek', 'Piątek', 'Sobota'];
+  const result: { dateKey: string; label: string; entries: TodayEntry[] }[] = [];
+
+  for (let d = 1; d <= days; d++) {
+    const date = new Date(now);
+    date.setDate(date.getDate() - d);
+    const dateKey = date.toISOString().slice(0, 10);
+    const dayName = d === 1 ? 'Wczoraj' : dayNames[date.getDay()] ?? '';
+    const ddmm = `${String(date.getDate()).padStart(2, '0')}.${String(date.getMonth() + 1).padStart(2, '0')}`;
+    const label = d === 1 ? `Wczoraj, ${ddmm}` : `${dayName}, ${ddmm}`;
+    const entries = getTodaySchedule(medications, doseRecords, dateKey);
+    if (entries.length > 0) {
+      result.push({ dateKey, label, entries });
+    }
+  }
+
+  return result;
+}
+
 function TodayTab({
   nextDue,
   countdownMs,
   todaySchedule,
   medications,
+  doseRecords,
   onAdd,
   onTake,
   onSkip,
+  onSetRecord,
   onSnooze,
 }: {
   nextDue: ReturnType<typeof getNextDue>;
   countdownMs: number;
   todaySchedule: TodayEntry[];
   medications: Medication[];
+  doseRecords: DoseRecord[];
   onAdd: () => void;
   onTake: (medicationId: string, scheduleItemId: string) => void;
   onSkip: (medicationId: string, scheduleItemId: string) => void;
+  onSetRecord: (medicationId: string, scheduleItemId: string, dateKey: string, status: 'taken' | 'skipped' | 'none') => void;
   onSnooze: (entry: TodayEntry) => void;
 }) {
   const t = useT();
   const scaleAnim = useRef(new Animated.Value(1)).current;
+  const [showHistory, setShowHistory] = useState(false);
 
   function handleTake(entry: TodayEntry) {
     Animated.sequence([
@@ -450,7 +498,175 @@ function TodayTab({
           </View>
         </>
       )}
+
+      {/* History toggle */}
+      <Pressable
+        onPress={() => setShowHistory((v) => !v)}
+        style={{
+          marginTop: 24, flexDirection: 'row', alignItems: 'center', gap: 8,
+          paddingVertical: 12, paddingHorizontal: 14,
+          backgroundColor: colors.surface.DEFAULT,
+          borderRadius: 12, borderWidth: 0.5, borderColor: colors.line.DEFAULT,
+          justifyContent: 'center',
+        }}
+      >
+        <Icon name="clock" size={16} color={colors.ink.soft} />
+        <Text style={{ fontSize: 14, fontFamily: 'Geist_500Medium', color: colors.ink.soft }}>
+          {showHistory ? t.medications.hideHistory : t.medications.showHistory}
+        </Text>
+        <View style={{ transform: [{ rotate: showHistory ? '90deg' : '-90deg' }] }}>
+          <Icon name="chevron" size={14} color={colors.ink.faint} />
+        </View>
+      </Pressable>
+
+      {/* History section */}
+      {showHistory && (
+        <HistorySection
+          medications={medications}
+          doseRecords={doseRecords}
+          onSetRecord={onSetRecord}
+          t={t}
+        />
+      )}
     </ScrollView>
+  );
+}
+
+function HistorySection({
+  medications,
+  doseRecords,
+  onSetRecord,
+  t,
+}: {
+  medications: Medication[];
+  doseRecords: DoseRecord[];
+  onSetRecord: (medicationId: string, scheduleItemId: string, dateKey: string, status: 'taken' | 'skipped' | 'none') => void;
+  t: ReturnType<typeof useT>;
+}) {
+  const days = buildHistoryDays(medications, doseRecords, 30);
+
+  if (days.length === 0) {
+    return (
+      <Text style={{ fontSize: 14, color: colors.ink.faint, textAlign: 'center', marginTop: 16, marginBottom: 8 }}>
+        {t.medications.historyEmpty}
+      </Text>
+    );
+  }
+
+  return (
+    <View style={{ marginTop: 20, gap: 20 }}>
+      {days.map(({ dateKey, label, entries }) => (
+        <View key={dateKey}>
+          <Text style={{
+            fontSize: 11, fontFamily: 'Geist_500Medium', color: colors.ink.faint,
+            letterSpacing: 0.5, textTransform: 'uppercase', marginBottom: 8,
+          }}>
+            {label}
+          </Text>
+          <View style={{ gap: 6 }}>
+            {entries.map((entry) => (
+              <HistoryEntryRow
+                key={`${entry.medication.id}-${entry.item.id}-${dateKey}`}
+                entry={entry}
+                dateKey={dateKey}
+                onSetRecord={onSetRecord}
+              />
+            ))}
+          </View>
+        </View>
+      ))}
+    </View>
+  );
+}
+
+function HistoryEntryRow({
+  entry,
+  dateKey,
+  onSetRecord,
+}: {
+  entry: TodayEntry;
+  dateKey: string;
+  onSetRecord: (medicationId: string, scheduleItemId: string, dateKey: string, status: 'taken' | 'skipped' | 'none') => void;
+}) {
+  const typeConf = MED_TYPE_CONFIG[entry.medication.type];
+
+  function toggleTaken() {
+    if (entry.taken) {
+      onSetRecord(entry.medication.id, entry.item.id, dateKey, 'none');
+    } else {
+      onSetRecord(entry.medication.id, entry.item.id, dateKey, 'taken');
+    }
+  }
+
+  function toggleSkipped() {
+    if (entry.skipped) {
+      onSetRecord(entry.medication.id, entry.item.id, dateKey, 'none');
+    } else {
+      onSetRecord(entry.medication.id, entry.item.id, dateKey, 'skipped');
+    }
+  }
+
+  return (
+    <View style={{
+      backgroundColor: colors.surface.DEFAULT,
+      borderRadius: 12, borderWidth: 0.5,
+      borderColor: entry.taken
+        ? colors.success + '44'
+        : entry.skipped
+        ? colors.line.DEFAULT
+        : colors.line.DEFAULT,
+      padding: 12, flexDirection: 'row', alignItems: 'center', gap: 10,
+    }}>
+      <Text style={{ fontSize: 12, fontFamily: 'Geist_500Medium', color: colors.ink.faint, width: 40 }}>
+        {fmtTime(entry.item.hour, entry.item.minute)}
+      </Text>
+
+      <View style={{
+        width: 28, height: 28, borderRadius: 7,
+        backgroundColor: typeConf.bgColor,
+        alignItems: 'center', justifyContent: 'center',
+      }}>
+        <Text style={{ fontSize: 13 }}>{typeConf.emoji}</Text>
+      </View>
+
+      <View style={{ flex: 1 }}>
+        <Text style={{ fontSize: 13, fontFamily: 'Geist_500Medium', color: colors.ink.DEFAULT }}>
+          {entry.medication.name}
+        </Text>
+        <Text style={{ fontSize: 11, color: colors.ink.faint, marginTop: 1 }}>
+          {entry.item.dosage}
+        </Text>
+      </View>
+
+      <View style={{ flexDirection: 'row', gap: 6 }}>
+        {/* Pominięto */}
+        <Pressable
+          onPress={toggleSkipped}
+          style={{
+            width: 30, height: 30, borderRadius: 8,
+            borderWidth: 1,
+            borderColor: entry.skipped ? colors.ink.faint : colors.line.DEFAULT,
+            backgroundColor: entry.skipped ? colors.ink.faint + '22' : 'transparent',
+            alignItems: 'center', justifyContent: 'center',
+          }}
+        >
+          <Icon name="minus" size={14} color={entry.skipped ? colors.ink.DEFAULT : colors.ink.faint} />
+        </Pressable>
+        {/* Zażyte */}
+        <Pressable
+          onPress={toggleTaken}
+          style={{
+            width: 30, height: 30, borderRadius: 8,
+            borderWidth: 1,
+            borderColor: entry.taken ? colors.success : colors.line.DEFAULT,
+            backgroundColor: entry.taken ? colors.success + '22' : 'transparent',
+            alignItems: 'center', justifyContent: 'center',
+          }}
+        >
+          <Icon name="check" size={14} color={entry.taken ? colors.success : colors.ink.faint} strokeWidth={2} />
+        </Pressable>
+      </View>
+    </View>
   );
 }
 
@@ -549,10 +765,12 @@ function TodayEntryRow({
 function MedicationsTab({
   medications,
   onAdd,
+  onEdit,
   onDelete,
 }: {
   medications: Medication[];
   onAdd: () => void;
+  onEdit: (med: Medication) => void;
   onDelete: (id: string) => void;
 }) {
   const t = useT();
@@ -586,7 +804,7 @@ function MedicationsTab({
     <ScrollView contentContainerStyle={{ paddingHorizontal: 18, paddingBottom: 120 }} showsVerticalScrollIndicator={false}>
       <View style={{ gap: 10 }}>
         {medications.map((med) => (
-          <MedicationCard key={med.id} medication={med} onDelete={() => onDelete(med.id)} />
+          <MedicationCard key={med.id} medication={med} onEdit={() => onEdit(med)} onDelete={() => onDelete(med.id)} />
         ))}
       </View>
 
@@ -610,9 +828,11 @@ function MedicationsTab({
 
 function MedicationCard({
   medication,
+  onEdit,
   onDelete,
 }: {
   medication: Medication;
+  onEdit: () => void;
   onDelete: () => void;
 }) {
   const typeConf = MED_TYPE_CONFIG[medication.type];
@@ -641,17 +861,34 @@ function MedicationCard({
           <Text style={{ fontSize: 12, color: colors.ink.faint, marginTop: 2 }}>
             {typeConf.label}
           </Text>
+          {medication.dosageNote ? (
+            <Text style={{ fontSize: 12, color: colors.evergreen.DEFAULT, marginTop: 3 }}>
+              {medication.dosageNote}
+            </Text>
+          ) : null}
         </View>
-        <Pressable
-          onPress={onDelete}
-          style={{
-            width: 34, height: 34, borderRadius: 10,
-            borderWidth: 0.5, borderColor: colors.line.DEFAULT,
-            alignItems: 'center', justifyContent: 'center',
-          }}
-        >
-          <Icon name="trash" size={16} color={colors.danger} />
-        </Pressable>
+        <View style={{ flexDirection: 'row', gap: 8 }}>
+          <Pressable
+            onPress={onEdit}
+            style={{
+              width: 34, height: 34, borderRadius: 10,
+              borderWidth: 0.5, borderColor: colors.line.DEFAULT,
+              alignItems: 'center', justifyContent: 'center',
+            }}
+          >
+            <Icon name="pencil" size={15} color={colors.ink.soft} />
+          </Pressable>
+          <Pressable
+            onPress={onDelete}
+            style={{
+              width: 34, height: 34, borderRadius: 10,
+              borderWidth: 0.5, borderColor: colors.line.DEFAULT,
+              alignItems: 'center', justifyContent: 'center',
+            }}
+          >
+            <Icon name="trash" size={16} color={colors.danger} />
+          </Pressable>
+        </View>
       </View>
 
       <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 6 }}>
@@ -690,14 +927,6 @@ function StatsTab({
   const monthPct = getAdherence(medications, doseRecords, 30);
   const streak = getStreakDays(medications, doseRecords);
   const chartData = getChartData(medications, doseRecords);
-  const monthAdherence = getAdherence(medications, doseRecords, 30);
-
-  const REWARDS = [
-    { id: 'streak_7',  icon: '🌱', label: t.medications.reward7,    minStreak: 7  },
-    { id: 'streak_30', icon: '🔥', label: t.medications.reward30,   minStreak: 30 },
-    { id: 'streak_90', icon: '🌟', label: t.medications.reward90,   minStreak: 90 },
-    { id: 'month',     icon: '💎', label: t.medications.rewardMonth, minStreak: 0, minMonth: 100 },
-  ];
 
   if (medications.length === 0) {
     return (
@@ -774,21 +1003,6 @@ function StatsTab({
         </View>
       </View>
 
-      {/* Rewards */}
-      <Text style={{ fontSize: 11, fontFamily: 'Geist_500Medium', color: colors.ink.faint, letterSpacing: 0.5, textTransform: 'uppercase', marginBottom: 12 }}>
-        {t.medications.achievements}
-      </Text>
-      <View style={{ gap: 8 }}>
-        {REWARDS.map((reward) => {
-          const unlocked =
-            reward.id === 'month'
-              ? monthAdherence >= 100
-              : streak >= reward.minStreak;
-          return (
-            <RewardRow key={reward.id} icon={reward.icon} label={reward.label} unlocked={unlocked} />
-          );
-        })}
-      </View>
     </ScrollView>
   );
 }
@@ -806,42 +1020,6 @@ function StatCard({ label, value }: { label: string; value: number }) {
     }}>
       <Text style={{ fontSize: 26, fontFamily: 'Newsreader_400Regular', color }}>{value}%</Text>
       <Text style={{ fontSize: 12, color: colors.ink.faint, marginTop: 3 }}>{label}</Text>
-    </View>
-  );
-}
-
-function RewardRow({
-  icon,
-  label,
-  unlocked,
-}: {
-  icon: string;
-  label: string;
-  unlocked: boolean;
-}) {
-  return (
-    <View
-      style={{
-        backgroundColor: unlocked ? colors.surface.DEFAULT : colors.cream.DEFAULT,
-        borderRadius: 14,
-        borderWidth: 0.5,
-        borderColor: unlocked ? colors.line.strong : colors.line.DEFAULT,
-        padding: 14,
-        flexDirection: 'row',
-        alignItems: 'center',
-        gap: 14,
-        opacity: unlocked ? 1 : 0.5,
-      }}
-    >
-      <Text style={{ fontSize: 26 }}>{icon}</Text>
-      <Text style={{ flex: 1, fontSize: 14, fontFamily: 'Geist_500Medium', color: colors.ink.DEFAULT }}>
-        {label}
-      </Text>
-      {unlocked && (
-        <View style={{ width: 24, height: 24, borderRadius: 12, backgroundColor: colors.success + '22', alignItems: 'center', justifyContent: 'center' }}>
-          <Icon name="check" size={13} color={colors.success} strokeWidth={2.2} />
-        </View>
-      )}
     </View>
   );
 }
@@ -999,28 +1177,53 @@ function NotifPrefsModal({
   );
 }
 
-// ─── ADD MEDICATION MODAL ─────────────────────────────────────────────────────
+// ─── ADD / EDIT MEDICATION MODAL ──────────────────────────────────────────────
 
 const MED_TYPES: MedType[] = ['supplement', 'prescription', 'pregnancy_vitamin', 'insulin', 'child_med'];
 
-function AddMedicationModal({
+function MedFormModal({
   visible,
+  initialData,
   onClose,
   onSave,
 }: {
   visible: boolean;
+  initialData?: Medication;
   onClose: () => void;
   onSave: (data: Omit<Medication, 'id' | 'createdAt' | 'notificationIds'>) => void;
 }) {
   const t = useT();
+  const isEditing = !!initialData;
+
   const [name, setName] = useState('');
   const [type, setType] = useState<MedType>('supplement');
+  const [dosageNote, setDosageNote] = useState('');
   const [entries, setEntries] = useState<ScheduleFormEntry[]>([{ time: '08:00', dosage: t.medications.dosagePlaceholder }]);
   const dosageRefs = useRef<Record<number, TextInput | null>>({});
+
+  useEffect(() => {
+    if (visible && initialData) {
+      setName(initialData.name);
+      setType(initialData.type);
+      setDosageNote(initialData.dosageNote ?? '');
+      setEntries(
+        initialData.schedule.map((item) => ({
+          time: fmtTime(item.hour, item.minute),
+          dosage: item.dosage,
+        })),
+      );
+    } else if (visible && !initialData) {
+      setName('');
+      setType('supplement');
+      setDosageNote('');
+      setEntries([{ time: '08:00', dosage: t.medications.dosagePlaceholder }]);
+    }
+  }, [visible, initialData]);
 
   function reset() {
     setName('');
     setType('supplement');
+    setDosageNote('');
     setEntries([{ time: '08:00', dosage: t.medications.dosagePlaceholder }]);
   }
 
@@ -1095,7 +1298,7 @@ function AddMedicationModal({
       });
     }
 
-    onSave({ name: name.trim(), type, schedule });
+    onSave({ name: name.trim(), type, schedule, dosageNote: dosageNote.trim() || undefined });
     reset();
   }
 
@@ -1103,7 +1306,7 @@ function AddMedicationModal({
     <Modal visible={visible} animationType="slide" presentationStyle="pageSheet" onRequestClose={handleClose}>
       <KeyboardAvoidingView
         style={{ flex: 1, backgroundColor: colors.cream.DEFAULT }}
-        behavior={Platform.OS === 'ios' ? 'padding' : undefined}
+        behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
       >
         <SafeAreaView edges={['top']} style={{ flex: 1 }}>
           {/* Modal header */}
@@ -1112,7 +1315,7 @@ function AddMedicationModal({
               <Text style={{ fontSize: 15, color: colors.ink.faint }}>{t.medications.cancel}</Text>
             </Pressable>
             <Text style={{ flex: 1, textAlign: 'center', fontSize: 16, fontFamily: 'Geist_500Medium', color: colors.ink.DEFAULT }}>
-              {t.medications.newMed}
+              {isEditing ? t.medications.edit : t.medications.newMed}
             </Text>
             <Pressable onPress={handleSave}>
               <Text style={{ fontSize: 15, fontFamily: 'Geist_500Medium', color: colors.evergreen.DEFAULT }}>
@@ -1131,6 +1334,19 @@ function AddMedicationModal({
               placeholderTextColor={colors.ink.faint}
               style={inputStyle}
               autoFocus
+            />
+
+            {/* Dosage note */}
+            <Text style={[labelStyle, { marginTop: 18 }]}>{t.medications.dosageNoteLabel}</Text>
+            <TextInput
+              value={dosageNote}
+              onChangeText={setDosageNote}
+              placeholder={t.medications.dosageNotePlaceholder}
+              placeholderTextColor={colors.ink.faint}
+              style={[inputStyle, { minHeight: 52 }]}
+              multiline
+              returnKeyType="done"
+              blurOnSubmit
             />
 
             {/* Type */}

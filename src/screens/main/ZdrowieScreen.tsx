@@ -36,6 +36,12 @@ function fmtCountdown(
   return t.countdownMin(m);
 }
 
+function trimesterLabel(week: number): string {
+  if (week <= 13) return 'I trymestr';
+  if (week <= 27) return 'II trymestr';
+  return 'III trymestr';
+}
+
 export default function ZdrowieScreen() {
   const router = useRouter();
   const trackers = useTrackersStore();
@@ -46,7 +52,7 @@ export default function ZdrowieScreen() {
   const t = useT();
 
   useEffect(() => {
-    const id = setInterval(() => setTick((t) => t + 1), 60_000);
+    const id = setInterval(() => setTick((tv) => tv + 1), 60_000);
     return () => clearInterval(id);
   }, []);
 
@@ -58,7 +64,7 @@ export default function ZdrowieScreen() {
     .filter((s) => s.date === todayIso)
     .reduce((sum, s) => sum + s.kicks.length, 0);
   const todayFeedings = trackers.feedingSessions.filter(
-    (f) => new Date(f.startedAt).toISOString().slice(0, 10) === todayIso
+    (f) => new Date(f.startedAt).toISOString().slice(0, 10) === todayIso,
   ).length;
   const doneVax = trackers.vaccinations.filter((v) => v.done).length;
   const totalVax = trackers.vaccinations.length;
@@ -76,12 +82,19 @@ export default function ZdrowieScreen() {
     } catch { return null; }
   })();
 
+  const nextDue = getNextDue(medications);
+  const countdownMs = nextDue ? nextDue.at.getTime() - Date.now() : 0;
+
   const n = t.health.notes;
+
   const pregnancy: ToolItem[] = [
+    // Leki — na miejscu tygodnia ciąży (który jest teraz hero cardem)
     {
-      id: 'tygodnie', icon: 'baby', title: t.health.tools.pregnancyWeek,
-      note: () => currentWeek ? n.pregnancyWeekNote(currentWeek) : n.browse,
-      bg: '#DEE8DD', fg: '#41614C', route: '/tygodnie',
+      id: 'leki', icon: 'pill', title: t.health.medAssistant,
+      note: () => nextDue
+        ? `${nextDue.medication.name} · ${fmtCountdown(countdownMs, t.health)}`
+        : medications.length > 0 ? t.health.allDosesTaken : t.health.addMedications,
+      bg: '#DEE8DD', fg: '#41614C', route: '/tracker/leki',
     },
     {
       id: 'kalkulator', icon: 'calendar', title: t.health.tools.dueDate,
@@ -151,12 +164,16 @@ export default function ZdrowieScreen() {
           </Text>
         </View>
 
-        {/* Kafelek Smart Asystent Leków */}
-        <MedAssistantTile
-          medications={medications}
-          tick={tick}
-          t={t.health}
-          onPress={() => router.push('/tracker/leki' as any)}
+        {/* Hero: Tydzień ciąży */}
+        <PregnancyWeekHeroTile
+          currentWeek={currentWeek}
+          onPress={() => {
+            if (currentWeek) {
+              router.push(`/week/${currentWeek}` as any);
+            } else {
+              router.push('/tygodnie' as any);
+            }
+          }}
         />
 
         {/* Sekcja 1: W ciąży */}
@@ -169,20 +186,15 @@ export default function ZdrowieScreen() {
   );
 }
 
-function MedAssistantTile({
-  medications,
-  tick,
-  t,
+// ─── PREGNANCY WEEK HERO TILE ─────────────────────────────────────────────────
+
+function PregnancyWeekHeroTile({
+  currentWeek,
   onPress,
 }: {
-  medications: ReturnType<typeof useMedicationsStore.getState>['medications'];
-  tick: number;
-  t: ReturnType<typeof useT>['health'];
+  currentWeek: number | null;
   onPress: () => void;
 }) {
-  const nextDue = getNextDue(medications);
-  const countdownMs = nextDue ? nextDue.at.getTime() - Date.now() : 0;
-
   return (
     <Pressable
       onPress={onPress}
@@ -192,61 +204,67 @@ function MedAssistantTile({
         backgroundColor: colors.evergreen.DEFAULT,
         borderRadius: 20,
         padding: 20,
-        overflow: 'hidden',
         minHeight: 124,
       }}
     >
-      {/* Nagłówek kafelka */}
+      {/* Nagłówek */}
       <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 14, gap: 10 }}>
         <View style={{
           width: 34, height: 34, borderRadius: 10,
           backgroundColor: 'rgba(255,255,255,0.15)',
           alignItems: 'center', justifyContent: 'center',
         }}>
-          <Icon name="pill" size={18} color="#FFFFFF" />
+          <Icon name="baby" size={18} color="#FFFFFF" />
         </View>
-        <Text style={{ fontSize: 11, fontFamily: 'Geist_500Medium', color: 'rgba(255,255,255,0.65)', letterSpacing: 0.6, textTransform: 'uppercase' }}>
-          {t.medAssistant}
+        <Text style={{
+          fontSize: 11, fontFamily: 'Geist_500Medium',
+          color: 'rgba(255,255,255,0.65)', letterSpacing: 0.6, textTransform: 'uppercase',
+        }}>
+          Twój tydzień ciąży
         </Text>
       </View>
 
-      {/* Stan */}
-      {medications.length === 0 ? (
-        <View>
-          <Text style={{ fontSize: 17, fontFamily: 'Newsreader_400Regular', color: '#FFFFFF', marginBottom: 4 }}>
-            {t.addMedications}
-          </Text>
-          <Text style={{ fontSize: 13, color: 'rgba(255,255,255,0.6)' }}>
-            {t.remindersStats}
-          </Text>
-        </View>
-      ) : nextDue ? (
+      {currentWeek ? (
         <View style={{ flexDirection: 'row', alignItems: 'flex-end', justifyContent: 'space-between' }}>
           <View style={{ flex: 1 }}>
-            <Text style={{ fontSize: 22, fontFamily: 'Newsreader_400Regular', color: '#FFFFFF', lineHeight: 26 }}>
-              {nextDue.medication.name}
+            <Text style={{
+              fontSize: 34, fontFamily: 'Newsreader_400Regular',
+              color: '#FFFFFF', lineHeight: 38,
+            }}>
+              {currentWeek}. tydzień
             </Text>
             <Text style={{ fontSize: 13, color: 'rgba(255,255,255,0.65)', marginTop: 3 }}>
-              {nextDue.item.dosage} · {fmtCountdown(countdownMs, t)}
+              {trimesterLabel(currentWeek)} · kliknij, by zobaczyć szczegóły
             </Text>
           </View>
           <View style={{
             backgroundColor: 'rgba(255,255,255,0.12)',
-            borderRadius: 10, paddingHorizontal: 10, paddingVertical: 6,
+            borderRadius: 10, paddingHorizontal: 12, paddingVertical: 8,
+            alignItems: 'center',
           }}>
-            <Text style={{ fontSize: 13, fontFamily: 'Geist_500Medium', color: 'rgba(255,255,255,0.9)' }}>
-              {String(Math.floor(countdownMs / 3600000)).padStart(2, '0')}:{String(Math.floor((countdownMs % 3600000) / 60000)).padStart(2, '0')}
+            <Text style={{ fontSize: 22, fontFamily: 'Newsreader_400Regular', color: '#FFFFFF', lineHeight: 26 }}>
+              {currentWeek}
+            </Text>
+            <Text style={{ fontSize: 9, color: 'rgba(255,255,255,0.6)', fontFamily: 'Geist_500Medium', letterSpacing: 0.3 }}>
+              TYG.
             </Text>
           </View>
         </View>
       ) : (
-        <Text style={{ fontSize: 16, color: 'rgba(255,255,255,0.7)' }}>
-          {t.allDosesTaken}
-        </Text>
+        <View>
+          <Text style={{ fontSize: 17, fontFamily: 'Newsreader_400Regular', color: '#FFFFFF', marginBottom: 4 }}>
+            Sprawdź tygodnie ciąży
+          </Text>
+          <Text style={{ fontSize: 13, color: 'rgba(255,255,255,0.6)' }}>
+            Przeglądaj co dzieje się każdego tygodnia
+          </Text>
+        </View>
       )}
     </Pressable>
   );
 }
+
+// ─── SECTION + TOOL CARD ─────────────────────────────────────────────────────
 
 function Section({ label, items, onPress }: { label: string; items: ToolItem[]; onPress: (r: string) => void }) {
   const pairs: ToolItem[][] = [];
@@ -256,7 +274,11 @@ function Section({ label, items, onPress }: { label: string; items: ToolItem[]; 
 
   return (
     <View style={{ paddingHorizontal: 22, marginBottom: 28 }}>
-      <Text style={{ fontSize: 11, fontFamily: 'Geist_500Medium', color: colors.ink.faint, letterSpacing: 0.5, textTransform: 'uppercase', marginBottom: 12 }}>
+      <Text style={{
+        fontSize: 11, fontFamily: 'Geist_500Medium',
+        color: colors.ink.faint, letterSpacing: 0.5,
+        textTransform: 'uppercase', marginBottom: 12,
+      }}>
         {label}
       </Text>
       <View style={{ gap: 10 }}>
@@ -285,7 +307,11 @@ function ToolCard({ item, onPress }: { item: ToolItem; onPress: () => void }) {
       }}
     >
       <Icon name={item.icon} size={22} color={item.fg} strokeWidth={1.7} />
-      <Text style={{ fontSize: 15, fontFamily: 'Geist_500Medium', color: colors.ink.DEFAULT, lineHeight: 20, marginTop: 14, marginBottom: 3 }}>
+      <Text style={{
+        fontSize: 15, fontFamily: 'Geist_500Medium',
+        color: colors.ink.DEFAULT, lineHeight: 20,
+        marginTop: 14, marginBottom: 3,
+      }}>
         {item.title}
       </Text>
       <Text style={{ fontSize: 12.5, color: item.fg }}>

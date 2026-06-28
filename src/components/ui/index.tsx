@@ -10,6 +10,7 @@ import { colors } from '@/theme/tokens';
 
 export { Icon, type IconName } from './Icon';
 export { LanguageSwitcher } from './LanguageSwitcher';
+export { DatePickerModal, DateField, type DatePickerModalProps, type DateFieldProps } from './DatePickerModal';
 
 // ============ BUTTON ============
 

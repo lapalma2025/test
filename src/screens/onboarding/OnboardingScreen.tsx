@@ -3,7 +3,7 @@ import { View, Text, ScrollView, TextInput, Pressable } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useRouter } from 'expo-router';
 
-import { Button, Progress, Icon, Field, type IconName } from '@/components/ui';
+import { Button, Progress, Icon, Field, DateField, type IconName } from '@/components/ui';
 import { useProfileStore } from '@/stores/profile';
 import { checkEligibility, calculateTotalYearOneProjection, type EmploymentType } from '@/engine/eligibility-engine';
 import benefitsData from '@/data/benefits.json';
@@ -87,6 +87,13 @@ export default function OnboardingScreen() {
   const [childName, setChildName] = useState<string>(profile.childName);
   const [partnerIncluded, setPartnerIncluded] = useState<boolean>(profile.partnerIncluded);
   const [partnerName, setPartnerName] = useState<string>(profile.partnerName ?? '');
+  const [monthlyNetIncomePln, setMonthlyNetIncomePln] = useState<string>(
+    profile.monthlyNetIncomePln > 0 ? String(profile.monthlyNetIncomePln) : ''
+  );
+  const [partnerMonthlyNetIncomePln, setPartnerMonthlyNetIncomePln] = useState<string>(
+    profile.partnerMonthlyNetIncomePln > 0 ? String(profile.partnerMonthlyNetIncomePln) : ''
+  );
+  const [householdSize, setHouseholdSize] = useState<string>(String(profile.householdSize ?? 2));
 
   const next = () => {
     if (step < TOTAL_STEPS) {
@@ -104,6 +111,9 @@ export default function OnboardingScreen() {
   };
 
   const commitStep = () => {
+    const parsedIncome = parseFloat(monthlyNetIncomePln.replace(',', '.')) || 0;
+    const parsedPartnerIncome = parseFloat(partnerMonthlyNetIncomePln.replace(',', '.')) || 0;
+    const parsedHousehold = parseInt(householdSize) || 2;
     profile.setMany({
       childBirthDate: stage === 'born' ? dateInput || null : null,
       childDueDate: stage === 'preg' ? dateInput || null : null,
@@ -115,6 +125,9 @@ export default function OnboardingScreen() {
       childName,
       partnerIncluded,
       partnerName: partnerIncluded ? partnerName : null,
+      monthlyNetIncomePln: parsedIncome,
+      partnerMonthlyNetIncomePln: parsedPartnerIncome,
+      householdSize: parsedHousehold,
     });
   };
 
@@ -183,6 +196,12 @@ export default function OnboardingScreen() {
             setPartnerIncluded={setPartnerIncluded}
             partnerName={partnerName}
             setPartnerName={setPartnerName}
+            monthlyNetIncomePln={monthlyNetIncomePln}
+            setMonthlyNetIncomePln={setMonthlyNetIncomePln}
+            partnerMonthlyNetIncomePln={partnerMonthlyNetIncomePln}
+            setPartnerMonthlyNetIncomePln={setPartnerMonthlyNetIncomePln}
+            householdSize={householdSize}
+            setHouseholdSize={setHouseholdSize}
           />
         )}
         {step === 5 && <StepSummary />}
@@ -243,12 +262,12 @@ function StepStage({ stage, setStage, dateInput, setDateInput, childName, setChi
       </View>
 
       <Field label={stage === 'born' ? t.onboarding.birthDateLabel : t.onboarding.dueDateLabelInput}>
-        <TextInput
+        <DateField
           value={dateInput}
-          onChangeText={setDateInput}
-          placeholder="2026-05-26"
-          className="bg-surface border border-line rounded-card px-4 py-3.5 text-[15px] text-ink"
-          placeholderTextColor={colors.ink.faint}
+          onChange={setDateInput}
+          modalTitle={stage === 'born' ? t.onboarding.birthDateLabel : t.onboarding.dueDateLabelInput}
+          placeholder="Wybierz datę"
+          maxYear={2040}
         />
       </Field>
 
@@ -390,9 +409,15 @@ function StepLocation({
 
 function StepPartner({
   partnerIncluded, setPartnerIncluded, partnerName, setPartnerName,
+  monthlyNetIncomePln, setMonthlyNetIncomePln,
+  partnerMonthlyNetIncomePln, setPartnerMonthlyNetIncomePln,
+  householdSize, setHouseholdSize,
 }: {
   partnerIncluded: boolean; setPartnerIncluded: (v: boolean) => void;
   partnerName: string; setPartnerName: (v: string) => void;
+  monthlyNetIncomePln: string; setMonthlyNetIncomePln: (v: string) => void;
+  partnerMonthlyNetIncomePln: string; setPartnerMonthlyNetIncomePln: (v: string) => void;
+  householdSize: string; setHouseholdSize: (v: string) => void;
 }) {
   const t = useT();
   return (
@@ -429,6 +454,39 @@ function StepPartner({
           />
         </Field>
       )}
+      <Field label="Twoje zarobki netto / mies. (zł)">
+        <TextInput
+          value={monthlyNetIncomePln}
+          onChangeText={setMonthlyNetIncomePln}
+          placeholder="np. 4500  (opcjonalnie)"
+          className="bg-surface border border-line rounded-card px-4 py-3.5 text-[15px] text-ink"
+          placeholderTextColor={colors.ink.faint}
+          keyboardType="numeric"
+        />
+      </Field>
+      {partnerIncluded && (
+        <Field label="Zarobki ojca netto / mies. (zł)">
+          <TextInput
+            value={partnerMonthlyNetIncomePln}
+            onChangeText={setPartnerMonthlyNetIncomePln}
+            placeholder="np. 5000  (opcjonalnie)"
+            className="bg-surface border border-line rounded-card px-4 py-3.5 text-[15px] text-ink"
+            placeholderTextColor={colors.ink.faint}
+            keyboardType="numeric"
+          />
+        </Field>
+      )}
+      <Field label="Liczba osób w gosp. domowym">
+        <TextInput
+          value={householdSize}
+          onChangeText={setHouseholdSize}
+          placeholder="np. 3"
+          className="bg-surface border border-line rounded-card px-4 py-3.5 text-[15px] text-ink"
+          placeholderTextColor={colors.ink.faint}
+          keyboardType="number-pad"
+          maxLength={2}
+        />
+      </Field>
     </View>
   );
 }

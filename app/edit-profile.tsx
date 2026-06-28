@@ -12,7 +12,7 @@ import {
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useRouter } from 'expo-router';
 
-import { Icon } from '@/components/ui';
+import { Icon, DateField } from '@/components/ui';
 import { useProfileStore, type ProfileState } from '@/stores/profile';
 import { VOIVODESHIPS } from '@/constants/voivodeships';
 import { type EmploymentType } from '@/engine/eligibility-engine';
@@ -47,13 +47,23 @@ export default function EditProfileScreen() {
   const [voivodeship, setVoivodeship] = useState(profile.voivodeship);
   const [employment, setEmployment] = useState<EmploymentType>(profile.employment);
   const [firstChild, setFirstChild] = useState(profile.firstChild);
+  const [numberOfChildren, setNumberOfChildren] = useState(String(profile.numberOfChildren ?? 2));
+  const [monthlyNetIncomePln, setMonthlyNetIncomePln] = useState(
+    profile.monthlyNetIncomePln > 0 ? String(profile.monthlyNetIncomePln) : ''
+  );
+  const [partnerMonthlyNetIncomePln, setPartnerMonthlyNetIncomePln] = useState(
+    profile.partnerMonthlyNetIncomePln > 0 ? String(profile.partnerMonthlyNetIncomePln) : ''
+  );
+  const [householdSize, setHouseholdSize] = useState(String(profile.householdSize ?? 2));
   const [voivodeshipOpen, setVoivodeshipOpen] = useState(false);
 
-  const dueDateError = childDueDate && !isValidDate(childDueDate);
-  const birthDateError = childBirthDate && !isValidDate(childBirthDate);
-  const canSave = !dueDateError && !birthDateError;
+  const canSave = true;
 
   const handleSave = () => {
+    const parsedIncome = parseFloat(monthlyNetIncomePln.replace(',', '.')) || 0;
+    const parsedPartnerIncome = parseFloat(partnerMonthlyNetIncomePln.replace(',', '.')) || 0;
+    const parsedHousehold = parseInt(householdSize) || 2;
+    const parsedChildren = parseInt(numberOfChildren) || 2;
     const updates: Partial<ProfileState> = {
       parentName: parentName.trim(),
       childName: childName.trim(),
@@ -63,6 +73,10 @@ export default function EditProfileScreen() {
       voivodeship,
       employment,
       firstChild,
+      numberOfChildren: firstChild ? 1 : parsedChildren,
+      monthlyNetIncomePln: parsedIncome,
+      partnerMonthlyNetIncomePln: parsedPartnerIncome,
+      householdSize: parsedHousehold,
     };
     profile.setMany(updates);
     router.back();
@@ -97,9 +111,9 @@ export default function EditProfileScreen() {
 
       <KeyboardAvoidingView
         style={{ flex: 1 }}
-        behavior={Platform.OS === 'ios' ? 'padding' : undefined}
+        behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
       >
-        <ScrollView contentContainerStyle={{ paddingBottom: 40 }} showsVerticalScrollIndicator={false}>
+        <ScrollView contentContainerStyle={{ paddingBottom: 40 }} showsVerticalScrollIndicator={false} keyboardShouldPersistTaps="handled">
 
           {/* Rodzic */}
           <SectionLabel>Rodzic</SectionLabel>
@@ -128,27 +142,23 @@ export default function EditProfileScreen() {
               />
             </FieldRow>
             <Separator />
-            <FieldRow label="Termin porodu" hint={dueDateError ? 'Niepoprawna data' : 'RRRR-MM-DD'} error={!!dueDateError}>
-              <TextInput
+            <FieldRow label="Termin porodu">
+              <DateField
                 value={childDueDate}
-                onChangeText={setChildDueDate}
-                placeholder="np. 2025-09-15"
-                placeholderTextColor={colors.ink.faint}
-                keyboardType="numeric"
-                maxLength={10}
-                style={inputStyle}
+                onChange={setChildDueDate}
+                modalTitle="Termin porodu"
+                placeholder="Wybierz datę"
+                maxYear={2040}
               />
             </FieldRow>
             <Separator />
-            <FieldRow label="Data urodzenia dziecka" hint={birthDateError ? 'Niepoprawna data' : 'RRRR-MM-DD'} error={!!birthDateError}>
-              <TextInput
+            <FieldRow label="Data urodzenia dziecka">
+              <DateField
                 value={childBirthDate}
-                onChangeText={setChildBirthDate}
-                placeholder="np. 2025-09-20"
-                placeholderTextColor={colors.ink.faint}
-                keyboardType="numeric"
-                maxLength={10}
-                style={inputStyle}
+                onChange={setChildBirthDate}
+                modalTitle="Data urodzenia dziecka"
+                placeholder="Wybierz datę"
+                maxYear={2040}
               />
             </FieldRow>
             <Separator />
@@ -161,6 +171,22 @@ export default function EditProfileScreen() {
                 thumbColor={colors.cream.DEFAULT}
               />
             </View>
+            {!firstChild && (
+              <>
+                <Separator />
+                <FieldRow label="Ile masz dzieci (łącznie z tym)">
+                  <TextInput
+                    value={numberOfChildren}
+                    onChangeText={setNumberOfChildren}
+                    placeholder="np. 2"
+                    placeholderTextColor={colors.ink.faint}
+                    keyboardType="number-pad"
+                    maxLength={2}
+                    style={inputStyle}
+                  />
+                </FieldRow>
+              </>
+            )}
           </FieldBlock>
 
           {/* Lokalizacja */}
@@ -237,6 +263,44 @@ export default function EditProfileScreen() {
               );
             })}
           </View>
+
+          {/* Finanse */}
+          <SectionLabel>Finanse (do liczenia becikowego)</SectionLabel>
+          <FieldBlock>
+            <FieldRow label="Twoje zarobki netto / mies. (zł)">
+              <TextInput
+                value={monthlyNetIncomePln}
+                onChangeText={setMonthlyNetIncomePln}
+                placeholder="np. 4500"
+                placeholderTextColor={colors.ink.faint}
+                keyboardType="numeric"
+                style={inputStyle}
+              />
+            </FieldRow>
+            <Separator />
+            <FieldRow label="Zarobki ojca netto / mies. (zł)">
+              <TextInput
+                value={partnerMonthlyNetIncomePln}
+                onChangeText={setPartnerMonthlyNetIncomePln}
+                placeholder="np. 5000"
+                placeholderTextColor={colors.ink.faint}
+                keyboardType="numeric"
+                style={inputStyle}
+              />
+            </FieldRow>
+            <Separator />
+            <FieldRow label="Liczba osób w gosp. domowym">
+              <TextInput
+                value={householdSize}
+                onChangeText={setHouseholdSize}
+                placeholder="np. 3"
+                placeholderTextColor={colors.ink.faint}
+                keyboardType="number-pad"
+                maxLength={2}
+                style={inputStyle}
+              />
+            </FieldRow>
+          </FieldBlock>
 
         </ScrollView>
       </KeyboardAvoidingView>

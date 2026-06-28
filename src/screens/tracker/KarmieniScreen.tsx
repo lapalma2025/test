@@ -4,6 +4,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { useRouter } from 'expo-router';
 
 import { Icon } from '@/components/ui';
+import { MedInfoCard } from '@/components/ui/MedInfoCard';
 import { useTrackersStore, type FeedingSession } from '@/stores/trackers';
 import { colors } from '@/theme/tokens';
 import { useT } from '@/i18n';
@@ -215,6 +216,21 @@ export default function KarmieniScreen() {
               : t.feeding.tapSideToStart}
           </Text>
 
+          {/* Med info */}
+          <View style={{ marginTop: 20 }}>
+            <MedInfoCard
+              title="Karmienie piersią — jak to działa?"
+              items={[
+                'Noworodek karmi się 8–12 razy na dobę, zwykle co 2–3 godziny (również w nocy)',
+                'Karm na żądanie – obserwuj sygnały głodu: szukanie, cmokanie, przykładanie piąstek do buzi',
+                'Typowo 10–20 min na piersi; gdy dziecko zwalnia, zaproponuj drugą stronę',
+                'WHO zaleca wyłączne karmienie piersią przez pierwsze 6 miesięcy życia',
+                'Oznaki dobrego karmienia: 6+ mokrych pieluszek dziennie, spokój po karmieniu, regularny przyrost masy ciała',
+                'Trudności z karmieniem? Skontaktuj się z doradcą laktacyjnym (certyfikat IBCLC)',
+              ]}
+            />
+          </View>
+
           {/* Today */}
           {todayDone.length > 0 && (
             <View style={{ marginTop: 28 }}>
@@ -242,6 +258,29 @@ export default function KarmieniScreen() {
               </View>
             </View>
           ))}
+
+          <View style={{
+            backgroundColor: '#FCFBF7',
+            borderRadius: 16,
+            borderWidth: 0.5,
+            borderColor: colors.line.DEFAULT,
+            padding: 14,
+            marginTop: 26,
+            gap: 6,
+          }}>
+            <Text style={{ fontSize: 14, fontFamily: 'Geist_500Medium', color: colors.ink.DEFAULT }}>
+              {t.feeding.infoTitle}
+            </Text>
+            <Text style={{ fontSize: 12.5, color: colors.ink.soft, lineHeight: 18 }}>
+              • {t.feeding.infoWhy}
+            </Text>
+            <Text style={{ fontSize: 12.5, color: colors.ink.soft, lineHeight: 18 }}>
+              • {t.feeding.infoHow}
+            </Text>
+            <Text style={{ fontSize: 12.5, color: colors.terracotta.dark, lineHeight: 18 }}>
+              • {t.feeding.infoWhen}
+            </Text>
+          </View>
         </ScrollView>
       </SafeAreaView>
     </View>

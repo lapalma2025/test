@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import {
   View, Text, ScrollView, Pressable, TextInput, Modal,
+  KeyboardAvoidingView, Platform,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useRouter } from 'expo-router';
 
-import { Icon } from '@/components/ui';
+import { Icon, DateField } from '@/components/ui';
 import { useTrackersStore, type TestResult } from '@/stores/trackers';
 import { colors } from '@/theme/tokens';
 import { useT } from '@/i18n';
@@ -262,6 +263,7 @@ export default function WynikiScreen() {
                 </Pressable>
               </View>
 
+              <KeyboardAvoidingView style={{ flex: 1 }} behavior={Platform.OS === 'ios' ? 'padding' : 'height'}>
               <ScrollView contentContainerStyle={{ padding: 20, gap: 16 }} keyboardShouldPersistTaps="handled">
                 <View>
                   <Text style={labelStyle}>{tr.results.testName} *</Text>
@@ -327,17 +329,15 @@ export default function WynikiScreen() {
                   />
                 </View>
 
-                <View style={{ flexDirection: 'row', gap: 12 }}>
-                  <View style={{ flex: 1 }}>
-                    <Text style={labelStyle}>{tr.results.dateLabel}</Text>
-                    <TextInput
-                      value={form.date}
-                      onChangeText={(v) => setF('date', v)}
-                      placeholder="2026-03-15"
-                      placeholderTextColor={colors.ink.faint}
-                      style={inputStyle}
-                    />
-                  </View>
+                <View>
+                  <Text style={labelStyle}>{tr.results.dateLabel}</Text>
+                  <DateField
+                    value={form.date}
+                    onChange={(v) => setF('date', v)}
+                    modalTitle={tr.results.dateLabel}
+                    placeholder="Wybierz datę"
+                    maxYear={2040}
+                  />
                 </View>
 
                 <View>
@@ -420,6 +420,7 @@ export default function WynikiScreen() {
                   </Pressable>
                 )}
               </ScrollView>
+              </KeyboardAvoidingView>
             </SafeAreaView>
           </View>
         </Modal>
