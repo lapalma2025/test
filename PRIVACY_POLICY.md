@@ -8,7 +8,7 @@ Administratorem Twoich danych osobowych jest:
 **CodeWithMe Sp. z o.o.**
 ul. Św. Mikołaja 8/11, Wrocław
 NIP: 8971969995
-Kontakt: kontakt@kidelo.pl
+Kontakt: biuro@kidelo.pl
 
 ## 2. Jakie dane zbieramy
 
@@ -79,7 +79,7 @@ Masz prawo:
 - **Wycofania zgody** w dowolnym momencie — Profil → Powiadomienia / Analityka
 - **Skargi do Prezesa UODO** (uodo.gov.pl)
 
-Aby skorzystać z praw, napisz na kontakt@kidelo.pl lub skorzystaj z opcji w aplikacji.
+Aby skorzystać z praw, napisz na biuro@kidelo.pl lub skorzystaj z opcji w aplikacji.
 
 ## 7. Bezpieczeństwo
 
@@ -103,5 +103,5 @@ O istotnych zmianach poinformujemy Cię w aplikacji minimum 30 dni przed wejści
 
 ## 11. Kontakt
 
-Pytania: kontakt@kidelo.pl
+Pytania: biuro@kidelo.pl
 Inspektor Ochrony Danych: iod@kidelo.pl (jeśli powołany)

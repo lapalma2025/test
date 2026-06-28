@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import {
   View, Text, ScrollView, Pressable, Modal, TextInput,
+  KeyboardAvoidingView, Platform,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useRouter } from 'expo-router';
@@ -278,7 +279,10 @@ export default function BrzuszekScreen() {
 
         {/* Modal form */}
         <Modal visible={showForm} animationType="slide" presentationStyle="pageSheet">
-          <View style={{ flex: 1, backgroundColor: colors.cream.DEFAULT }}>
+          <KeyboardAvoidingView
+            style={{ flex: 1, backgroundColor: colors.cream.DEFAULT }}
+            behavior={Platform.OS === 'ios' ? 'padding' : undefined}
+          >
             <SafeAreaView style={{ flex: 1 }} edges={['top', 'bottom']}>
               <View style={{
                 flexDirection: 'row', alignItems: 'center',
@@ -395,7 +399,7 @@ export default function BrzuszekScreen() {
                 </View>
               </ScrollView>
             </SafeAreaView>
-          </View>
+          </KeyboardAvoidingView>
         </Modal>
       </SafeAreaView>
     </View>

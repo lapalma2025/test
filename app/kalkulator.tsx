@@ -119,7 +119,7 @@ export default function KalkulatorScreen() {
 
         <KeyboardAvoidingView
           style={{ flex: 1 }}
-          behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
+          behavior={Platform.OS === 'ios' ? 'padding' : undefined}
         >
           <ScrollView
             contentContainerStyle={{ paddingHorizontal: 22, paddingBottom: 40 }}

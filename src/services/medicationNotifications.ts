@@ -6,10 +6,15 @@
 import * as Notifications from 'expo-notifications';
 import * as Device from 'expo-device';
 import { Platform, Linking } from 'react-native';
+import Constants from 'expo-constants';
 import type { MedType, Medication, MedScheduleItem, NotifPrefs } from '@/stores/medications';
 
 const CHANNEL_FULL   = 'medications_full';
 const CHANNEL_SILENT = 'medications_silent';
+
+// Expo Go na Androidzie (SDK 53+) nie obsługuje planowania powiadomień push.
+// Lokalne powiadomienia nadal działają, ale DevicePushTokenAutoRegistration rzuca błąd.
+const IS_EXPO_GO = Constants.appOwnership === 'expo';
 
 function getMedTitle(type: MedType): string {
   switch (type) {
@@ -24,7 +29,7 @@ function getMedTitle(type: MedType): string {
 // ─── UPRAWNIENIA ──────────────────────────────────────────────────────────────
 
 export async function requestMedNotifPermissions(): Promise<boolean> {
-  if (!Device.isDevice) return false;
+  if (!Device.isDevice || IS_EXPO_GO) return false;
   try {
     const { status: existing } = await Notifications.getPermissionsAsync();
     if (existing !== 'granted') {
@@ -101,6 +106,7 @@ export async function scheduleMedNotifications(
   med: Medication,
   prefs: NotifPrefs = { sound: true, vibration: true },
 ): Promise<string[]> {
+  if (IS_EXPO_GO) return [];
   try {
     await ensureChannels();
     const channelId = pickChannel(prefs);

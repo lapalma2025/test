@@ -31,6 +31,7 @@ export default function AuthScreen() {
   const [confirmed, setConfirmed] = useState(false);
   const [forgotMode, setForgotMode] = useState(false);
   const [resetSent, setResetSent] = useState(false);
+  const [privacyAccepted, setPrivacyAccepted] = useState(false);
 
   const passwordRef = useRef<TextInput>(null);
   const confirmRef = useRef<TextInput>(null);
@@ -43,6 +44,7 @@ export default function AuthScreen() {
     setConfirmed(false);
     setForgotMode(false);
     setResetSent(false);
+    setPrivacyAccepted(false);
   };
 
   const validate = (): string | null => {
@@ -53,6 +55,8 @@ export default function AuthScreen() {
       return 'Hasło musi mieć co najmniej 8 znaków.';
     if (tab === 'register' && password !== confirmPassword)
       return 'Hasła nie są takie same.';
+    if (tab === 'register' && !privacyAccepted)
+      return 'Wyraź zgodę na przetwarzanie danych, aby kontynuować.';
     return null;
   };
 
@@ -64,20 +68,24 @@ export default function AuthScreen() {
     setBusy(true);
     const trimmedEmail = email.trim().toLowerCase();
 
-    if (tab === 'login') {
-      const result = await signInWithPassword(trimmedEmail, password);
-      setBusy(false);
-      if (!result.ok) { setError(result.error ?? 'Nieznany błąd.'); return; }
-      router.replace(nextRoute);
-    } else {
-      const result = await signUpWithPassword(trimmedEmail, password);
-      setBusy(false);
-      if (!result.ok) { setError(result.error ?? 'Nieznany błąd.'); return; }
-      if (result.needsConfirmation) {
-        setConfirmed(true);
-      } else {
+    try {
+      if (tab === 'login') {
+        const result = await signInWithPassword(trimmedEmail, password);
+        if (!result.ok) { setError(result.error ?? 'Nieznany błąd.'); return; }
         router.replace(nextRoute);
+      } else {
+        const result = await signUpWithPassword(trimmedEmail, password);
+        if (!result.ok) { setError(result.error ?? 'Nieznany błąd.'); return; }
+        if (result.needsConfirmation) {
+          setConfirmed(true);
+        } else {
+          router.replace(nextRoute);
+        }
       }
+    } catch (e: any) {
+      setError(e?.message ?? 'Błąd połączenia. Sprawdź internet i spróbuj ponownie.');
+    } finally {
+      setBusy(false);
     }
   };
 
@@ -183,7 +191,7 @@ export default function AuthScreen() {
     <SafeAreaView style={{ flex: 1, backgroundColor: colors.cream.DEFAULT }} edges={['top', 'bottom']}>
       <KeyboardAvoidingView
         style={{ flex: 1 }}
-        behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
+        behavior={Platform.OS === 'ios' ? 'padding' : undefined}
       >
         <ScrollView
           contentContainerStyle={{ flexGrow: 1, paddingHorizontal: 22, paddingBottom: 32 }}
@@ -307,6 +315,36 @@ export default function AuthScreen() {
                   onSubmitEditing={handleSubmit}
                 />
               </View>
+            )}
+
+            {/* Zgoda RODO — tylko przy rejestracji */}
+            {tab === 'register' && !forgotMode && (
+              <Pressable
+                onPress={() => setPrivacyAccepted((v) => !v)}
+                style={{ flexDirection: 'row', alignItems: 'flex-start', gap: 12, marginTop: 16 }}
+              >
+                <View style={{
+                  width: 20, height: 20, borderRadius: 5, marginTop: 1,
+                  borderWidth: 1.5,
+                  borderColor: privacyAccepted ? colors.evergreen.DEFAULT : colors.line.DEFAULT,
+                  backgroundColor: privacyAccepted ? colors.evergreen.DEFAULT : 'transparent',
+                  alignItems: 'center', justifyContent: 'center', flexShrink: 0,
+                }}>
+                  {privacyAccepted && (
+                    <Icon name="check" size={12} color="#FFFFFF" strokeWidth={2.5} />
+                  )}
+                </View>
+                <Text style={{ flex: 1, fontSize: 13, color: colors.ink.soft, lineHeight: 20 }}>
+                  Akceptuję{' '}
+                  <Text
+                    onPress={() => router.push('/info?section=privacy' as any)}
+                    style={{ color: colors.evergreen.DEFAULT, fontFamily: 'Geist_500Medium' }}
+                  >
+                    Politykę Prywatności
+                  </Text>
+                  {' '}i wyrażam zgodę na przetwarzanie moich danych osobowych, w tym danych o stanie zdrowia, w celu korzystania z aplikacji.
+                </Text>
+              </Pressable>
             )}
 
             {/* Błąd */}

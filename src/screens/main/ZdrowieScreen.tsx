@@ -47,7 +47,7 @@ export default function ZdrowieScreen() {
   const trackers = useTrackersStore();
   const notes = useNotesStore();
   const profile = useProfileStore();
-  const { medications } = useMedicationsStore();
+  const { medications, doseRecords } = useMedicationsStore();
   const [tick, setTick] = useState(0);
   const t = useT();
 
@@ -82,7 +82,7 @@ export default function ZdrowieScreen() {
     } catch { return null; }
   })();
 
-  const nextDue = getNextDue(medications);
+  const nextDue = getNextDue(medications, doseRecords);
   const countdownMs = nextDue ? nextDue.at.getTime() - Date.now() : 0;
 
   const n = t.health.notes;

@@ -56,7 +56,7 @@ Zabronione jest:
 
 ## §8. Reklamacje
 
-Reklamacje: kontakt@kidelo.pl. Wydawca rozpatrzy w ciągu 14 dni.
+Reklamacje: biuro@kidelo.pl. Wydawca rozpatrzy w ciągu 14 dni.
 
 ## §9. Zmiany regulaminu
 

@@ -263,7 +263,7 @@ export default function WynikiScreen() {
                 </Pressable>
               </View>
 
-              <KeyboardAvoidingView style={{ flex: 1 }} behavior={Platform.OS === 'ios' ? 'padding' : 'height'}>
+              <KeyboardAvoidingView style={{ flex: 1 }} behavior={Platform.OS === 'ios' ? 'padding' : undefined}>
               <ScrollView contentContainerStyle={{ padding: 20, gap: 16 }} keyboardShouldPersistTaps="handled">
                 <View>
                   <Text style={labelStyle}>{tr.results.testName} *</Text>

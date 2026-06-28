@@ -28,6 +28,7 @@
     "android": {
       "package": "pl.kidelo.app",
       "versionCode": 1,
+      "softwareKeyboardLayoutMode": "pan",
       "adaptiveIcon": {
         "foregroundImage": "./assets/log-app-bigger.png",
         "backgroundColor": "#FAF7F2"

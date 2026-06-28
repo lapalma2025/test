@@ -13,8 +13,11 @@ import { useRouter } from 'expo-router';
 import { Card, Chip, Icon, IconBadge, Pill, Button, LanguageSwitcher } from '@/components/ui';
 import { MainScreenShell } from '@/components/layout/MainScreenShell';
 import { useProfileStore } from '@/stores/profile';
+import { useTrackersStore } from '@/stores/trackers';
+import { useMedicationsStore } from '@/stores/medications';
+import { useNotesStore } from '@/stores/notes';
 import { useAuth } from '@/hooks/useAuth';
-import { signOut } from '@/services/auth';
+import { signOut, deleteAccount } from '@/services/auth';
 import { colors } from '@/theme/tokens';
 import { useT } from '@/i18n';
 
@@ -158,6 +161,7 @@ export function ProfilScreen() {
   const auth = useAuth();
   const t = useT();
   const [loggingOut, setLoggingOut] = useState(false);
+  const [deleting, setDeleting] = useState(false);
 
   const handleReset = () => {
     profile.reset();
@@ -178,6 +182,37 @@ export function ProfilScreen() {
             profile.setField('hasSkippedAuth', false);
             await signOut();
             setLoggingOut(false);
+          },
+        },
+      ],
+    );
+  };
+
+  const handleDeleteAccount = () => {
+    Alert.alert(
+      'Usuń konto i dane',
+      'Wszystkie Twoje dane zostaną trwale i nieodwracalnie usunięte z naszych serwerów. Tej operacji nie można cofnąć.',
+      [
+        { text: 'Anuluj', style: 'cancel' },
+        {
+          text: 'Usuń konto',
+          style: 'destructive',
+          onPress: async () => {
+            setDeleting(true);
+            const result = await deleteAccount();
+            setDeleting(false);
+            if (!result.ok) {
+              Alert.alert('Błąd', result.error ?? 'Nie udało się usunąć konta. Spróbuj ponownie.');
+              return;
+            }
+            useTrackersStore.getState().replaceFromCloud({
+              kickSessions: [], contractionSessions: [], testResults: [],
+              feedingSessions: [], vaccinations: [], bumpEntries: [],
+            });
+            useMedicationsStore.getState().replaceFromCloud({ medications: [], doseRecords: [] });
+            useNotesStore.getState().replaceFromCloud([]);
+            profile.reset();
+            router.replace('/auth');
           },
         },
       ],
@@ -288,21 +323,44 @@ export function ProfilScreen() {
           </Text>
           <View className="bg-surface border border-line rounded-card overflow-hidden">
             {auth.isAuthenticated ? (
-              <Pressable
-                onPress={handleLogout}
-                disabled={loggingOut}
-                style={{ flexDirection: 'row', alignItems: 'center', gap: 12, padding: 14, opacity: loggingOut ? 0.6 : 1 }}
-              >
-                <View style={{ width: 32, height: 32, alignItems: 'center', justifyContent: 'center' }}>
-                  {loggingOut
-                    ? <ActivityIndicator size="small" color={colors.terracotta.DEFAULT} />
-                    : <Icon name="logout" size={18} color={colors.terracotta.DEFAULT} />
-                  }
-                </View>
-                <Text style={{ flex: 1, fontSize: 14, color: colors.terracotta.DEFAULT, fontFamily: 'Geist_500Medium' }}>
-                  Wyloguj się
-                </Text>
-              </Pressable>
+              <>
+                <Pressable
+                  onPress={handleLogout}
+                  disabled={loggingOut || deleting}
+                  style={{ flexDirection: 'row', alignItems: 'center', gap: 12, padding: 14, opacity: loggingOut ? 0.6 : 1 }}
+                >
+                  <View style={{ width: 32, height: 32, alignItems: 'center', justifyContent: 'center' }}>
+                    {loggingOut
+                      ? <ActivityIndicator size="small" color={colors.terracotta.DEFAULT} />
+                      : <Icon name="logout" size={18} color={colors.terracotta.DEFAULT} />
+                    }
+                  </View>
+                  <Text style={{ flex: 1, fontSize: 14, color: colors.terracotta.DEFAULT, fontFamily: 'Geist_500Medium' }}>
+                    Wyloguj się
+                  </Text>
+                </Pressable>
+                <View style={{ height: 1, backgroundColor: colors.line.DEFAULT, marginLeft: 12 }} />
+                <Pressable
+                  onPress={handleDeleteAccount}
+                  disabled={loggingOut || deleting}
+                  style={{ flexDirection: 'row', alignItems: 'center', gap: 12, padding: 14, opacity: deleting ? 0.6 : 1 }}
+                >
+                  <View style={{ width: 32, height: 32, alignItems: 'center', justifyContent: 'center' }}>
+                    {deleting
+                      ? <ActivityIndicator size="small" color={colors.terracotta.DEFAULT} />
+                      : <Icon name="trash" size={18} color={colors.terracotta.DEFAULT} />
+                    }
+                  </View>
+                  <View style={{ flex: 1 }}>
+                    <Text style={{ fontSize: 14, color: colors.terracotta.DEFAULT, fontFamily: 'Geist_500Medium' }}>
+                      Usuń konto i dane
+                    </Text>
+                    <Text style={{ fontSize: 11.5, color: colors.ink.faint, marginTop: 1 }}>
+                      Trwale usuwa wszystkie Twoje dane z serwerów
+                    </Text>
+                  </View>
+                </Pressable>
+              </>
             ) : (
               <Pressable
                 onPress={() => router.push('/auth' as any)}

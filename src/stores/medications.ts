@@ -46,16 +46,27 @@ export interface NextDueResult {
   at: Date;
 }
 
-export function getNextDue(medications: Medication[]): NextDueResult | null {
+export function getNextDue(medications: Medication[], doseRecords: DoseRecord[] = []): NextDueResult | null {
   if (medications.length === 0) return null;
   const now = new Date();
+  const todayKey = now.toISOString().slice(0, 10);
   const candidates: NextDueResult[] = [];
 
   for (const med of medications) {
     for (const item of med.schedule) {
       const todayAt = new Date(now);
       todayAt.setHours(item.hour, item.minute, 0, 0);
-      if (todayAt > now) {
+
+      // Jeśli doza jest już odznaczona na dziś (nawet przed godziną) → przeskocz do jutra
+      const takenToday = doseRecords.some(
+        (r) =>
+          r.medicationId === med.id &&
+          r.scheduleItemId === item.id &&
+          r.dateKey === todayKey &&
+          r.takenAt != null,
+      );
+
+      if (!takenToday && todayAt > now) {
         candidates.push({ medication: med, item, at: todayAt });
       } else {
         const tomorrowAt = new Date(now);

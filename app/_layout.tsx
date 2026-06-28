@@ -134,6 +134,30 @@ function NavGuard() {
   const auth = useAuth();
   useCloudSync();
 
+  // Tapnięcie powiadomienia o leku → ekran leków
+  useEffect(() => {
+    // Aplikacja w tle lub na pierwszym planie
+    const sub = Notifications.addNotificationResponseReceivedListener((response) => {
+      const data = response.notification.request.content.data as Record<string, unknown>;
+      if (data?.type === 'medication') {
+        router.push('/tracker/leki' as any);
+      }
+    });
+
+    // Zimny start — aplikacja otwarta z powiadomienia
+    Notifications.getLastNotificationResponseAsync()
+      .then((response) => {
+        if (!response) return;
+        const data = response.notification.request.content.data as Record<string, unknown>;
+        if (data?.type === 'medication') {
+          router.push('/tracker/leki' as any);
+        }
+      })
+      .catch(() => {});
+
+    return () => sub.remove();
+  }, []);
+
   useEffect(() => {
     if (auth.isLoading) return;
 
@@ -154,8 +178,8 @@ function NavGuard() {
     } else if (canProceed && isOnboarded && inOnboarding) {
       // Profil ustawiony, był na onboardingu → tabs
       router.replace('/(tabs)/trasa');
-    } else if (canProceed && isOnboarded && inAuth) {
-      // Zalogowany/gość i onboarded, był na auth → tabs
+    } else if (auth.isAuthenticated && isOnboarded && inAuth) {
+      // Tylko zalogowany (nie gość) i onboarded, był na auth → tabs
       router.replace('/(tabs)/trasa');
     }
   }, [isOnboarded, hasSkippedAuth, segments, auth.isAuthenticated, auth.isLoading]);

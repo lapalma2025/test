@@ -106,7 +106,7 @@ export default function LekiScreen() {
   }, []);
 
   const todayKey = new Date().toISOString().slice(0, 10);
-  const nextDue = getNextDue(medications);
+  const nextDue = getNextDue(medications, doseRecords);
   const todaySchedule = getTodaySchedule(medications, doseRecords, todayKey);
 
   const countdownMs = nextDue ? nextDue.at.getTime() - Date.now() : 0;
@@ -1306,7 +1306,7 @@ function MedFormModal({
     <Modal visible={visible} animationType="slide" presentationStyle="pageSheet" onRequestClose={handleClose}>
       <KeyboardAvoidingView
         style={{ flex: 1, backgroundColor: colors.cream.DEFAULT }}
-        behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
+        behavior={Platform.OS === 'ios' ? 'padding' : undefined}
       >
         <SafeAreaView edges={['top']} style={{ flex: 1 }}>
           {/* Modal header */}
